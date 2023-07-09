@@ -1,0 +1,715 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "terms": "http://purl.org/dc/terms/",
+    "title": "terms:title",
+    "created": "terms:created",
+    "modified": "terms:modified",
+    "description": "terms:description",
+    "format": "terms:format",
+    "issued": "terms:issued",
+    "document": "dcat:hasDocument",
+    "start": "dcat:startDate",
+    "end": "dcat:endDate",
+    "access_url": "dcat:accessUrl",
+    "byte_size": "dcat:byteSize",
+    "download_url": "dcat:downloadURL",
+    "keyword": "dcat:keyword",
+    "name": "foaf:name",
+    "mbox": "foaf:mbox",
+    "identifier": "terms:identifier",
+    "type": "dcso:identifierType",
+    "dmp": "dcso:hasDMP",
+    "dmp_id": "dcso:hasDMPId",
+    "language": "dcso:language",
+    "ethical_issues_exist": "dcso:ethicalIssuesExist",
+    "ethical_issues_report": "dcso:ethicalIssuesReport",
+    "ethical_issues_description": "dcso:ethicalIssuesDescription",
+    "contact": "dcso:hasContact",
+    "contact_id": "dcso:hasContactId",
+    "contributor": "dcso:hasContributor",
+    "contributor_id": "dcso:hasContributorId",
+    "role": {
+      "@id": "dcso:role",
+      "@container": "@list"
+    },
+    "cost": "dcso:hasCost",
+    "currency_code": "dcso:currencyCode",
+    "value": "dcso:value",
+    "project": "dcso:hasProject",
+    "funding": "dcso:hasFunding",
+    "funder_id": "dcso:hasFunderId",
+    "funder_status": "dcso:funderStatus",
+    "grant_id": "dcso:hasGrantId",
+    "dataset": "dcso:hasDataset",
+    "dataset_id": "dcso:hasDatasetId",
+    "data_quality_assurance": "dcso:dataQualityAssurance",
+    "personal_data": "dcso:personalData",
+    "sensitive_data": "dcso:sensitiveData",
+    "distribution": "dcso:hasDistribution",
+    "available_until": "dcso:availableUntil",
+    "data_access": "dcso:dataAccess",
+    "host": "dcso:hasHost",
+    "availability": "dcso:availability",
+    "backup_frequency": "dcso:backupFrequency",
+    "backup_type": "dcso:backupType",
+    "certified_with": "dcso:certifiedWith",
+    "geo_location": "dcso:geoLocation",
+    "pid_system": "dcso:pidSystem",
+    "storage_type": "dcso:storageType",
+    "support_versioning": "dcso:supportVersioning",
+    "url": "dcso:url",
+    "license": "dcso:hasLicense",
+    "license_ref": "dcso:licenseRef",
+    "start_date": "dcat:startDate",
+    "metadata": "dcso:hasMetadata",
+    "metadata_standard_id": "dcso:hasMetadataStandardId",
+    "security_and_privacy": "dcso:hasSecurityPrivacy",
+    "technical_resource": "dcso:hasTechnicalResource"
+  },
+  "@graph": [
+    {
+      "dmp": {
+        "@id": "_:b1",
+        "created": "2021-04-18T18:02:00.000Z",
+        "description": "This maDMP describes how the data of the project Performance Comparison of kNN and GD is organized, archived, preserved and licensed. It gives information about the project in general, the project members and how it is accessable",
+        "modified": "2021-04-18T18:02:00.000Z",
+        "title": "machine actionable DMP: Performance Comparison of kNN and GD",
+        "ethical_issues_exist": "no",
+        "contact": {
+          "@id": "_:b2",
+          "mbox": "tobias.hajszan@tuwien.ac.at",
+          "name": "Tobias Hajszan",
+          "contact_id": {
+            "@id": "_:b3",
+            "identifier": "https://orcid.org/0000-0002-7143-0353",
+            "type": "orcid"
+          }
+        },
+        "contributor": [
+          {
+            "@id": "_:b4",
+            "mbox": "tobias.hajszan@tuwien.ac.at",
+            "name": "Tobias Hajszan",
+            "contributor_id": {
+              "@id": "_:b5",
+              "identifier": "https://orcid.org/0000-0002-7143-0353",
+              "type": "orcid"
+            },
+            "role": [
+              "Data Manager",
+              "Principal Investigator",
+              "Project Administrator",
+              "Software Engineer"
+            ]
+          },
+          {
+            "@id": "_:b6",
+            "mbox": "moritz.staudinger@tuwien.ac.at",
+            "name": "Moritz Staudinger",
+            "contributor_id": {
+              "@id": "_:b7",
+              "identifier": "https://orcid.org/0000-0002-5164-2690",
+              "type": "orcid"
+            },
+            "role": [
+              "Data Manager"
+            ]
+          }
+        ],
+        "dmp_id": {
+          "@id": "_:b8",
+          "identifier": "https://doi.org/10.5281/zenodo.4701164",
+          "type": "doi"
+        },
+        "dataset": [
+          {
+            "@id": "_:b9",
+            "description": "The fish data set is a small data and provides records of 7 common different fish species in fish market sales",
+            "issued": "2019-06-13",
+            "title": "Dataset Fish",
+            "dataset_id": {
+              "@id": "_:b10",
+              "identifier": "https://www.kaggle.com/aungpyaeap/fish-market",
+              "type": "url"
+            },
+            "type": "dataset",
+            "personal_data": "no",
+            "sensitive_data": "no"
+          },
+          {
+            "@id": "_:b11",
+            "description": "The employee dataset is from openml.org and provides annual salary information including gross pay and overtime pay for all active, permanent employees of Montgomery County, MD paid in calendar year 2016. It is composed of 13 features and 9222 rows of data.",
+            "issued": "2019-09-12",
+            "title": "Dataset Employees",
+            "dataset_id": {
+              "@id": "_:b12",
+              "identifier": "https://www.openml.org/d/42125",
+              "type": "url"
+            },
+            "type": "dataset",
+            "personal_data": "no",
+            "sensitive_data": "no"
+          },
+          {
+            "@id": "_:b13",
+            "description": "These datasets are used in the project Performance Comparison of kNN and GD. It contains the fish (https://www.kaggle.com/aungpyaeap/fish-market) and employee (https://www.openml.org/d/42125) dataset. Preview",
+            "issued": "2020-04-18",
+            "title": "Datasets for Performance Comparison of kNN and GD",
+            "dataset_id": {
+              "@id": "_:b14",
+              "identifier": "https://doi.org/10.5281/zenodo.4699520",
+              "type": "doi"
+            },
+            "type": "dataset",
+            "personal_data": "no",
+            "sensitive_data": "no"
+          },
+          {
+            "@id": "_:b15",
+            "description": "Source Code for Performance Comparison of kNN and GD",
+            "issued": "2021-04-18",
+            "title": "Source Code for Performance Comparison of kNN and GD",
+            "data_quality_assurance": "The code has been peer-reviewed by the authors",
+            "dataset_id": {
+              "@id": "_:b16",
+              "identifier": "https://doi.org/10.5281/zenodo.4701071",
+              "type": "doi"
+            },
+            "distribution": {
+              "@id": "_:b17",
+              "description": "Final release implemented using sklearn, numpy and matplotlib",
+              "title": "Planned Distribution",
+              "access_url": "https://doi.org/10.5281/zenodo.4699506",
+              "byte_size": 15007744,
+              "available_until": "2022-04-19",
+              "data_access": "open",
+              "host": {
+                "@id": "_:b18",
+                "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+                "title": "Zenodo",
+                "pid_system": "doi",
+                "storage_type": "repository",
+                "url": "https://www.re3data.org/repository/r3d100010468"
+              },
+              "license": {
+                "@id": "_:b19",
+                "start": "2021-04-19",
+                "license_ref": "https://opensource.org/licenses/lgpl-3.0.html"
+              }
+            },
+            "type": "software",
+            "personal_data": "no",
+            "sensitive_data": "no"
+          },
+          {
+            "@id": "_:b20",
+            "description": "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset.",
+            "issued": "2021-04-18",
+            "title": "Results for Performance Comparison of kNN and GD",
+            "dataset_id": {
+              "@id": "_:b21",
+              "identifier": "https://doi.org/10.5281/zenodo.4699565",
+              "type": "doi"
+            },
+            "distribution": {
+              "@id": "_:b22",
+              "description": "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
+              "format": "text/csv",
+              "title": "Planned Distribution",
+              "byte_size": 24576,
+              "available_until": "2022-04-19",
+              "data_access": "open",
+              "host": {
+                "@id": "_:b23",
+                "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+                "title": "Zenodo",
+                "pid_system": "doi",
+                "storage_type": "repository",
+                "url": "https://www.re3data.org/repository/r3d100010468"
+              },
+              "license": {
+                "@id": "_:b24",
+                "start": "2021-04-19",
+                "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+              }
+            },
+            "type": "dataset",
+            "personal_data": "no",
+            "sensitive_data": "no"
+          }
+        ],
+        "project": {
+          "@id": "_:b25",
+          "description": "This project aims to analyze the difference of two custom written regression algorithms against the state of the art implementation of sklearn. The two algorithms are k-nearest neighbors (KNN) and gradient descend (gd). Both are fully implemented in python. Key points to the comparison are accuracy and efficency of the two algorithms but we will furthermore comapre mse, mae, r2. ",
+          "title": "Performance Comparison of kNN and GD",
+          "end": "2020-12-10",
+          "start": "2020-11-15"
+        },
+        "language": "eng"
+      }
+    },
+    {
+      "@id": "_:b1",
+      "created": "2021-04-18T18:02:00.000Z",
+      "description": "This maDMP describes how the data of the project Performance Comparison of kNN and GD is organized, archived, preserved and licensed. It gives information about the project in general, the project members and how it is accessable",
+      "modified": "2021-04-18T18:02:00.000Z",
+      "title": "machine actionable DMP: Performance Comparison of kNN and GD",
+      "ethical_issues_exist": "no",
+      "contact": {
+        "@id": "_:b2",
+        "mbox": "tobias.hajszan@tuwien.ac.at",
+        "name": "Tobias Hajszan",
+        "contact_id": {
+          "@id": "_:b3",
+          "identifier": "https://orcid.org/0000-0002-7143-0353",
+          "type": "orcid"
+        }
+      },
+      "contributor": [
+        {
+          "@id": "_:b4",
+          "mbox": "tobias.hajszan@tuwien.ac.at",
+          "name": "Tobias Hajszan",
+          "contributor_id": {
+            "@id": "_:b5",
+            "identifier": "https://orcid.org/0000-0002-7143-0353",
+            "type": "orcid"
+          },
+          "role": [
+            "Data Manager",
+            "Principal Investigator",
+            "Project Administrator",
+            "Software Engineer"
+          ]
+        },
+        {
+          "@id": "_:b6",
+          "mbox": "moritz.staudinger@tuwien.ac.at",
+          "name": "Moritz Staudinger",
+          "contributor_id": {
+            "@id": "_:b7",
+            "identifier": "https://orcid.org/0000-0002-5164-2690",
+            "type": "orcid"
+          },
+          "role": [
+            "Data Manager"
+          ]
+        }
+      ],
+      "dmp_id": {
+        "@id": "_:b8",
+        "identifier": "https://doi.org/10.5281/zenodo.4701164",
+        "type": "doi"
+      },
+      "dataset": [
+        {
+          "@id": "_:b9",
+          "description": "The fish data set is a small data and provides records of 7 common different fish species in fish market sales",
+          "issued": "2019-06-13",
+          "title": "Dataset Fish",
+          "dataset_id": {
+            "@id": "_:b10",
+            "identifier": "https://www.kaggle.com/aungpyaeap/fish-market",
+            "type": "url"
+          },
+          "type": "dataset",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        },
+        {
+          "@id": "_:b11",
+          "description": "The employee dataset is from openml.org and provides annual salary information including gross pay and overtime pay for all active, permanent employees of Montgomery County, MD paid in calendar year 2016. It is composed of 13 features and 9222 rows of data.",
+          "issued": "2019-09-12",
+          "title": "Dataset Employees",
+          "dataset_id": {
+            "@id": "_:b12",
+            "identifier": "https://www.openml.org/d/42125",
+            "type": "url"
+          },
+          "type": "dataset",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        },
+        {
+          "@id": "_:b13",
+          "description": "These datasets are used in the project Performance Comparison of kNN and GD. It contains the fish (https://www.kaggle.com/aungpyaeap/fish-market) and employee (https://www.openml.org/d/42125) dataset. Preview",
+          "issued": "2020-04-18",
+          "title": "Datasets for Performance Comparison of kNN and GD",
+          "dataset_id": {
+            "@id": "_:b14",
+            "identifier": "https://doi.org/10.5281/zenodo.4699520",
+            "type": "doi"
+          },
+          "type": "dataset",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        },
+        {
+          "@id": "_:b15",
+          "description": "Source Code for Performance Comparison of kNN and GD",
+          "issued": "2021-04-18",
+          "title": "Source Code for Performance Comparison of kNN and GD",
+          "data_quality_assurance": "The code has been peer-reviewed by the authors",
+          "dataset_id": {
+            "@id": "_:b16",
+            "identifier": "https://doi.org/10.5281/zenodo.4701071",
+            "type": "doi"
+          },
+          "distribution": {
+            "@id": "_:b17",
+            "description": "Final release implemented using sklearn, numpy and matplotlib",
+            "title": "Planned Distribution",
+            "access_url": "https://doi.org/10.5281/zenodo.4699506",
+            "byte_size": 15007744,
+            "available_until": "2022-04-19",
+            "data_access": "open",
+            "host": {
+              "@id": "_:b18",
+              "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+              "title": "Zenodo",
+              "pid_system": "doi",
+              "storage_type": "repository",
+              "url": "https://www.re3data.org/repository/r3d100010468"
+            },
+            "license": {
+              "@id": "_:b19",
+              "start": "2021-04-19",
+              "license_ref": "https://opensource.org/licenses/lgpl-3.0.html"
+            }
+          },
+          "type": "software",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        },
+        {
+          "@id": "_:b20",
+          "description": "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset.",
+          "issued": "2021-04-18",
+          "title": "Results for Performance Comparison of kNN and GD",
+          "dataset_id": {
+            "@id": "_:b21",
+            "identifier": "https://doi.org/10.5281/zenodo.4699565",
+            "type": "doi"
+          },
+          "distribution": {
+            "@id": "_:b22",
+            "description": "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
+            "format": "text/csv",
+            "title": "Planned Distribution",
+            "byte_size": 24576,
+            "available_until": "2022-04-19",
+            "data_access": "open",
+            "host": {
+              "@id": "_:b23",
+              "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+              "title": "Zenodo",
+              "pid_system": "doi",
+              "storage_type": "repository",
+              "url": "https://www.re3data.org/repository/r3d100010468"
+            },
+            "license": {
+              "@id": "_:b24",
+              "start": "2021-04-19",
+              "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+            }
+          },
+          "type": "dataset",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        }
+      ],
+      "project": {
+        "@id": "_:b25",
+        "description": "This project aims to analyze the difference of two custom written regression algorithms against the state of the art implementation of sklearn. The two algorithms are k-nearest neighbors (KNN) and gradient descend (gd). Both are fully implemented in python. Key points to the comparison are accuracy and efficency of the two algorithms but we will furthermore comapre mse, mae, r2. ",
+        "title": "Performance Comparison of kNN and GD",
+        "end": "2020-12-10",
+        "start": "2020-11-15"
+      },
+      "language": "eng"
+    },
+    {
+      "@id": "_:b10",
+      "identifier": "https://www.kaggle.com/aungpyaeap/fish-market",
+      "type": "url"
+    },
+    {
+      "@id": "_:b11",
+      "description": "The employee dataset is from openml.org and provides annual salary information including gross pay and overtime pay for all active, permanent employees of Montgomery County, MD paid in calendar year 2016. It is composed of 13 features and 9222 rows of data.",
+      "issued": "2019-09-12",
+      "title": "Dataset Employees",
+      "dataset_id": {
+        "@id": "_:b12",
+        "identifier": "https://www.openml.org/d/42125",
+        "type": "url"
+      },
+      "type": "dataset",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    },
+    {
+      "@id": "_:b12",
+      "identifier": "https://www.openml.org/d/42125",
+      "type": "url"
+    },
+    {
+      "@id": "_:b13",
+      "description": "These datasets are used in the project Performance Comparison of kNN and GD. It contains the fish (https://www.kaggle.com/aungpyaeap/fish-market) and employee (https://www.openml.org/d/42125) dataset. Preview",
+      "issued": "2020-04-18",
+      "title": "Datasets for Performance Comparison of kNN and GD",
+      "dataset_id": {
+        "@id": "_:b14",
+        "identifier": "https://doi.org/10.5281/zenodo.4699520",
+        "type": "doi"
+      },
+      "type": "dataset",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    },
+    {
+      "@id": "_:b14",
+      "identifier": "https://doi.org/10.5281/zenodo.4699520",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b15",
+      "description": "Source Code for Performance Comparison of kNN and GD",
+      "issued": "2021-04-18",
+      "title": "Source Code for Performance Comparison of kNN and GD",
+      "data_quality_assurance": "The code has been peer-reviewed by the authors",
+      "dataset_id": {
+        "@id": "_:b16",
+        "identifier": "https://doi.org/10.5281/zenodo.4701071",
+        "type": "doi"
+      },
+      "distribution": {
+        "@id": "_:b17",
+        "description": "Final release implemented using sklearn, numpy and matplotlib",
+        "title": "Planned Distribution",
+        "access_url": "https://doi.org/10.5281/zenodo.4699506",
+        "byte_size": 15007744,
+        "available_until": "2022-04-19",
+        "data_access": "open",
+        "host": {
+          "@id": "_:b18",
+          "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+          "title": "Zenodo",
+          "pid_system": "doi",
+          "storage_type": "repository",
+          "url": "https://www.re3data.org/repository/r3d100010468"
+        },
+        "license": {
+          "@id": "_:b19",
+          "start": "2021-04-19",
+          "license_ref": "https://opensource.org/licenses/lgpl-3.0.html"
+        }
+      },
+      "type": "software",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    },
+    {
+      "@id": "_:b16",
+      "identifier": "https://doi.org/10.5281/zenodo.4701071",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b17",
+      "description": "Final release implemented using sklearn, numpy and matplotlib",
+      "title": "Planned Distribution",
+      "access_url": "https://doi.org/10.5281/zenodo.4699506",
+      "byte_size": 15007744,
+      "available_until": "2022-04-19",
+      "data_access": "open",
+      "host": {
+        "@id": "_:b18",
+        "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+        "title": "Zenodo",
+        "pid_system": "doi",
+        "storage_type": "repository",
+        "url": "https://www.re3data.org/repository/r3d100010468"
+      },
+      "license": {
+        "@id": "_:b19",
+        "start": "2021-04-19",
+        "license_ref": "https://opensource.org/licenses/lgpl-3.0.html"
+      }
+    },
+    {
+      "@id": "_:b18",
+      "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+      "title": "Zenodo",
+      "pid_system": "doi",
+      "storage_type": "repository",
+      "url": "https://www.re3data.org/repository/r3d100010468"
+    },
+    {
+      "@id": "_:b19",
+      "start": "2021-04-19",
+      "license_ref": "https://opensource.org/licenses/lgpl-3.0.html"
+    },
+    {
+      "@id": "_:b2",
+      "mbox": "tobias.hajszan@tuwien.ac.at",
+      "name": "Tobias Hajszan",
+      "contact_id": {
+        "@id": "_:b3",
+        "identifier": "https://orcid.org/0000-0002-7143-0353",
+        "type": "orcid"
+      }
+    },
+    {
+      "@id": "_:b20",
+      "description": "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset.",
+      "issued": "2021-04-18",
+      "title": "Results for Performance Comparison of kNN and GD",
+      "dataset_id": {
+        "@id": "_:b21",
+        "identifier": "https://doi.org/10.5281/zenodo.4699565",
+        "type": "doi"
+      },
+      "distribution": {
+        "@id": "_:b22",
+        "description": "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
+        "format": "text/csv",
+        "title": "Planned Distribution",
+        "byte_size": 24576,
+        "available_until": "2022-04-19",
+        "data_access": "open",
+        "host": {
+          "@id": "_:b23",
+          "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+          "title": "Zenodo",
+          "pid_system": "doi",
+          "storage_type": "repository",
+          "url": "https://www.re3data.org/repository/r3d100010468"
+        },
+        "license": {
+          "@id": "_:b24",
+          "start": "2021-04-19",
+          "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      },
+      "type": "dataset",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    },
+    {
+      "@id": "_:b21",
+      "identifier": "https://doi.org/10.5281/zenodo.4699565",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b22",
+      "description": "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
+      "format": "text/csv",
+      "title": "Planned Distribution",
+      "byte_size": 24576,
+      "available_until": "2022-04-19",
+      "data_access": "open",
+      "host": {
+        "@id": "_:b23",
+        "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+        "title": "Zenodo",
+        "pid_system": "doi",
+        "storage_type": "repository",
+        "url": "https://www.re3data.org/repository/r3d100010468"
+      },
+      "license": {
+        "@id": "_:b24",
+        "start": "2021-04-19",
+        "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "_:b23",
+      "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+      "title": "Zenodo",
+      "pid_system": "doi",
+      "storage_type": "repository",
+      "url": "https://www.re3data.org/repository/r3d100010468"
+    },
+    {
+      "@id": "_:b24",
+      "start": "2021-04-19",
+      "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@id": "_:b25",
+      "description": "This project aims to analyze the difference of two custom written regression algorithms against the state of the art implementation of sklearn. The two algorithms are k-nearest neighbors (KNN) and gradient descend (gd). Both are fully implemented in python. Key points to the comparison are accuracy and efficency of the two algorithms but we will furthermore comapre mse, mae, r2. ",
+      "title": "Performance Comparison of kNN and GD",
+      "end": "2020-12-10",
+      "start": "2020-11-15"
+    },
+    {
+      "@id": "_:b3",
+      "identifier": "https://orcid.org/0000-0002-7143-0353",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b4",
+      "mbox": "tobias.hajszan@tuwien.ac.at",
+      "name": "Tobias Hajszan",
+      "contributor_id": {
+        "@id": "_:b5",
+        "identifier": "https://orcid.org/0000-0002-7143-0353",
+        "type": "orcid"
+      },
+      "role": [
+        "Data Manager",
+        "Principal Investigator",
+        "Project Administrator",
+        "Software Engineer"
+      ]
+    },
+    {
+      "@id": "_:b5",
+      "identifier": "https://orcid.org/0000-0002-7143-0353",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b6",
+      "mbox": "moritz.staudinger@tuwien.ac.at",
+      "name": "Moritz Staudinger",
+      "contributor_id": {
+        "@id": "_:b7",
+        "identifier": "https://orcid.org/0000-0002-5164-2690",
+        "type": "orcid"
+      },
+      "role": [
+        "Data Manager"
+      ]
+    },
+    {
+      "@id": "_:b7",
+      "identifier": "https://orcid.org/0000-0002-5164-2690",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b8",
+      "identifier": "https://doi.org/10.5281/zenodo.4701164",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b9",
+      "description": "The fish data set is a small data and provides records of 7 common different fish species in fish market sales",
+      "issued": "2019-06-13",
+      "title": "Dataset Fish",
+      "dataset_id": {
+        "@id": "_:b10",
+        "identifier": "https://www.kaggle.com/aungpyaeap/fish-market",
+        "type": "url"
+      },
+      "type": "dataset",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    }
+  ]
+}

@@ -1,0 +1,717 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "terms": "http://purl.org/dc/terms/",
+    "title": "terms:title",
+    "created": "terms:created",
+    "modified": "terms:modified",
+    "description": "terms:description",
+    "format": "terms:format",
+    "issued": "terms:issued",
+    "document": "dcat:hasDocument",
+    "start": "dcat:startDate",
+    "end": "dcat:endDate",
+    "access_url": "dcat:accessUrl",
+    "byte_size": "dcat:byteSize",
+    "download_url": "dcat:downloadURL",
+    "keyword": "dcat:keyword",
+    "name": "foaf:name",
+    "mbox": "foaf:mbox",
+    "identifier": "terms:identifier",
+    "type": "dcso:identifierType",
+    "dmp": "dcso:hasDMP",
+    "dmp_id": "dcso:hasDMPId",
+    "language": "dcso:language",
+    "ethical_issues_exist": "dcso:ethicalIssuesExist",
+    "ethical_issues_report": "dcso:ethicalIssuesReport",
+    "ethical_issues_description": "dcso:ethicalIssuesDescription",
+    "contact": "dcso:hasContact",
+    "contact_id": "dcso:hasContactId",
+    "contributor": "dcso:hasContributor",
+    "contributor_id": "dcso:hasContributorId",
+    "role": {
+      "@id": "dcso:role",
+      "@container": "@list"
+    },
+    "cost": "dcso:hasCost",
+    "currency_code": "dcso:currencyCode",
+    "value": "dcso:value",
+    "project": "dcso:hasProject",
+    "funding": "dcso:hasFunding",
+    "funder_id": "dcso:hasFunderId",
+    "funder_status": "dcso:funderStatus",
+    "grant_id": "dcso:hasGrantId",
+    "dataset": "dcso:hasDataset",
+    "dataset_id": "dcso:hasDatasetId",
+    "data_quality_assurance": "dcso:dataQualityAssurance",
+    "personal_data": "dcso:personalData",
+    "sensitive_data": "dcso:sensitiveData",
+    "distribution": "dcso:hasDistribution",
+    "available_until": "dcso:availableUntil",
+    "data_access": "dcso:dataAccess",
+    "host": "dcso:hasHost",
+    "availability": "dcso:availability",
+    "backup_frequency": "dcso:backupFrequency",
+    "backup_type": "dcso:backupType",
+    "certified_with": "dcso:certifiedWith",
+    "geo_location": "dcso:geoLocation",
+    "pid_system": "dcso:pidSystem",
+    "storage_type": "dcso:storageType",
+    "support_versioning": "dcso:supportVersioning",
+    "url": "dcso:url",
+    "license": "dcso:hasLicense",
+    "license_ref": "dcso:licenseRef",
+    "start_date": "dcat:startDate",
+    "metadata": "dcso:hasMetadata",
+    "metadata_standard_id": "dcso:hasMetadataStandardId",
+    "security_and_privacy": "dcso:hasSecurityPrivacy",
+    "technical_resource": "dcso:hasTechnicalResource"
+  },
+  "@graph": [
+    {
+      "dmp": {
+        "@id": "_:b1",
+        "created": "2021-04-18T02:27:00.000Z",
+        "description": "This machine actionable DMP aims to describe how the data of our Project Analysis of Performances of kNN and Random Forest are archived, how they are reusable and also how they are licensed.",
+        "modified": "2021-04-18T02:27:00.000Z",
+        "title": "machine actionable DMP: Analysis of Performances of kNN and Random Forest",
+        "ethical_issues_exist": "no",
+        "contact": {
+          "@id": "_:b2",
+          "mbox": "moritz.staudinger@tuwien.ac.at",
+          "name": "Moritz Staudinger",
+          "contact_id": {
+            "@id": "_:b3",
+            "identifier": "https://orcid.org/0000-0002-5164-2690",
+            "type": "orcid"
+          }
+        },
+        "contributor": [
+          {
+            "@id": "_:b4",
+            "mbox": "moritz.staudinger@tuwien.ac.at",
+            "name": "Moritz Staudinger",
+            "contributor_id": {
+              "@id": "_:b5",
+              "identifier": "https://orcid.org/0000-0002-5164-2690",
+              "type": "orcid"
+            },
+            "role": [
+              "Data Steward",
+              "Software Engineer",
+              "Researcher"
+            ]
+          },
+          {
+            "@id": "_:b6",
+            "mbox": "tobias.hajszan@tuwien.ac.at",
+            "name": "Tobias Hajszan",
+            "contributor_id": {
+              "@id": "_:b7",
+              "identifier": "https://orcid.org/0000-0002-7143-0353",
+              "type": "orcid"
+            },
+            "role": [
+              "Software Engineer",
+              "Researcher"
+            ]
+          }
+        ],
+        "dmp_id": {
+          "@id": "_:b8",
+          "identifier": "https://doi.org/10.5281/zenodo.4699051",
+          "type": "doi"
+        },
+        "dataset": [
+          {
+            "@id": "_:b9",
+            "description": "Zoo dataset is a small dataset with 100 rows and 17 Boolean-valued attributes describing animals.",
+            "issued": "1990-05-15",
+            "title": "Dataset Zoo",
+            "dataset_id": {
+              "@id": "_:b10",
+              "identifier": "https://www.openml.org/d/62",
+              "type": "url"
+            },
+            "type": "dataset",
+            "personal_data": "no",
+            "sensitive_data": "no"
+          },
+          {
+            "@id": "_:b11",
+            "description": "One of the challenges faced by our research was the unavailability of reliable training datasets. In fact this challenge faces any researcher in the field. However, although plenty of articles about predicting phishing websites have been disseminated these days, no reliable training dataset has been published publically, may be because there is no agreement in literature on the definitive features that characterize phishing webpages, hence it is difficult to shape a dataset that covers all possible features. In this dataset, we shed light on the important features that have proved to be sound and effective in predicting phishing websites. In addition, we propose some new features.",
+            "issued": "2012-02-16",
+            "title": "Dataset Phishing Websites",
+            "dataset_id": {
+              "@id": "_:b12",
+              "identifier": "https://www.openml.org/d/4534",
+              "type": "url"
+            },
+            "metadata": {
+              "@id": "_:b13",
+              "description": "This metadata explaines all features in the dataset and how they have been preprocessed.",
+              "title": "Phishing Websites Metadata",
+              "metadata_standard_id": {
+                "@id": "_:b14",
+                "identifier": "https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Phishing Websites Features.docx",
+                "type": "url"
+              },
+              "language": "eng"
+            },
+            "type": "dataset",
+            "personal_data": "no",
+            "sensitive_data": "no"
+          },
+          {
+            "@id": "_:b15",
+            "description": "Source Code for Comparison of KNN and Random Forest on Zoo and PhishingWebsites datasets.",
+            "issued": "2021-04-18",
+            "title": "Code: Analysis of Performances of kNN and Random Forest",
+            "data_quality_assurance": "The code has been peer-reviewed by the authors",
+            "dataset_id": {
+              "@id": "_:b16",
+              "identifier": "https://doi.org/10.5281/zenodo.4699023",
+              "type": "doi"
+            },
+            "distribution": {
+              "@id": "_:b17",
+              "description": "Final release implemented using sklearn, numpy and Matplotlib",
+              "title": "Planned Distribution",
+              "access_url": "https://doi.org/10.5281/zenodo.4699023",
+              "byte_size": 5242880,
+              "available_until": "2022-04-19",
+              "data_access": "open",
+              "host": {
+                "@id": "_:b18",
+                "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+                "title": "Zenodo",
+                "pid_system": "doi",
+                "storage_type": "repository",
+                "url": "https://www.re3data.org/repository/r3d100010468"
+              },
+              "license": {
+                "@id": "_:b19",
+                "start": "2021-04-19",
+                "license_ref": "https://opensource.org/licenses/MIT"
+              }
+            },
+            "type": "software",
+            "personal_data": "no",
+            "sensitive_data": "no"
+          },
+          {
+            "@id": "_:b20",
+            "description": "Result CSV for Comparison of KNN and Random Forest on Zoo and PhishingWebsites datasets. This datasets contain the ",
+            "issued": "2021-04-18",
+            "title": "Result: Analysis of Performances of kNN and Random Forest",
+            "dataset_id": {
+              "@id": "_:b21",
+              "identifier": "https://doi.org/10.5281/zenodo.4699026",
+              "type": "doi"
+            },
+            "distribution": {
+              "@id": "_:b22",
+              "description": "CSV files showing the results of our experiments, especially the accuracy, precision, recall and fbeta scores.",
+              "format": "text/csv",
+              "title": "Planned Distribution",
+              "byte_size": 45056,
+              "available_until": "2022-04-19",
+              "data_access": "open",
+              "host": {
+                "@id": "_:b23",
+                "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+                "title": "Zenodo",
+                "pid_system": "doi",
+                "storage_type": "repository",
+                "url": "https://www.re3data.org/repository/r3d100010468"
+              },
+              "license": {
+                "@id": "_:b24",
+                "start": "2021-04-19",
+                "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+              }
+            },
+            "type": "dataset",
+            "personal_data": "no",
+            "sensitive_data": "no"
+          }
+        ],
+        "project": {
+          "@id": "_:b25",
+          "description": "This project aims to evaluate the performances of different settings for the k-nearest-neighbor algorithm and the random forest algorithm on two publicly available datasets of different sizes. With this project we want to show the differences between a small dataset with only 100 rows and a medium sized dataset with 10.000 rows. Both datasets (Zoo and Phishing Websites) are already preprocessed and do not contain any missing values",
+          "title": "Analysis of Performances of kNN and Random Forest",
+          "end": "2020-11-15",
+          "start": "2020-10-15"
+        },
+        "language": "eng"
+      }
+    },
+    {
+      "@id": "_:b1",
+      "created": "2021-04-18T02:27:00.000Z",
+      "description": "This machine actionable DMP aims to describe how the data of our Project Analysis of Performances of kNN and Random Forest are archived, how they are reusable and also how they are licensed.",
+      "modified": "2021-04-18T02:27:00.000Z",
+      "title": "machine actionable DMP: Analysis of Performances of kNN and Random Forest",
+      "ethical_issues_exist": "no",
+      "contact": {
+        "@id": "_:b2",
+        "mbox": "moritz.staudinger@tuwien.ac.at",
+        "name": "Moritz Staudinger",
+        "contact_id": {
+          "@id": "_:b3",
+          "identifier": "https://orcid.org/0000-0002-5164-2690",
+          "type": "orcid"
+        }
+      },
+      "contributor": [
+        {
+          "@id": "_:b4",
+          "mbox": "moritz.staudinger@tuwien.ac.at",
+          "name": "Moritz Staudinger",
+          "contributor_id": {
+            "@id": "_:b5",
+            "identifier": "https://orcid.org/0000-0002-5164-2690",
+            "type": "orcid"
+          },
+          "role": [
+            "Data Steward",
+            "Software Engineer",
+            "Researcher"
+          ]
+        },
+        {
+          "@id": "_:b6",
+          "mbox": "tobias.hajszan@tuwien.ac.at",
+          "name": "Tobias Hajszan",
+          "contributor_id": {
+            "@id": "_:b7",
+            "identifier": "https://orcid.org/0000-0002-7143-0353",
+            "type": "orcid"
+          },
+          "role": [
+            "Software Engineer",
+            "Researcher"
+          ]
+        }
+      ],
+      "dmp_id": {
+        "@id": "_:b8",
+        "identifier": "https://doi.org/10.5281/zenodo.4699051",
+        "type": "doi"
+      },
+      "dataset": [
+        {
+          "@id": "_:b9",
+          "description": "Zoo dataset is a small dataset with 100 rows and 17 Boolean-valued attributes describing animals.",
+          "issued": "1990-05-15",
+          "title": "Dataset Zoo",
+          "dataset_id": {
+            "@id": "_:b10",
+            "identifier": "https://www.openml.org/d/62",
+            "type": "url"
+          },
+          "type": "dataset",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        },
+        {
+          "@id": "_:b11",
+          "description": "One of the challenges faced by our research was the unavailability of reliable training datasets. In fact this challenge faces any researcher in the field. However, although plenty of articles about predicting phishing websites have been disseminated these days, no reliable training dataset has been published publically, may be because there is no agreement in literature on the definitive features that characterize phishing webpages, hence it is difficult to shape a dataset that covers all possible features. In this dataset, we shed light on the important features that have proved to be sound and effective in predicting phishing websites. In addition, we propose some new features.",
+          "issued": "2012-02-16",
+          "title": "Dataset Phishing Websites",
+          "dataset_id": {
+            "@id": "_:b12",
+            "identifier": "https://www.openml.org/d/4534",
+            "type": "url"
+          },
+          "metadata": {
+            "@id": "_:b13",
+            "description": "This metadata explaines all features in the dataset and how they have been preprocessed.",
+            "title": "Phishing Websites Metadata",
+            "metadata_standard_id": {
+              "@id": "_:b14",
+              "identifier": "https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Phishing Websites Features.docx",
+              "type": "url"
+            },
+            "language": "eng"
+          },
+          "type": "dataset",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        },
+        {
+          "@id": "_:b15",
+          "description": "Source Code for Comparison of KNN and Random Forest on Zoo and PhishingWebsites datasets.",
+          "issued": "2021-04-18",
+          "title": "Code: Analysis of Performances of kNN and Random Forest",
+          "data_quality_assurance": "The code has been peer-reviewed by the authors",
+          "dataset_id": {
+            "@id": "_:b16",
+            "identifier": "https://doi.org/10.5281/zenodo.4699023",
+            "type": "doi"
+          },
+          "distribution": {
+            "@id": "_:b17",
+            "description": "Final release implemented using sklearn, numpy and Matplotlib",
+            "title": "Planned Distribution",
+            "access_url": "https://doi.org/10.5281/zenodo.4699023",
+            "byte_size": 5242880,
+            "available_until": "2022-04-19",
+            "data_access": "open",
+            "host": {
+              "@id": "_:b18",
+              "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+              "title": "Zenodo",
+              "pid_system": "doi",
+              "storage_type": "repository",
+              "url": "https://www.re3data.org/repository/r3d100010468"
+            },
+            "license": {
+              "@id": "_:b19",
+              "start": "2021-04-19",
+              "license_ref": "https://opensource.org/licenses/MIT"
+            }
+          },
+          "type": "software",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        },
+        {
+          "@id": "_:b20",
+          "description": "Result CSV for Comparison of KNN and Random Forest on Zoo and PhishingWebsites datasets. This datasets contain the ",
+          "issued": "2021-04-18",
+          "title": "Result: Analysis of Performances of kNN and Random Forest",
+          "dataset_id": {
+            "@id": "_:b21",
+            "identifier": "https://doi.org/10.5281/zenodo.4699026",
+            "type": "doi"
+          },
+          "distribution": {
+            "@id": "_:b22",
+            "description": "CSV files showing the results of our experiments, especially the accuracy, precision, recall and fbeta scores.",
+            "format": "text/csv",
+            "title": "Planned Distribution",
+            "byte_size": 45056,
+            "available_until": "2022-04-19",
+            "data_access": "open",
+            "host": {
+              "@id": "_:b23",
+              "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+              "title": "Zenodo",
+              "pid_system": "doi",
+              "storage_type": "repository",
+              "url": "https://www.re3data.org/repository/r3d100010468"
+            },
+            "license": {
+              "@id": "_:b24",
+              "start": "2021-04-19",
+              "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+            }
+          },
+          "type": "dataset",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        }
+      ],
+      "project": {
+        "@id": "_:b25",
+        "description": "This project aims to evaluate the performances of different settings for the k-nearest-neighbor algorithm and the random forest algorithm on two publicly available datasets of different sizes. With this project we want to show the differences between a small dataset with only 100 rows and a medium sized dataset with 10.000 rows. Both datasets (Zoo and Phishing Websites) are already preprocessed and do not contain any missing values",
+        "title": "Analysis of Performances of kNN and Random Forest",
+        "end": "2020-11-15",
+        "start": "2020-10-15"
+      },
+      "language": "eng"
+    },
+    {
+      "@id": "_:b10",
+      "identifier": "https://www.openml.org/d/62",
+      "type": "url"
+    },
+    {
+      "@id": "_:b11",
+      "description": "One of the challenges faced by our research was the unavailability of reliable training datasets. In fact this challenge faces any researcher in the field. However, although plenty of articles about predicting phishing websites have been disseminated these days, no reliable training dataset has been published publically, may be because there is no agreement in literature on the definitive features that characterize phishing webpages, hence it is difficult to shape a dataset that covers all possible features. In this dataset, we shed light on the important features that have proved to be sound and effective in predicting phishing websites. In addition, we propose some new features.",
+      "issued": "2012-02-16",
+      "title": "Dataset Phishing Websites",
+      "dataset_id": {
+        "@id": "_:b12",
+        "identifier": "https://www.openml.org/d/4534",
+        "type": "url"
+      },
+      "metadata": {
+        "@id": "_:b13",
+        "description": "This metadata explaines all features in the dataset and how they have been preprocessed.",
+        "title": "Phishing Websites Metadata",
+        "metadata_standard_id": {
+          "@id": "_:b14",
+          "identifier": "https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Phishing Websites Features.docx",
+          "type": "url"
+        },
+        "language": "eng"
+      },
+      "type": "dataset",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    },
+    {
+      "@id": "_:b12",
+      "identifier": "https://www.openml.org/d/4534",
+      "type": "url"
+    },
+    {
+      "@id": "_:b13",
+      "description": "This metadata explaines all features in the dataset and how they have been preprocessed.",
+      "title": "Phishing Websites Metadata",
+      "metadata_standard_id": {
+        "@id": "_:b14",
+        "identifier": "https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Phishing Websites Features.docx",
+        "type": "url"
+      },
+      "language": "eng"
+    },
+    {
+      "@id": "_:b14",
+      "identifier": "https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Phishing Websites Features.docx",
+      "type": "url"
+    },
+    {
+      "@id": "_:b15",
+      "description": "Source Code for Comparison of KNN and Random Forest on Zoo and PhishingWebsites datasets.",
+      "issued": "2021-04-18",
+      "title": "Code: Analysis of Performances of kNN and Random Forest",
+      "data_quality_assurance": "The code has been peer-reviewed by the authors",
+      "dataset_id": {
+        "@id": "_:b16",
+        "identifier": "https://doi.org/10.5281/zenodo.4699023",
+        "type": "doi"
+      },
+      "distribution": {
+        "@id": "_:b17",
+        "description": "Final release implemented using sklearn, numpy and Matplotlib",
+        "title": "Planned Distribution",
+        "access_url": "https://doi.org/10.5281/zenodo.4699023",
+        "byte_size": 5242880,
+        "available_until": "2022-04-19",
+        "data_access": "open",
+        "host": {
+          "@id": "_:b18",
+          "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+          "title": "Zenodo",
+          "pid_system": "doi",
+          "storage_type": "repository",
+          "url": "https://www.re3data.org/repository/r3d100010468"
+        },
+        "license": {
+          "@id": "_:b19",
+          "start": "2021-04-19",
+          "license_ref": "https://opensource.org/licenses/MIT"
+        }
+      },
+      "type": "software",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    },
+    {
+      "@id": "_:b16",
+      "identifier": "https://doi.org/10.5281/zenodo.4699023",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b17",
+      "description": "Final release implemented using sklearn, numpy and Matplotlib",
+      "title": "Planned Distribution",
+      "access_url": "https://doi.org/10.5281/zenodo.4699023",
+      "byte_size": 5242880,
+      "available_until": "2022-04-19",
+      "data_access": "open",
+      "host": {
+        "@id": "_:b18",
+        "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+        "title": "Zenodo",
+        "pid_system": "doi",
+        "storage_type": "repository",
+        "url": "https://www.re3data.org/repository/r3d100010468"
+      },
+      "license": {
+        "@id": "_:b19",
+        "start": "2021-04-19",
+        "license_ref": "https://opensource.org/licenses/MIT"
+      }
+    },
+    {
+      "@id": "_:b18",
+      "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+      "title": "Zenodo",
+      "pid_system": "doi",
+      "storage_type": "repository",
+      "url": "https://www.re3data.org/repository/r3d100010468"
+    },
+    {
+      "@id": "_:b19",
+      "start": "2021-04-19",
+      "license_ref": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@id": "_:b2",
+      "mbox": "moritz.staudinger@tuwien.ac.at",
+      "name": "Moritz Staudinger",
+      "contact_id": {
+        "@id": "_:b3",
+        "identifier": "https://orcid.org/0000-0002-5164-2690",
+        "type": "orcid"
+      }
+    },
+    {
+      "@id": "_:b20",
+      "description": "Result CSV for Comparison of KNN and Random Forest on Zoo and PhishingWebsites datasets. This datasets contain the ",
+      "issued": "2021-04-18",
+      "title": "Result: Analysis of Performances of kNN and Random Forest",
+      "dataset_id": {
+        "@id": "_:b21",
+        "identifier": "https://doi.org/10.5281/zenodo.4699026",
+        "type": "doi"
+      },
+      "distribution": {
+        "@id": "_:b22",
+        "description": "CSV files showing the results of our experiments, especially the accuracy, precision, recall and fbeta scores.",
+        "format": "text/csv",
+        "title": "Planned Distribution",
+        "byte_size": 45056,
+        "available_until": "2022-04-19",
+        "data_access": "open",
+        "host": {
+          "@id": "_:b23",
+          "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+          "title": "Zenodo",
+          "pid_system": "doi",
+          "storage_type": "repository",
+          "url": "https://www.re3data.org/repository/r3d100010468"
+        },
+        "license": {
+          "@id": "_:b24",
+          "start": "2021-04-19",
+          "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      },
+      "type": "dataset",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    },
+    {
+      "@id": "_:b21",
+      "identifier": "https://doi.org/10.5281/zenodo.4699026",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b22",
+      "description": "CSV files showing the results of our experiments, especially the accuracy, precision, recall and fbeta scores.",
+      "format": "text/csv",
+      "title": "Planned Distribution",
+      "byte_size": 45056,
+      "available_until": "2022-04-19",
+      "data_access": "open",
+      "host": {
+        "@id": "_:b23",
+        "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+        "title": "Zenodo",
+        "pid_system": "doi",
+        "storage_type": "repository",
+        "url": "https://www.re3data.org/repository/r3d100010468"
+      },
+      "license": {
+        "@id": "_:b24",
+        "start": "2021-04-19",
+        "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "_:b23",
+      "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+      "title": "Zenodo",
+      "pid_system": "doi",
+      "storage_type": "repository",
+      "url": "https://www.re3data.org/repository/r3d100010468"
+    },
+    {
+      "@id": "_:b24",
+      "start": "2021-04-19",
+      "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@id": "_:b25",
+      "description": "This project aims to evaluate the performances of different settings for the k-nearest-neighbor algorithm and the random forest algorithm on two publicly available datasets of different sizes. With this project we want to show the differences between a small dataset with only 100 rows and a medium sized dataset with 10.000 rows. Both datasets (Zoo and Phishing Websites) are already preprocessed and do not contain any missing values",
+      "title": "Analysis of Performances of kNN and Random Forest",
+      "end": "2020-11-15",
+      "start": "2020-10-15"
+    },
+    {
+      "@id": "_:b3",
+      "identifier": "https://orcid.org/0000-0002-5164-2690",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b4",
+      "mbox": "moritz.staudinger@tuwien.ac.at",
+      "name": "Moritz Staudinger",
+      "contributor_id": {
+        "@id": "_:b5",
+        "identifier": "https://orcid.org/0000-0002-5164-2690",
+        "type": "orcid"
+      },
+      "role": [
+        "Data Steward",
+        "Software Engineer",
+        "Researcher"
+      ]
+    },
+    {
+      "@id": "_:b5",
+      "identifier": "https://orcid.org/0000-0002-5164-2690",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b6",
+      "mbox": "tobias.hajszan@tuwien.ac.at",
+      "name": "Tobias Hajszan",
+      "contributor_id": {
+        "@id": "_:b7",
+        "identifier": "https://orcid.org/0000-0002-7143-0353",
+        "type": "orcid"
+      },
+      "role": [
+        "Software Engineer",
+        "Researcher"
+      ]
+    },
+    {
+      "@id": "_:b7",
+      "identifier": "https://orcid.org/0000-0002-7143-0353",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b8",
+      "identifier": "https://doi.org/10.5281/zenodo.4699051",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b9",
+      "description": "Zoo dataset is a small dataset with 100 rows and 17 Boolean-valued attributes describing animals.",
+      "issued": "1990-05-15",
+      "title": "Dataset Zoo",
+      "dataset_id": {
+        "@id": "_:b10",
+        "identifier": "https://www.openml.org/d/62",
+        "type": "url"
+      },
+      "type": "dataset",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    }
+  ]
+}
