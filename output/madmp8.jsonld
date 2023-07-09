@@ -1,0 +1,634 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "terms": "http://purl.org/dc/terms/",
+    "title": "terms:title",
+    "created": "terms:created",
+    "modified": "terms:modified",
+    "description": "terms:description",
+    "format": "terms:format",
+    "issued": "terms:issued",
+    "document": "dcat:hasDocument",
+    "start": "dcat:startDate",
+    "end": "dcat:endDate",
+    "access_url": "dcat:accessUrl",
+    "byte_size": "dcat:byteSize",
+    "download_url": "dcat:downloadURL",
+    "keyword": "dcat:keyword",
+    "name": "foaf:name",
+    "mbox": "foaf:mbox",
+    "identifier": "terms:identifier",
+    "type": "dcso:identifierType",
+    "dmp": "dcso:hasDMP",
+    "dmp_id": "dcso:hasDMPId",
+    "language": "dcso:language",
+    "ethical_issues_exist": "dcso:ethicalIssuesExist",
+    "ethical_issues_report": "dcso:ethicalIssuesReport",
+    "ethical_issues_description": "dcso:ethicalIssuesDescription",
+    "contact": "dcso:hasContact",
+    "contact_id": "dcso:hasContactId",
+    "contributor": "dcso:hasContributor",
+    "contributor_id": "dcso:hasContributorId",
+    "role": {
+      "@id": "dcso:role",
+      "@container": "@list"
+    },
+    "cost": "dcso:hasCost",
+    "currency_code": "dcso:currencyCode",
+    "value": "dcso:value",
+    "project": "dcso:hasProject",
+    "funding": "dcso:hasFunding",
+    "funder_id": "dcso:hasFunderId",
+    "funder_status": "dcso:funderStatus",
+    "grant_id": "dcso:hasGrantId",
+    "dataset": "dcso:hasDataset",
+    "dataset_id": "dcso:hasDatasetId",
+    "data_quality_assurance": "dcso:dataQualityAssurance",
+    "personal_data": "dcso:personalData",
+    "sensitive_data": "dcso:sensitiveData",
+    "distribution": "dcso:hasDistribution",
+    "available_until": "dcso:availableUntil",
+    "data_access": "dcso:dataAccess",
+    "host": "dcso:hasHost",
+    "availability": "dcso:availability",
+    "backup_frequency": "dcso:backupFrequency",
+    "backup_type": "dcso:backupType",
+    "certified_with": "dcso:certifiedWith",
+    "geo_location": "dcso:geoLocation",
+    "pid_system": "dcso:pidSystem",
+    "storage_type": "dcso:storageType",
+    "support_versioning": "dcso:supportVersioning",
+    "url": "dcso:url",
+    "license": "dcso:hasLicense",
+    "license_ref": "dcso:licenseRef",
+    "start_date": "dcat:startDate",
+    "metadata": "dcso:hasMetadata",
+    "metadata_standard_id": "dcso:hasMetadataStandardId",
+    "security_and_privacy": "dcso:hasSecurityPrivacy",
+    "technical_resource": "dcso:hasTechnicalResource"
+  },
+  "@graph": [
+    {
+      "dmp": {
+        "@id": "_:b1",
+        "created": "2021-04-18T20:15:00+0100",
+        "description": "This is the DMP for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\".",
+        "modified": "2021-04-19T12:20:00+0100",
+        "title": "DMP: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+        "ethical_issues_description": "All in all, no ethical issues arise in this experiment. No personal information is processed and there are no participants involved; hence, there is no consent needed for data preservation or sharing. Furthermore, there are no restrictions with regard to data transfer and storage duration since no sensitive data is being handled.",
+        "ethical_issues_exist": "no",
+        "contact": {
+          "@id": "_:b2",
+          "mbox": "lea.brugger@student.tuwien.ac.at",
+          "name": "Lea Salome Brugger",
+          "contact_id": {
+            "@id": "_:b3",
+            "identifier": "https://orcid.org/0000-0001-8770-4112",
+            "type": "orcid"
+          }
+        },
+        "contributor": {
+          "@id": "_:b4",
+          "mbox": "lea.brugger@student.tuwien.ac.at",
+          "name": "Lea Salome Brugger",
+          "contributor_id": {
+            "@id": "_:b5",
+            "identifier": "https://orcid.org/0000-0001-8770-4112",
+            "type": "orcid"
+          },
+          "role": [
+            "Project Creator",
+            "Project Maintainer"
+          ]
+        },
+        "dmp_id": {
+          "@id": "_:b6",
+          "identifier": "https://doi.org/10.5281/zenodo.4701272",
+          "type": "doi"
+        },
+        "dataset": {
+          "@id": "_:b7",
+          "description": "As a result of the experiment, a CSV files is created. This CSV file contains the raw data produced by the experiment; for each country, there are two entries in the CSV file: Each entry contains the country code, country name and the GDP per capita, which are obviously the same for both entries. The two entries differ in the columns for the sex and the mean height of 19-year-olds of this sex; there is one entry for males and another for females. Therefore, the created CSV file represents filtered and then merged data from the two input datasets. Additionally, two PNG files are generated which display a linear regression between the GDP per capita and the average height of 19-year-old males or females, respectively. A Python application is responsible for processing the data and producing the desired output.",
+          "issued": "2021-04-18",
+          "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+          "keyword": [
+            "GDP",
+            "GDP per capita",
+            "height",
+            "average height",
+            "regression",
+            "linear regression",
+            "2019"
+          ],
+          "data_quality_assurance": [
+            "The naming and structure of the folders and files follows the convention defined by Princeton University (https://libguides.princeton.edu/rdm)",
+            "In order to only produce useful data, countries where incomplete information is provided by either or both of the datasets, are neglected. This is ensured firstly by filtering out rows in the CSV file for the GDP per capita where no numeric value is given and secondly by the way the datasets are merged; if a country is only included in one of the datasets, but not both, it is not added to the resulting dataset."
+          ],
+          "dataset_id": {
+            "@id": "_:b8",
+            "identifier": "https://doi.org/10.5281/zenodo.4699901",
+            "type": "doi"
+          },
+          "distribution": [
+            {
+              "@id": "_:b9",
+              "description": "This Zenodo upload contains the results obtained by running the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\"",
+              "format": [
+                "text/csv",
+                "image/png"
+              ],
+              "title": "Results: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+              "access_url": "https://zenodo.org/record/4699901",
+              "byte_size": 82900,
+              "data_access": "open",
+              "host": {
+                "@id": "_:b10",
+                "description": "Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN.",
+                "title": "Zenodo",
+                "availability": "at least 99.7%",
+                "backup_frequency": "nightly",
+                "backup_type": "tape",
+                "pid_system": "doi",
+                "support_versioning": "yes",
+                "url": "https://zenodo.org"
+              },
+              "license": {
+                "@id": "_:b11",
+                "start": "2021-04-19",
+                "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+              }
+            },
+            {
+              "@id": "_:b12",
+              "description": "This Github repository contains the source code for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\" as well as the input data used and the results obtained by running the experiment",
+              "format": "application/zip",
+              "title": "gdp-height",
+              "access_url": "https://github.com/bruggerl/gdp-height",
+              "byte_size": 5645000,
+              "data_access": "open",
+              "host": {
+                "@id": "_:b13",
+                "description": "GitHub is a provider of Internet hosting for software development and version control using Git.",
+                "title": "Github",
+                "pid_system": "doi",
+                "support_versioning": "yes",
+                "url": "https://github.com"
+              },
+              "license": {
+                "@id": "_:b14",
+                "start": "2021-04-19",
+                "license_ref": "https://choosealicense.com/licenses/mit/"
+              }
+            }
+          ],
+          "metadata": {
+            "@id": "_:b15",
+            "description": "Provides metadata for the created dataset.",
+            "metadata_standard_id": {
+              "@id": "_:b16",
+              "identifier": "http://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+              "type": "url"
+            },
+            "language": "eng"
+          },
+          "security_and_privacy": [
+            {
+              "@id": "_:b17",
+              "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
+              "title": "Read access to the data"
+            },
+            {
+              "@id": "_:b18",
+              "description": "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
+              "title": "Write access to the data"
+            }
+          ],
+          "type": "dataset",
+          "language": "eng",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        },
+        "project": {
+          "@id": "_:b19",
+          "description": "The aim of this experiment is to find out whether there is a (strong) correlation between the gross domestic product (GDP) per capita of a country and the average height of its 19-year-old inhabitants. For this purpose, data from two publicly available datasets were used: One dataset concerns the GDP per capita and the other contains data about the mean height of girls and boys of different ages per country. Both datasets consist of data collected over the course of several years; the year of interest for this experiment is 2019. The data entries from the two datasets were matched by comparing the country name given in the respective entry. Only countries are taken into consideration for which both datasets yield complete information - in total, 164 countries were considered in the experiment.",
+          "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+          "end": "2021-04-19",
+          "start": "2021-04-11"
+        },
+        "language": "eng"
+      }
+    },
+    {
+      "@id": "_:b1",
+      "created": "2021-04-18T20:15:00+0100",
+      "description": "This is the DMP for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\".",
+      "modified": "2021-04-19T12:20:00+0100",
+      "title": "DMP: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+      "ethical_issues_description": "All in all, no ethical issues arise in this experiment. No personal information is processed and there are no participants involved; hence, there is no consent needed for data preservation or sharing. Furthermore, there are no restrictions with regard to data transfer and storage duration since no sensitive data is being handled.",
+      "ethical_issues_exist": "no",
+      "contact": {
+        "@id": "_:b2",
+        "mbox": "lea.brugger@student.tuwien.ac.at",
+        "name": "Lea Salome Brugger",
+        "contact_id": {
+          "@id": "_:b3",
+          "identifier": "https://orcid.org/0000-0001-8770-4112",
+          "type": "orcid"
+        }
+      },
+      "contributor": {
+        "@id": "_:b4",
+        "mbox": "lea.brugger@student.tuwien.ac.at",
+        "name": "Lea Salome Brugger",
+        "contributor_id": {
+          "@id": "_:b5",
+          "identifier": "https://orcid.org/0000-0001-8770-4112",
+          "type": "orcid"
+        },
+        "role": [
+          "Project Creator",
+          "Project Maintainer"
+        ]
+      },
+      "dmp_id": {
+        "@id": "_:b6",
+        "identifier": "https://doi.org/10.5281/zenodo.4701272",
+        "type": "doi"
+      },
+      "dataset": {
+        "@id": "_:b7",
+        "description": "As a result of the experiment, a CSV files is created. This CSV file contains the raw data produced by the experiment; for each country, there are two entries in the CSV file: Each entry contains the country code, country name and the GDP per capita, which are obviously the same for both entries. The two entries differ in the columns for the sex and the mean height of 19-year-olds of this sex; there is one entry for males and another for females. Therefore, the created CSV file represents filtered and then merged data from the two input datasets. Additionally, two PNG files are generated which display a linear regression between the GDP per capita and the average height of 19-year-old males or females, respectively. A Python application is responsible for processing the data and producing the desired output.",
+        "issued": "2021-04-18",
+        "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+        "keyword": [
+          "GDP",
+          "GDP per capita",
+          "height",
+          "average height",
+          "regression",
+          "linear regression",
+          "2019"
+        ],
+        "data_quality_assurance": [
+          "The naming and structure of the folders and files follows the convention defined by Princeton University (https://libguides.princeton.edu/rdm)",
+          "In order to only produce useful data, countries where incomplete information is provided by either or both of the datasets, are neglected. This is ensured firstly by filtering out rows in the CSV file for the GDP per capita where no numeric value is given and secondly by the way the datasets are merged; if a country is only included in one of the datasets, but not both, it is not added to the resulting dataset."
+        ],
+        "dataset_id": {
+          "@id": "_:b8",
+          "identifier": "https://doi.org/10.5281/zenodo.4699901",
+          "type": "doi"
+        },
+        "distribution": [
+          {
+            "@id": "_:b9",
+            "description": "This Zenodo upload contains the results obtained by running the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\"",
+            "format": [
+              "text/csv",
+              "image/png"
+            ],
+            "title": "Results: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+            "access_url": "https://zenodo.org/record/4699901",
+            "byte_size": 82900,
+            "data_access": "open",
+            "host": {
+              "@id": "_:b10",
+              "description": "Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN.",
+              "title": "Zenodo",
+              "availability": "at least 99.7%",
+              "backup_frequency": "nightly",
+              "backup_type": "tape",
+              "pid_system": "doi",
+              "support_versioning": "yes",
+              "url": "https://zenodo.org"
+            },
+            "license": {
+              "@id": "_:b11",
+              "start": "2021-04-19",
+              "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+            }
+          },
+          {
+            "@id": "_:b12",
+            "description": "This Github repository contains the source code for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\" as well as the input data used and the results obtained by running the experiment",
+            "format": "application/zip",
+            "title": "gdp-height",
+            "access_url": "https://github.com/bruggerl/gdp-height",
+            "byte_size": 5645000,
+            "data_access": "open",
+            "host": {
+              "@id": "_:b13",
+              "description": "GitHub is a provider of Internet hosting for software development and version control using Git.",
+              "title": "Github",
+              "pid_system": "doi",
+              "support_versioning": "yes",
+              "url": "https://github.com"
+            },
+            "license": {
+              "@id": "_:b14",
+              "start": "2021-04-19",
+              "license_ref": "https://choosealicense.com/licenses/mit/"
+            }
+          }
+        ],
+        "metadata": {
+          "@id": "_:b15",
+          "description": "Provides metadata for the created dataset.",
+          "metadata_standard_id": {
+            "@id": "_:b16",
+            "identifier": "http://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+            "type": "url"
+          },
+          "language": "eng"
+        },
+        "security_and_privacy": [
+          {
+            "@id": "_:b17",
+            "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
+            "title": "Read access to the data"
+          },
+          {
+            "@id": "_:b18",
+            "description": "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
+            "title": "Write access to the data"
+          }
+        ],
+        "type": "dataset",
+        "language": "eng",
+        "personal_data": "no",
+        "sensitive_data": "no"
+      },
+      "project": {
+        "@id": "_:b19",
+        "description": "The aim of this experiment is to find out whether there is a (strong) correlation between the gross domestic product (GDP) per capita of a country and the average height of its 19-year-old inhabitants. For this purpose, data from two publicly available datasets were used: One dataset concerns the GDP per capita and the other contains data about the mean height of girls and boys of different ages per country. Both datasets consist of data collected over the course of several years; the year of interest for this experiment is 2019. The data entries from the two datasets were matched by comparing the country name given in the respective entry. Only countries are taken into consideration for which both datasets yield complete information - in total, 164 countries were considered in the experiment.",
+        "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+        "end": "2021-04-19",
+        "start": "2021-04-11"
+      },
+      "language": "eng"
+    },
+    {
+      "@id": "_:b10",
+      "description": "Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN.",
+      "title": "Zenodo",
+      "availability": "at least 99.7%",
+      "backup_frequency": "nightly",
+      "backup_type": "tape",
+      "pid_system": "doi",
+      "support_versioning": "yes",
+      "url": "https://zenodo.org"
+    },
+    {
+      "@id": "_:b11",
+      "start": "2021-04-19",
+      "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@id": "_:b12",
+      "description": "This Github repository contains the source code for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\" as well as the input data used and the results obtained by running the experiment",
+      "format": "application/zip",
+      "title": "gdp-height",
+      "access_url": "https://github.com/bruggerl/gdp-height",
+      "byte_size": 5645000,
+      "data_access": "open",
+      "host": {
+        "@id": "_:b13",
+        "description": "GitHub is a provider of Internet hosting for software development and version control using Git.",
+        "title": "Github",
+        "pid_system": "doi",
+        "support_versioning": "yes",
+        "url": "https://github.com"
+      },
+      "license": {
+        "@id": "_:b14",
+        "start": "2021-04-19",
+        "license_ref": "https://choosealicense.com/licenses/mit/"
+      }
+    },
+    {
+      "@id": "_:b13",
+      "description": "GitHub is a provider of Internet hosting for software development and version control using Git.",
+      "title": "Github",
+      "pid_system": "doi",
+      "support_versioning": "yes",
+      "url": "https://github.com"
+    },
+    {
+      "@id": "_:b14",
+      "start": "2021-04-19",
+      "license_ref": "https://choosealicense.com/licenses/mit/"
+    },
+    {
+      "@id": "_:b15",
+      "description": "Provides metadata for the created dataset.",
+      "metadata_standard_id": {
+        "@id": "_:b16",
+        "identifier": "http://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+        "type": "url"
+      },
+      "language": "eng"
+    },
+    {
+      "@id": "_:b16",
+      "identifier": "http://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+      "type": "url"
+    },
+    {
+      "@id": "_:b17",
+      "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
+      "title": "Read access to the data"
+    },
+    {
+      "@id": "_:b18",
+      "description": "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
+      "title": "Write access to the data"
+    },
+    {
+      "@id": "_:b19",
+      "description": "The aim of this experiment is to find out whether there is a (strong) correlation between the gross domestic product (GDP) per capita of a country and the average height of its 19-year-old inhabitants. For this purpose, data from two publicly available datasets were used: One dataset concerns the GDP per capita and the other contains data about the mean height of girls and boys of different ages per country. Both datasets consist of data collected over the course of several years; the year of interest for this experiment is 2019. The data entries from the two datasets were matched by comparing the country name given in the respective entry. Only countries are taken into consideration for which both datasets yield complete information - in total, 164 countries were considered in the experiment.",
+      "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+      "end": "2021-04-19",
+      "start": "2021-04-11"
+    },
+    {
+      "@id": "_:b2",
+      "mbox": "lea.brugger@student.tuwien.ac.at",
+      "name": "Lea Salome Brugger",
+      "contact_id": {
+        "@id": "_:b3",
+        "identifier": "https://orcid.org/0000-0001-8770-4112",
+        "type": "orcid"
+      }
+    },
+    {
+      "@id": "_:b3",
+      "identifier": "https://orcid.org/0000-0001-8770-4112",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b4",
+      "mbox": "lea.brugger@student.tuwien.ac.at",
+      "name": "Lea Salome Brugger",
+      "contributor_id": {
+        "@id": "_:b5",
+        "identifier": "https://orcid.org/0000-0001-8770-4112",
+        "type": "orcid"
+      },
+      "role": [
+        "Project Creator",
+        "Project Maintainer"
+      ]
+    },
+    {
+      "@id": "_:b5",
+      "identifier": "https://orcid.org/0000-0001-8770-4112",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b6",
+      "identifier": "https://doi.org/10.5281/zenodo.4701272",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b7",
+      "description": "As a result of the experiment, a CSV files is created. This CSV file contains the raw data produced by the experiment; for each country, there are two entries in the CSV file: Each entry contains the country code, country name and the GDP per capita, which are obviously the same for both entries. The two entries differ in the columns for the sex and the mean height of 19-year-olds of this sex; there is one entry for males and another for females. Therefore, the created CSV file represents filtered and then merged data from the two input datasets. Additionally, two PNG files are generated which display a linear regression between the GDP per capita and the average height of 19-year-old males or females, respectively. A Python application is responsible for processing the data and producing the desired output.",
+      "issued": "2021-04-18",
+      "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+      "keyword": [
+        "GDP",
+        "GDP per capita",
+        "height",
+        "average height",
+        "regression",
+        "linear regression",
+        "2019"
+      ],
+      "data_quality_assurance": [
+        "The naming and structure of the folders and files follows the convention defined by Princeton University (https://libguides.princeton.edu/rdm)",
+        "In order to only produce useful data, countries where incomplete information is provided by either or both of the datasets, are neglected. This is ensured firstly by filtering out rows in the CSV file for the GDP per capita where no numeric value is given and secondly by the way the datasets are merged; if a country is only included in one of the datasets, but not both, it is not added to the resulting dataset."
+      ],
+      "dataset_id": {
+        "@id": "_:b8",
+        "identifier": "https://doi.org/10.5281/zenodo.4699901",
+        "type": "doi"
+      },
+      "distribution": [
+        {
+          "@id": "_:b9",
+          "description": "This Zenodo upload contains the results obtained by running the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\"",
+          "format": [
+            "text/csv",
+            "image/png"
+          ],
+          "title": "Results: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+          "access_url": "https://zenodo.org/record/4699901",
+          "byte_size": 82900,
+          "data_access": "open",
+          "host": {
+            "@id": "_:b10",
+            "description": "Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN.",
+            "title": "Zenodo",
+            "availability": "at least 99.7%",
+            "backup_frequency": "nightly",
+            "backup_type": "tape",
+            "pid_system": "doi",
+            "support_versioning": "yes",
+            "url": "https://zenodo.org"
+          },
+          "license": {
+            "@id": "_:b11",
+            "start": "2021-04-19",
+            "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+          }
+        },
+        {
+          "@id": "_:b12",
+          "description": "This Github repository contains the source code for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\" as well as the input data used and the results obtained by running the experiment",
+          "format": "application/zip",
+          "title": "gdp-height",
+          "access_url": "https://github.com/bruggerl/gdp-height",
+          "byte_size": 5645000,
+          "data_access": "open",
+          "host": {
+            "@id": "_:b13",
+            "description": "GitHub is a provider of Internet hosting for software development and version control using Git.",
+            "title": "Github",
+            "pid_system": "doi",
+            "support_versioning": "yes",
+            "url": "https://github.com"
+          },
+          "license": {
+            "@id": "_:b14",
+            "start": "2021-04-19",
+            "license_ref": "https://choosealicense.com/licenses/mit/"
+          }
+        }
+      ],
+      "metadata": {
+        "@id": "_:b15",
+        "description": "Provides metadata for the created dataset.",
+        "metadata_standard_id": {
+          "@id": "_:b16",
+          "identifier": "http://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+          "type": "url"
+        },
+        "language": "eng"
+      },
+      "security_and_privacy": [
+        {
+          "@id": "_:b17",
+          "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
+          "title": "Read access to the data"
+        },
+        {
+          "@id": "_:b18",
+          "description": "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
+          "title": "Write access to the data"
+        }
+      ],
+      "type": "dataset",
+      "language": "eng",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    },
+    {
+      "@id": "_:b8",
+      "identifier": "https://doi.org/10.5281/zenodo.4699901",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b9",
+      "description": "This Zenodo upload contains the results obtained by running the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\"",
+      "format": [
+        "text/csv",
+        "image/png"
+      ],
+      "title": "Results: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+      "access_url": "https://zenodo.org/record/4699901",
+      "byte_size": 82900,
+      "data_access": "open",
+      "host": {
+        "@id": "_:b10",
+        "description": "Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN.",
+        "title": "Zenodo",
+        "availability": "at least 99.7%",
+        "backup_frequency": "nightly",
+        "backup_type": "tape",
+        "pid_system": "doi",
+        "support_versioning": "yes",
+        "url": "https://zenodo.org"
+      },
+      "license": {
+        "@id": "_:b11",
+        "start": "2021-04-19",
+        "license_ref": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    }
+  ]
+}

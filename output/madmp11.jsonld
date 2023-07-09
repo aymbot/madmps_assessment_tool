@@ -1,0 +1,838 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "terms": "http://purl.org/dc/terms/",
+    "title": "terms:title",
+    "created": "terms:created",
+    "modified": "terms:modified",
+    "description": "terms:description",
+    "format": "terms:format",
+    "issued": "terms:issued",
+    "document": "dcat:hasDocument",
+    "start": "dcat:startDate",
+    "end": "dcat:endDate",
+    "access_url": "dcat:accessUrl",
+    "byte_size": "dcat:byteSize",
+    "download_url": "dcat:downloadURL",
+    "keyword": "dcat:keyword",
+    "name": "foaf:name",
+    "mbox": "foaf:mbox",
+    "identifier": "terms:identifier",
+    "type": "dcso:identifierType",
+    "dmp": "dcso:hasDMP",
+    "dmp_id": "dcso:hasDMPId",
+    "language": "dcso:language",
+    "ethical_issues_exist": "dcso:ethicalIssuesExist",
+    "ethical_issues_report": "dcso:ethicalIssuesReport",
+    "ethical_issues_description": "dcso:ethicalIssuesDescription",
+    "contact": "dcso:hasContact",
+    "contact_id": "dcso:hasContactId",
+    "contributor": "dcso:hasContributor",
+    "contributor_id": "dcso:hasContributorId",
+    "role": {
+      "@id": "dcso:role",
+      "@container": "@list"
+    },
+    "cost": "dcso:hasCost",
+    "currency_code": "dcso:currencyCode",
+    "value": "dcso:value",
+    "project": "dcso:hasProject",
+    "funding": "dcso:hasFunding",
+    "funder_id": "dcso:hasFunderId",
+    "funder_status": "dcso:funderStatus",
+    "grant_id": "dcso:hasGrantId",
+    "dataset": "dcso:hasDataset",
+    "dataset_id": "dcso:hasDatasetId",
+    "data_quality_assurance": "dcso:dataQualityAssurance",
+    "personal_data": "dcso:personalData",
+    "sensitive_data": "dcso:sensitiveData",
+    "distribution": "dcso:hasDistribution",
+    "available_until": "dcso:availableUntil",
+    "data_access": "dcso:dataAccess",
+    "host": "dcso:hasHost",
+    "availability": "dcso:availability",
+    "backup_frequency": "dcso:backupFrequency",
+    "backup_type": "dcso:backupType",
+    "certified_with": "dcso:certifiedWith",
+    "geo_location": "dcso:geoLocation",
+    "pid_system": "dcso:pidSystem",
+    "storage_type": "dcso:storageType",
+    "support_versioning": "dcso:supportVersioning",
+    "url": "dcso:url",
+    "license": "dcso:hasLicense",
+    "license_ref": "dcso:licenseRef",
+    "start_date": "dcat:startDate",
+    "metadata": "dcso:hasMetadata",
+    "metadata_standard_id": "dcso:hasMetadataStandardId",
+    "security_and_privacy": "dcso:hasSecurityPrivacy",
+    "technical_resource": "dcso:hasTechnicalResource"
+  },
+  "@graph": [
+    {
+      "dmp": {
+        "@id": "_:b1",
+        "created": "2021-04-04T21:13:03Z",
+        "modified": "2021-04-07T02:21:53Z",
+        "title": "DMP: Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+        "ethical_issues_exist": "no",
+        "contact": {
+          "@id": "_:b2",
+          "mbox": "e11775820@student.tuwien.ac.at",
+          "name": "Raffael Foidl",
+          "contact_id": {
+            "@id": "_:b3",
+            "identifier": "https://orcid.org/0000-0002-1748-1571",
+            "type": "orcid"
+          }
+        },
+        "contributor": {
+          "@id": "_:b4",
+          "mbox": "e11775820@student.tuwien.ac.at",
+          "name": "Raffael Foidl",
+          "contributor_id": {
+            "@id": "_:b5",
+            "identifier": "https://orcid.org/0000-0002-1748-1571",
+            "type": "orcid"
+          },
+          "role": [
+            "Project Creator"
+          ]
+        },
+        "dmp_id": {
+          "@id": "_:b6",
+          "identifier": "https://doi.org/10.5281/zenodo.4664032",
+          "type": "doi"
+        },
+        "dataset": {
+          "@id": "_:b7",
+          "description": "Shows the progression of the gross revenue in the USA and the IMDb user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016 in the form of a raw dataset (CSV) and a visualization (PNG chart).",
+          "issued": "2021-04-04",
+          "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+          "keyword": [
+            "movies",
+            "movie industry",
+            "imdb",
+            "data history",
+            "movie awards",
+            "oscars",
+            "academy award",
+            "best picture"
+          ],
+          "data_quality_assurance": [
+            "The data is organized in files and folders in the filesystem.",
+            "Since the input and output data are static, there is no need for (re-)calibration or repeated measurements and data reviews",
+            "Consistency and correctness checks will be performed on a sample basis, as well as code refactorings."
+          ],
+          "dataset_id": {
+            "@id": "_:b8",
+            "identifier": "https://doi.org/10.5281/zenodo.4662040",
+            "type": "doi"
+          },
+          "distribution": [
+            {
+              "@id": "_:b9",
+              "description": "Shows the progression of the gross revenue in the USA and the IMDb user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016 in the form of a raw dataset (CSV) and a visualization (PNG chart).",
+              "format": [
+                "text/csv",
+                "image/png"
+              ],
+              "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+              "access_url": "https://zenodo.org/record/4662040",
+              "byte_size": 157900,
+              "data_access": "open",
+              "host": {
+                "@id": "_:b10",
+                "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+                "title": "Zenodo",
+                "availability": "99.8",
+                "backup_frequency": "nightly",
+                "backup_type": "tapes",
+                "pid_system": "doi",
+                "storage_type": "Disk cluster with replicas on different disk servers",
+                "support_versioning": "yes",
+                "url": "https://zenodo.org"
+              },
+              "license": {
+                "@id": "_:b11",
+                "start": "2021-04-04",
+                "license_ref": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+              }
+            },
+            {
+              "@id": "_:b12",
+              "description": "Implementation of the project. Contains source code, documentation and information on how to run the experiment.",
+              "format": "application/zip",
+              "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+              "access_url": "https://zenodo.org/record/4661145",
+              "byte_size": 886600,
+              "download_url": "https://zenodo.org/record/4665093/files/raffaelfoidl/omrsp-code-v1.1.zip?download=1",
+              "data_access": "open",
+              "host": {
+                "@id": "_:b13",
+                "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+                "title": "Zenodo",
+                "availability": "99.8",
+                "backup_frequency": "nightly",
+                "backup_type": "tapes",
+                "pid_system": "doi",
+                "storage_type": "Disk cluster with replicas on different disk servers",
+                "support_versioning": "yes",
+                "url": "https://zenodo.org"
+              },
+              "license": {
+                "@id": "_:b14",
+                "start": "2021-04-04",
+                "license_ref": "https://opensource.org/licenses/MIT"
+              }
+            },
+            {
+              "@id": "_:b15",
+              "description": "Implementation of the project. Contains source code, documentation and information on how to run the experiment.",
+              "format": "application/zip",
+              "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+              "access_url": "https://github.com/raffaelfoidl/omrsp-code",
+              "byte_size": 888832,
+              "download_url": "https://github.com/raffaelfoidl/omrsp-code/archive/refs/tags/v1.1.zip",
+              "data_access": "open",
+              "host": {
+                "@id": "_:b16",
+                "description": "GitHub is a code hosting platform for software that is tracked using the distributed version control system git.",
+                "title": "GitHub",
+                "pid_system": "doi",
+                "support_versioning": "yes",
+                "url": "https://github.com/"
+              },
+              "license": {
+                "@id": "_:b17",
+                "start": "2021-04-04",
+                "license_ref": "https://opensource.org/licenses/MIT"
+              }
+            }
+          ],
+          "metadata": [
+            {
+              "@id": "_:b18",
+              "description": "Provides a vocabulary for documenting research data, along with an XML serialization. It specializes in earth and environmental sciences, but is well-suites for other discplines, too.",
+              "metadata_standard_id": {
+                "@id": "_:b19",
+                "identifier": "https://eml.ecoinformatics.org/",
+                "type": "url"
+              },
+              "language": "eng"
+            },
+            {
+              "@id": "_:b20",
+              "description": "Collection of common metadata elements about digital images, especially for PNG images such as IHDR, tEXt, pHYs.",
+              "metadata_standard_id": {
+                "@id": "_:b21",
+                "identifier": "Generic Image Metadata",
+                "type": "url"
+              },
+              "language": "eng"
+            }
+          ],
+          "security_and_privacy": [
+            {
+              "@id": "_:b22",
+              "description": "Write-Access to data is only permitted using credentials that belong to the project creator",
+              "title": "Access Control"
+            },
+            {
+              "@id": "_:b23",
+              "description": "Backups are performed at least twice a week. Data is stored redundantly at four locations.",
+              "title": "Data Security"
+            },
+            {
+              "@id": "_:b24",
+              "description": "The project neither processes nor produces sensitive or personal data. Hence, no actions to protect any of the data need to be taken.",
+              "title": "Privacy"
+            }
+          ],
+          "type": "dataset",
+          "language": "eng",
+          "personal_data": "no",
+          "sensitive_data": "no"
+        },
+        "project": {
+          "@id": "_:b25",
+          "description": "Examines the progression of the gross revenue in the USA and the IMDB user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016.",
+          "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+          "end": "2021-04-19",
+          "start": "2021-03-16"
+        },
+        "language": "eng"
+      }
+    },
+    {
+      "@id": "_:b1",
+      "created": "2021-04-04T21:13:03Z",
+      "modified": "2021-04-07T02:21:53Z",
+      "title": "DMP: Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+      "ethical_issues_exist": "no",
+      "contact": {
+        "@id": "_:b2",
+        "mbox": "e11775820@student.tuwien.ac.at",
+        "name": "Raffael Foidl",
+        "contact_id": {
+          "@id": "_:b3",
+          "identifier": "https://orcid.org/0000-0002-1748-1571",
+          "type": "orcid"
+        }
+      },
+      "contributor": {
+        "@id": "_:b4",
+        "mbox": "e11775820@student.tuwien.ac.at",
+        "name": "Raffael Foidl",
+        "contributor_id": {
+          "@id": "_:b5",
+          "identifier": "https://orcid.org/0000-0002-1748-1571",
+          "type": "orcid"
+        },
+        "role": [
+          "Project Creator"
+        ]
+      },
+      "dmp_id": {
+        "@id": "_:b6",
+        "identifier": "https://doi.org/10.5281/zenodo.4664032",
+        "type": "doi"
+      },
+      "dataset": {
+        "@id": "_:b7",
+        "description": "Shows the progression of the gross revenue in the USA and the IMDb user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016 in the form of a raw dataset (CSV) and a visualization (PNG chart).",
+        "issued": "2021-04-04",
+        "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+        "keyword": [
+          "movies",
+          "movie industry",
+          "imdb",
+          "data history",
+          "movie awards",
+          "oscars",
+          "academy award",
+          "best picture"
+        ],
+        "data_quality_assurance": [
+          "The data is organized in files and folders in the filesystem.",
+          "Since the input and output data are static, there is no need for (re-)calibration or repeated measurements and data reviews",
+          "Consistency and correctness checks will be performed on a sample basis, as well as code refactorings."
+        ],
+        "dataset_id": {
+          "@id": "_:b8",
+          "identifier": "https://doi.org/10.5281/zenodo.4662040",
+          "type": "doi"
+        },
+        "distribution": [
+          {
+            "@id": "_:b9",
+            "description": "Shows the progression of the gross revenue in the USA and the IMDb user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016 in the form of a raw dataset (CSV) and a visualization (PNG chart).",
+            "format": [
+              "text/csv",
+              "image/png"
+            ],
+            "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+            "access_url": "https://zenodo.org/record/4662040",
+            "byte_size": 157900,
+            "data_access": "open",
+            "host": {
+              "@id": "_:b10",
+              "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+              "title": "Zenodo",
+              "availability": "99.8",
+              "backup_frequency": "nightly",
+              "backup_type": "tapes",
+              "pid_system": "doi",
+              "storage_type": "Disk cluster with replicas on different disk servers",
+              "support_versioning": "yes",
+              "url": "https://zenodo.org"
+            },
+            "license": {
+              "@id": "_:b11",
+              "start": "2021-04-04",
+              "license_ref": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+            }
+          },
+          {
+            "@id": "_:b12",
+            "description": "Implementation of the project. Contains source code, documentation and information on how to run the experiment.",
+            "format": "application/zip",
+            "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+            "access_url": "https://zenodo.org/record/4661145",
+            "byte_size": 886600,
+            "download_url": "https://zenodo.org/record/4665093/files/raffaelfoidl/omrsp-code-v1.1.zip?download=1",
+            "data_access": "open",
+            "host": {
+              "@id": "_:b13",
+              "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+              "title": "Zenodo",
+              "availability": "99.8",
+              "backup_frequency": "nightly",
+              "backup_type": "tapes",
+              "pid_system": "doi",
+              "storage_type": "Disk cluster with replicas on different disk servers",
+              "support_versioning": "yes",
+              "url": "https://zenodo.org"
+            },
+            "license": {
+              "@id": "_:b14",
+              "start": "2021-04-04",
+              "license_ref": "https://opensource.org/licenses/MIT"
+            }
+          },
+          {
+            "@id": "_:b15",
+            "description": "Implementation of the project. Contains source code, documentation and information on how to run the experiment.",
+            "format": "application/zip",
+            "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+            "access_url": "https://github.com/raffaelfoidl/omrsp-code",
+            "byte_size": 888832,
+            "download_url": "https://github.com/raffaelfoidl/omrsp-code/archive/refs/tags/v1.1.zip",
+            "data_access": "open",
+            "host": {
+              "@id": "_:b16",
+              "description": "GitHub is a code hosting platform for software that is tracked using the distributed version control system git.",
+              "title": "GitHub",
+              "pid_system": "doi",
+              "support_versioning": "yes",
+              "url": "https://github.com/"
+            },
+            "license": {
+              "@id": "_:b17",
+              "start": "2021-04-04",
+              "license_ref": "https://opensource.org/licenses/MIT"
+            }
+          }
+        ],
+        "metadata": [
+          {
+            "@id": "_:b18",
+            "description": "Provides a vocabulary for documenting research data, along with an XML serialization. It specializes in earth and environmental sciences, but is well-suites for other discplines, too.",
+            "metadata_standard_id": {
+              "@id": "_:b19",
+              "identifier": "https://eml.ecoinformatics.org/",
+              "type": "url"
+            },
+            "language": "eng"
+          },
+          {
+            "@id": "_:b20",
+            "description": "Collection of common metadata elements about digital images, especially for PNG images such as IHDR, tEXt, pHYs.",
+            "metadata_standard_id": {
+              "@id": "_:b21",
+              "identifier": "Generic Image Metadata",
+              "type": "url"
+            },
+            "language": "eng"
+          }
+        ],
+        "security_and_privacy": [
+          {
+            "@id": "_:b22",
+            "description": "Write-Access to data is only permitted using credentials that belong to the project creator",
+            "title": "Access Control"
+          },
+          {
+            "@id": "_:b23",
+            "description": "Backups are performed at least twice a week. Data is stored redundantly at four locations.",
+            "title": "Data Security"
+          },
+          {
+            "@id": "_:b24",
+            "description": "The project neither processes nor produces sensitive or personal data. Hence, no actions to protect any of the data need to be taken.",
+            "title": "Privacy"
+          }
+        ],
+        "type": "dataset",
+        "language": "eng",
+        "personal_data": "no",
+        "sensitive_data": "no"
+      },
+      "project": {
+        "@id": "_:b25",
+        "description": "Examines the progression of the gross revenue in the USA and the IMDB user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016.",
+        "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+        "end": "2021-04-19",
+        "start": "2021-03-16"
+      },
+      "language": "eng"
+    },
+    {
+      "@id": "_:b10",
+      "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+      "title": "Zenodo",
+      "availability": "99.8",
+      "backup_frequency": "nightly",
+      "backup_type": "tapes",
+      "pid_system": "doi",
+      "storage_type": "Disk cluster with replicas on different disk servers",
+      "support_versioning": "yes",
+      "url": "https://zenodo.org"
+    },
+    {
+      "@id": "_:b11",
+      "start": "2021-04-04",
+      "license_ref": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+    },
+    {
+      "@id": "_:b12",
+      "description": "Implementation of the project. Contains source code, documentation and information on how to run the experiment.",
+      "format": "application/zip",
+      "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+      "access_url": "https://zenodo.org/record/4661145",
+      "byte_size": 886600,
+      "download_url": "https://zenodo.org/record/4665093/files/raffaelfoidl/omrsp-code-v1.1.zip?download=1",
+      "data_access": "open",
+      "host": {
+        "@id": "_:b13",
+        "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+        "title": "Zenodo",
+        "availability": "99.8",
+        "backup_frequency": "nightly",
+        "backup_type": "tapes",
+        "pid_system": "doi",
+        "storage_type": "Disk cluster with replicas on different disk servers",
+        "support_versioning": "yes",
+        "url": "https://zenodo.org"
+      },
+      "license": {
+        "@id": "_:b14",
+        "start": "2021-04-04",
+        "license_ref": "https://opensource.org/licenses/MIT"
+      }
+    },
+    {
+      "@id": "_:b13",
+      "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+      "title": "Zenodo",
+      "availability": "99.8",
+      "backup_frequency": "nightly",
+      "backup_type": "tapes",
+      "pid_system": "doi",
+      "storage_type": "Disk cluster with replicas on different disk servers",
+      "support_versioning": "yes",
+      "url": "https://zenodo.org"
+    },
+    {
+      "@id": "_:b14",
+      "start": "2021-04-04",
+      "license_ref": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@id": "_:b15",
+      "description": "Implementation of the project. Contains source code, documentation and information on how to run the experiment.",
+      "format": "application/zip",
+      "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+      "access_url": "https://github.com/raffaelfoidl/omrsp-code",
+      "byte_size": 888832,
+      "download_url": "https://github.com/raffaelfoidl/omrsp-code/archive/refs/tags/v1.1.zip",
+      "data_access": "open",
+      "host": {
+        "@id": "_:b16",
+        "description": "GitHub is a code hosting platform for software that is tracked using the distributed version control system git.",
+        "title": "GitHub",
+        "pid_system": "doi",
+        "support_versioning": "yes",
+        "url": "https://github.com/"
+      },
+      "license": {
+        "@id": "_:b17",
+        "start": "2021-04-04",
+        "license_ref": "https://opensource.org/licenses/MIT"
+      }
+    },
+    {
+      "@id": "_:b16",
+      "description": "GitHub is a code hosting platform for software that is tracked using the distributed version control system git.",
+      "title": "GitHub",
+      "pid_system": "doi",
+      "support_versioning": "yes",
+      "url": "https://github.com/"
+    },
+    {
+      "@id": "_:b17",
+      "start": "2021-04-04",
+      "license_ref": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@id": "_:b18",
+      "description": "Provides a vocabulary for documenting research data, along with an XML serialization. It specializes in earth and environmental sciences, but is well-suites for other discplines, too.",
+      "metadata_standard_id": {
+        "@id": "_:b19",
+        "identifier": "https://eml.ecoinformatics.org/",
+        "type": "url"
+      },
+      "language": "eng"
+    },
+    {
+      "@id": "_:b19",
+      "identifier": "https://eml.ecoinformatics.org/",
+      "type": "url"
+    },
+    {
+      "@id": "_:b2",
+      "mbox": "e11775820@student.tuwien.ac.at",
+      "name": "Raffael Foidl",
+      "contact_id": {
+        "@id": "_:b3",
+        "identifier": "https://orcid.org/0000-0002-1748-1571",
+        "type": "orcid"
+      }
+    },
+    {
+      "@id": "_:b20",
+      "description": "Collection of common metadata elements about digital images, especially for PNG images such as IHDR, tEXt, pHYs.",
+      "metadata_standard_id": {
+        "@id": "_:b21",
+        "identifier": "Generic Image Metadata",
+        "type": "url"
+      },
+      "language": "eng"
+    },
+    {
+      "@id": "_:b21",
+      "identifier": "Generic Image Metadata",
+      "type": "url"
+    },
+    {
+      "@id": "_:b22",
+      "description": "Write-Access to data is only permitted using credentials that belong to the project creator",
+      "title": "Access Control"
+    },
+    {
+      "@id": "_:b23",
+      "description": "Backups are performed at least twice a week. Data is stored redundantly at four locations.",
+      "title": "Data Security"
+    },
+    {
+      "@id": "_:b24",
+      "description": "The project neither processes nor produces sensitive or personal data. Hence, no actions to protect any of the data need to be taken.",
+      "title": "Privacy"
+    },
+    {
+      "@id": "_:b25",
+      "description": "Examines the progression of the gross revenue in the USA and the IMDB user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016.",
+      "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+      "end": "2021-04-19",
+      "start": "2021-03-16"
+    },
+    {
+      "@id": "_:b3",
+      "identifier": "https://orcid.org/0000-0002-1748-1571",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b4",
+      "mbox": "e11775820@student.tuwien.ac.at",
+      "name": "Raffael Foidl",
+      "contributor_id": {
+        "@id": "_:b5",
+        "identifier": "https://orcid.org/0000-0002-1748-1571",
+        "type": "orcid"
+      },
+      "role": [
+        "Project Creator"
+      ]
+    },
+    {
+      "@id": "_:b5",
+      "identifier": "https://orcid.org/0000-0002-1748-1571",
+      "type": "orcid"
+    },
+    {
+      "@id": "_:b6",
+      "identifier": "https://doi.org/10.5281/zenodo.4664032",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b7",
+      "description": "Shows the progression of the gross revenue in the USA and the IMDb user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016 in the form of a raw dataset (CSV) and a visualization (PNG chart).",
+      "issued": "2021-04-04",
+      "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+      "keyword": [
+        "movies",
+        "movie industry",
+        "imdb",
+        "data history",
+        "movie awards",
+        "oscars",
+        "academy award",
+        "best picture"
+      ],
+      "data_quality_assurance": [
+        "The data is organized in files and folders in the filesystem.",
+        "Since the input and output data are static, there is no need for (re-)calibration or repeated measurements and data reviews",
+        "Consistency and correctness checks will be performed on a sample basis, as well as code refactorings."
+      ],
+      "dataset_id": {
+        "@id": "_:b8",
+        "identifier": "https://doi.org/10.5281/zenodo.4662040",
+        "type": "doi"
+      },
+      "distribution": [
+        {
+          "@id": "_:b9",
+          "description": "Shows the progression of the gross revenue in the USA and the IMDb user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016 in the form of a raw dataset (CSV) and a visualization (PNG chart).",
+          "format": [
+            "text/csv",
+            "image/png"
+          ],
+          "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+          "access_url": "https://zenodo.org/record/4662040",
+          "byte_size": 157900,
+          "data_access": "open",
+          "host": {
+            "@id": "_:b10",
+            "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+            "title": "Zenodo",
+            "availability": "99.8",
+            "backup_frequency": "nightly",
+            "backup_type": "tapes",
+            "pid_system": "doi",
+            "storage_type": "Disk cluster with replicas on different disk servers",
+            "support_versioning": "yes",
+            "url": "https://zenodo.org"
+          },
+          "license": {
+            "@id": "_:b11",
+            "start": "2021-04-04",
+            "license_ref": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+          }
+        },
+        {
+          "@id": "_:b12",
+          "description": "Implementation of the project. Contains source code, documentation and information on how to run the experiment.",
+          "format": "application/zip",
+          "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+          "access_url": "https://zenodo.org/record/4661145",
+          "byte_size": 886600,
+          "download_url": "https://zenodo.org/record/4665093/files/raffaelfoidl/omrsp-code-v1.1.zip?download=1",
+          "data_access": "open",
+          "host": {
+            "@id": "_:b13",
+            "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+            "title": "Zenodo",
+            "availability": "99.8",
+            "backup_frequency": "nightly",
+            "backup_type": "tapes",
+            "pid_system": "doi",
+            "storage_type": "Disk cluster with replicas on different disk servers",
+            "support_versioning": "yes",
+            "url": "https://zenodo.org"
+          },
+          "license": {
+            "@id": "_:b14",
+            "start": "2021-04-04",
+            "license_ref": "https://opensource.org/licenses/MIT"
+          }
+        },
+        {
+          "@id": "_:b15",
+          "description": "Implementation of the project. Contains source code, documentation and information on how to run the experiment.",
+          "format": "application/zip",
+          "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+          "access_url": "https://github.com/raffaelfoidl/omrsp-code",
+          "byte_size": 888832,
+          "download_url": "https://github.com/raffaelfoidl/omrsp-code/archive/refs/tags/v1.1.zip",
+          "data_access": "open",
+          "host": {
+            "@id": "_:b16",
+            "description": "GitHub is a code hosting platform for software that is tracked using the distributed version control system git.",
+            "title": "GitHub",
+            "pid_system": "doi",
+            "support_versioning": "yes",
+            "url": "https://github.com/"
+          },
+          "license": {
+            "@id": "_:b17",
+            "start": "2021-04-04",
+            "license_ref": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "metadata": [
+        {
+          "@id": "_:b18",
+          "description": "Provides a vocabulary for documenting research data, along with an XML serialization. It specializes in earth and environmental sciences, but is well-suites for other discplines, too.",
+          "metadata_standard_id": {
+            "@id": "_:b19",
+            "identifier": "https://eml.ecoinformatics.org/",
+            "type": "url"
+          },
+          "language": "eng"
+        },
+        {
+          "@id": "_:b20",
+          "description": "Collection of common metadata elements about digital images, especially for PNG images such as IHDR, tEXt, pHYs.",
+          "metadata_standard_id": {
+            "@id": "_:b21",
+            "identifier": "Generic Image Metadata",
+            "type": "url"
+          },
+          "language": "eng"
+        }
+      ],
+      "security_and_privacy": [
+        {
+          "@id": "_:b22",
+          "description": "Write-Access to data is only permitted using credentials that belong to the project creator",
+          "title": "Access Control"
+        },
+        {
+          "@id": "_:b23",
+          "description": "Backups are performed at least twice a week. Data is stored redundantly at four locations.",
+          "title": "Data Security"
+        },
+        {
+          "@id": "_:b24",
+          "description": "The project neither processes nor produces sensitive or personal data. Hence, no actions to protect any of the data need to be taken.",
+          "title": "Privacy"
+        }
+      ],
+      "type": "dataset",
+      "language": "eng",
+      "personal_data": "no",
+      "sensitive_data": "no"
+    },
+    {
+      "@id": "_:b8",
+      "identifier": "https://doi.org/10.5281/zenodo.4662040",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b9",
+      "description": "Shows the progression of the gross revenue in the USA and the IMDb user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016 in the form of a raw dataset (CSV) and a visualization (PNG chart).",
+      "format": [
+        "text/csv",
+        "image/png"
+      ],
+      "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
+      "access_url": "https://zenodo.org/record/4662040",
+      "byte_size": 157900,
+      "data_access": "open",
+      "host": {
+        "@id": "_:b10",
+        "description": "Zenodo is hosted by CERN as part of its mission to make available the result of its work.",
+        "title": "Zenodo",
+        "availability": "99.8",
+        "backup_frequency": "nightly",
+        "backup_type": "tapes",
+        "pid_system": "doi",
+        "storage_type": "Disk cluster with replicas on different disk servers",
+        "support_versioning": "yes",
+        "url": "https://zenodo.org"
+      },
+      "license": {
+        "@id": "_:b11",
+        "start": "2021-04-04",
+        "license_ref": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+      }
+    }
+  ]
+}
