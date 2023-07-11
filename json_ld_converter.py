@@ -22,7 +22,7 @@ madmps = []
 
 folder_path = 'madmps'
 
-for filename in ['madmp1.json', 'madmp2.json', 'madmp3.json', 'madmp4.json', 'madmp5.json', 'madmp6.json', 'madmp7.json', 'madmp8.json', 'madmp10.json', 'madmp11.json', 'madmp12.json']:
+for filename in ['madmp1.json', 'madmp2.json', 'madmp3.json', 'madmp4.json', 'madmp5.json', 'madmp6.json', 'madmp7.json', 'madmp8.json', 'madmp9.json', 'madmp10.json', 'madmp11.json']:
     try:
         file_path = os.path.join(folder_path, filename)
         with open(file_path, 'r') as file:

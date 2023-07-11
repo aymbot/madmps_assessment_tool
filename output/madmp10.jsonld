@@ -78,2095 +78,987 @@
     {
       "dmp": {
         "@id": "_:b1",
-        "created": "2021-04-17T22:30:49.604Z",
-        "description": "This is the machine-actionable version of the primary DMP (10.5281/zenodo.4698514), which describes the project 'Influence of sunshine on GDP per capita'",
-        "modified": "2021-04-17T22:30:49.604Z",
-        "title": "maDMP: Influence of sunshine on GDP per capita",
+        "created": "2021-04-19T04:51:48+02:00",
+        "modified": "2021-04-19T04:51:48+02:00",
+        "title": "Data Management Plan -- Correlating World Conflict with Local Economy Growth",
         "ethical_issues_exist": "no",
         "contact": {
           "@id": "_:b2",
-          "mbox": "e1527089@student.tuwien.ac.at",
-          "name": "Filip Darmanovic",
+          "mbox": "max-julian@pogner.at",
+          "name": "Max-Julian Pogner",
           "contact_id": {
             "@id": "_:b3",
-            "identifier": "https://orcid.org/0000-0002-2239-1634",
+            "identifier": "https://orcid.org/0000-0001-6244-0173",
             "type": "orcid"
           }
         },
-        "contributor": {
-          "@id": "_:b4",
-          "mbox": "e1527089@student.tuwien.ac.at",
-          "name": "Filip Darmanovic",
-          "contributor_id": {
-            "@id": "_:b5",
-            "identifier": "https://orcid.org/0000-0002-2239-1634",
-            "type": "orcid"
-          },
-          "role": [
-            "Lead Researcher",
-            "Data Steward",
-            "Project Lead"
-          ]
-        },
-        "cost": {
-          "@id": "_:b6",
-          "description": "esse Excepteur eiusmod cillum",
-          "title": "Duis laborum",
-          "currency_code": "HNL",
-          "value": -23242891.467893064
-        },
         "dmp_id": {
-          "@id": "_:b7",
-          "identifier": "10.5281/zenodo.4698936",
+          "@id": "_:b4",
+          "identifier": "https://doi.org/10.5281/zenodo.4699885",
           "type": "doi"
         },
         "dataset": [
           {
-            "@id": "_:b8",
-            "description": "The following is a list of cities by sunshine duration. Sunshine duration is a climatological indicator, measuring duration of sunshine in given period (usually, a day or a year) for a given location on Earth, typically expressed as an averaged value over several years. It is a general indicator of cloudiness of a location, and thus differs from insolation, which measures the total energy delivered by sunlight over a given period.",
-            "title": "List of cities by sunshine duration",
+            "@id": "_:b5",
+            "description": "Economical data on the country 'AUSTRIA' as calculated by the state-owned and state-sponsored entity 'STATISTIK AUSTRIA'.\nData comprises such values as the gross domestic product, and related figures.\nData contains one value of each parameter per year, in the extent from 1976 to 2020.\nData constitutes three files, as downloaded by the publisher from the creator's homepage.\nvolkswirtschaftliche_gesamtrechnung_hauptgroessen.xlsx\n    the most recent data, up to 2020. the data 2016 to 2020 is\n    only preliminary.\n\nvolkswirtschaftliche_gesamtrechnungen_1976-2007.pdf\n    austria economic figures from 1976 to 2007 (final numbers).\n\nvolkswirtschaftliche_gesamtrechnungen_1995_-_2018.pdf\n    austria economic figures from 1995 to 2018, final numbers,\n    except 2016 to 2018 which are preliminiary numbers.",
+            "issued": "2021-05-03",
+            "title": "Economic figures of Austria, 1976 to 2020",
+            "data_quality_assurance": [
+              "file naming convention: store files exactly as named by the data source",
+              "data quality checklist items included in step-by-step download guide",
+              "layman-knowledge visual inspection of files"
+            ],
             "dataset_id": {
-              "@id": "_:b9",
-              "identifier": "https://data.world/makeovermonday/2019w44",
-              "type": "url"
+              "@id": "_:b6",
+              "identifier": "https://doi.org/10.5281/zenodo.4699804",
+              "type": "doi"
             },
             "distribution": [
               {
-                "@id": "_:b10",
-                "description": "World Cities Ranked by Annual Average Sunshine Hours, exported from wikipedia.",
-                "format": "application/vnd.ms-excel",
-                "title": "2019/W44: World Cities Ranked by Annual Sunshine Hours",
-                "access_url": "https://data.world/makeovermonday/2019w44",
-                "byte_size": 44304,
-                "download_url": "https://query.data.world/s/luog37hqnqmtktu5s7ntjvowwbp34r",
+                "@id": "_:b7",
+                "description": "Re-publishing of the original dataset in unaltered form via public github git repository.\nThe distribution consists of multiple files, exactly in the form the data was acquired from the source.",
+                "format": [
+                  "text/csv",
+                  "application/vnd.ms-excel"
+                ],
+                "title": "`sna-at` data set within the public project github repository",
+                "access_url": "https://github.com/qyanu/2021-gdp-vs-ucdp/tree/master/sna-at-data",
+                "byte_size": 5867691,
                 "data_access": "open",
                 "host": {
-                  "@id": "_:b11",
-                  "description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
-                  "title": "data.world",
-                  "backup_type": "AWS",
-                  "geo_location": "US",
+                  "@id": "_:b8",
+                  "title": "Github Inc.",
                   "support_versioning": "yes",
-                  "url": "http://data.world"
+                  "url": "https://github.com"
+                },
+                "license": {
+                  "@id": "_:b9",
+                  "start": "2021-04-15",
+                  "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
+                }
+              },
+              {
+                "@id": "_:b10",
+                "description": "Publishing of the original dataset in unaltered form via public github git repository.\nThe distribution consists of multiple files, exactly in the form the data was acquired from the source.",
+                "format": [
+                  "text/csv",
+                  "application/vnd.ms-excel"
+                ],
+                "title": "`sna-at` data set within the public project github repository",
+                "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/sna-at-data",
+                "byte_size": 5867691,
+                "data_access": "closed",
+                "host": {
+                  "@id": "_:b11",
+                  "title": "Pogner Family IT System",
+                  "availability": "sufficient",
+                  "backup_frequency": "within 24h",
+                  "backup_type": "rotating magnetic disks, on-site and off-site",
+                  "geo_location": "AT",
+                  "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+                  "support_versioning": "yes",
+                  "url": "https://pogner.at"
                 },
                 "license": {
                   "@id": "_:b12",
-                  "start": "2019-10-27",
-                  "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-                }
-              },
-              {
-                "@id": "_:b13",
-                "description": "List of cities by sunshine duration, compiled from weather reports all accross the world",
-                "format": "text/html",
-                "title": "List of cities by sunshine duration",
-                "access_url": "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration",
-                "byte_size": 482085,
-                "download_url": "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration",
-                "data_access": "open",
-                "host": {
-                  "@id": "_:b14",
-                  "description": "Community and commercial dataset and metadata repository with many features. Hosted on AWS",
-                  "title": "Wikipedia",
-                  "geo_location": "US",
-                  "storage_type": "Object storage (Swift)",
-                  "support_versioning": "yes",
-                  "url": "https://wikipedia.org"
-                },
-                "license": {
-                  "@id": "_:b15",
-                  "start": "2019-10-27",
-                  "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
+                  "start": "2021-04-15",
+                  "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
                 }
               }
             ],
-            "type": "dataset",
-            "language": "eng",
+            "type": "Dataset",
+            "language": "deu",
             "personal_data": "no",
             "sensitive_data": "no"
           },
           {
-            "@id": "_:b16",
-            "description": "World Bank national accounts data, and OECD National Accounts data files regarding GDP per capita.",
-            "issued": "2020-01-01",
-            "title": "GDP per capita (current US$)",
-            "keyword": [
-              "GDP",
-              "capita"
+            "@id": "_:b13",
+            "description": "Economical data on the nominal gross domestic product of the country 'AUSTRIA' as calculated by the state-owned and state-sponsored entity 'STATISTIK AUSTRIA'.\nThe data points for various years have been collected from various places on https://statistik.at and merged into a single table by the contributor.",
+            "issued": "2021-05-03",
+            "title": "Gross Domestic Product of Austria, 1976 to 2019",
+            "data_quality_assurance": [
+              "file naming convention: single file with data is named like data set",
+              "data quality checklist items included in step-by-step extract & combine guide",
+              "layman-knowledge visual inspection of result rendered in pdf form"
             ],
             "dataset_id": {
-              "@id": "_:b17",
-              "identifier": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
-              "type": "url"
+              "@id": "_:b14",
+              "identifier": "https://doi.org/10.5281/zenodo.4699806",
+              "type": "doi"
             },
-            "distribution": {
-              "@id": "_:b18",
-              "format": [
-                "text/csv",
-                "text/xml",
-                "application/vnd.ms-excel"
-              ],
-              "title": "GDP per capita (current US$)",
-              "access_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
-              "download_url": "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv",
-              "data_access": "open",
-              "host": {
-                "@id": "_:b19",
-                "description": "Global organization with more than 170 member countries dealing with development.",
-                "title": "World Bank Data",
-                "support_versioning": "unknown",
-                "url": "https://data.worldbank.org"
+            "distribution": [
+              {
+                "@id": "_:b15",
+                "description": "Publishing of intermediate processing steps of the 2021-gdp-vs-ucdp project.\nThe distribution consists of a single `csv` file, which is also rendered into `pdf` form.",
+                "format": "text/csv",
+                "title": "`sna-at-extracted` data set within the public project github repository",
+                "access_url": "https://github.com/qyanu/2021-gdp-vs-ucdp/tree/master/sna-at-data-extracted",
+                "byte_size": 18443,
+                "data_access": "open",
+                "host": {
+                  "@id": "_:b16",
+                  "title": "Github Inc.",
+                  "support_versioning": "yes",
+                  "url": "https://github.com"
+                },
+                "license": {
+                  "@id": "_:b17",
+                  "start": "2021-04-15",
+                  "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
+                }
               },
-              "license": {
-                "@id": "_:b20",
-                "start": "2021-04-18",
-                "license_ref": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+              {
+                "@id": "_:b18",
+                "description": "Sharing of intermediate processing steps of the 2021-gdp-vs-ucdp project.\nThe distribution consists of a single `csv` file, which is also rendered into `pdf` form.",
+                "format": "text/csv",
+                "title": "`sna-at-extracted` data set within the public project github repository",
+                "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/sna-at-data",
+                "byte_size": 18443,
+                "data_access": "closed",
+                "host": {
+                  "@id": "_:b19",
+                  "title": "Pogner Family IT System",
+                  "availability": "sufficient",
+                  "backup_frequency": "within 24h",
+                  "backup_type": "rotating magnetic disks, on-site and off-site",
+                  "geo_location": "AT",
+                  "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+                  "support_versioning": "yes",
+                  "url": "https://pogner.at"
+                },
+                "license": {
+                  "@id": "_:b20",
+                  "start": "2021-04-15",
+                  "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
+                }
               }
-            },
-            "metadata": {
-              "@id": "_:b21",
-              "description": "Provides metadata on the included countires and general data collection methods.",
-              "metadata_standard_id": {
-                "@id": "_:b22",
-                "identifier": "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.PCAP.CD",
-                "type": "url"
-              },
-              "language": "eng"
-            },
-            "type": "dataset",
-            "language": "eng",
+            ],
+            "type": "Dataset",
+            "language": "deu",
             "personal_data": "no",
             "sensitive_data": "no"
           },
           {
-            "@id": "_:b23",
-            "description": "Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data",
-            "issued": "2018-05-23",
-            "title": "Admin 0 \u00e2\u20ac\u201c Countries",
-            "keyword": [
-              "GIS",
-              "Map",
-              "Vector",
-              "World",
-              "Countries"
+            "@id": "_:b21",
+            "description": "A conflict-year dataset with information on armed conflict where at least one party is the government of a state in the time period 1946-2019.",
+            "issued": "2020-05-25",
+            "title": "UCDP/PRIO Armed Conflict Dataset version 20.1",
+            "data_quality_assurance": [
+              "file naming convention: store files exactly as named by the data source",
+              "data quality checklist provided",
+              "downloaded file content compared with expected sha256 checksum"
             ],
             "dataset_id": {
-              "@id": "_:b24",
-              "identifier": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
-              "type": "url"
-            },
-            "distribution": [
-              {
-                "@id": "_:b25",
-                "format": "appliaction/zip",
-                "title": "Admin 0 - Countries",
-                "access_url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
-                "download_url": "https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip",
-                "data_access": "open",
-                "host": {
-                  "@id": "_:b26",
-                  "description": "Landing page for the Natural Earth dataset.",
-                  "title": "Natural Earth",
-                  "pid_system": "url",
-                  "support_versioning": "unknown",
-                  "url": "https://www.naturalearthdata.com/"
-                },
-                "license": {
-                  "@id": "_:b27",
-                  "start": "2015-06-07",
-                  "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
-                }
-              },
-              {
-                "@id": "_:b28",
-                "format": "appliaction/zip",
-                "title": "natural-earth-vector",
-                "access_url": "https://github.com/nvkelso/natural-earth-vector",
-                "download_url": "https://github.com/nvkelso/natural-earth-vector/archive/refs/tags/v4.1.0.zip",
-                "data_access": "open",
-                "host": {
-                  "@id": "_:b29",
-                  "description": "World's largest code repository.",
-                  "title": "GitHub",
-                  "backup_type": "tape in an ice vault",
-                  "pid_system": "url",
-                  "support_versioning": "yes",
-                  "url": "https://github.com"
-                },
-                "license": {
-                  "@id": "_:b30",
-                  "start": "2015-06-07",
-                  "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
-                }
-              }
-            ],
-            "language": "eng",
-            "personal_data": "no",
-            "sensitive_data": "unknown"
-          },
-          {
-            "@id": "_:b31",
-            "description": "The actual source code of the project, with or without the entire project directory including the input and output data, depending on the distribution.",
-            "issued": "2021-04-17",
-            "title": "Influence of sunshine on GDP per capita",
-            "keyword": [
-              "GDP per capita",
-              "Sunshine",
-              "Correlation",
-              "Jupyter"
-            ],
-            "dataset_id": {
-              "@id": "_:b32",
-              "identifier": "10.5281/zenodo.4698564",
-              "type": "doi"
-            },
-            "distribution": [
-              {
-                "@id": "_:b33",
-                "description": "The 'source-of-truth' repository from which releases are created.",
-                "format": [
-                  "application/zip",
-                  "application/x-ipynb+json"
-                ],
-                "title": "Influence-of-sunshine-on-GDP-per-capita",
-                "access_url": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/tree/v1.0",
-                "download_url": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/archive/refs/tags/v1.0.zip",
-                "data_access": "open",
-                "host": {
-                  "@id": "_:b34",
-                  "description": "World's largest code repository.",
-                  "title": "GitHub",
-                  "backup_type": "tape in an ice vault",
-                  "pid_system": "url",
-                  "support_versioning": "yes",
-                  "url": "https://github.com"
-                },
-                "license": {
-                  "@id": "_:b35",
-                  "start": "2021-04-17",
-                  "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
-                }
-              },
-              {
-                "@id": "_:b36",
-                "format": [
-                  "application/zip",
-                  "application/x-ipynb+json"
-                ],
-                "title": "Influence of sunshine on GDP per capita",
-                "access_url": "https://zenodo.org/record/4698564",
-                "download_url": "https://zenodo.org/record/4698564/files/Dzeri96/Influence-of-sunshine-on-GDP-per-capita-v1.0.zip?download=1",
-                "data_access": "open",
-                "host": {
-                  "@id": "_:b37",
-                  "description": "General-purpose data repository hosted by CERN.",
-                  "title": "Zenodo",
-                  "availability": "99.8",
-                  "backup_frequency": "weekly",
-                  "backup_type": "tapes",
-                  "geo_location": "CH",
-                  "pid_system": [
-                    "doi",
-                    "url"
-                  ],
-                  "storage_type": "Decentralized disk cluster",
-                  "support_versioning": "yes",
-                  "url": "https://zenodo.org"
-                },
-                "license": {
-                  "@id": "_:b38",
-                  "start": "2021-04-17",
-                  "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
-                }
-              }
-            ],
-            "metadata": {
-              "@id": "_:b39",
-              "description": "Dublin Core metadata in XML format.",
-              "metadata_standard_id": {
-                "@id": "_:b40",
-                "identifier": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/v1.0/documentation/metadata.xml",
-                "type": "url"
-              },
-              "language": "eng"
-            },
-            "technical_resource": [
-              {
-                "@id": "_:b41",
-                "name": "python3"
-              },
-              {
-                "@id": "_:b42",
-                "description": "Python package manager.",
-                "name": "pip"
-              }
-            ],
-            "type": "software",
-            "language": "eng",
-            "personal_data": "no",
-            "sensitive_data": "unknown"
-          },
-          {
-            "@id": "_:b43",
-            "description": "Tabular dataset containing descriptors like min, max, median of GDP per capita for many countries from the 1960s up to 2019, combined with average yearly sunshine hours extrapolated from readings in some cities of those countries.",
-            "issued": "2021-04-16",
-            "title": "Statistical descriptors of GDP per capita combined with yearly averages of hours of sunshine per country",
-            "keyword": [
-              "GDP per capita",
-              "Sunshine",
-              "Tabular"
-            ],
-            "dataset_id": {
-              "@id": "_:b44",
-              "identifier": "10.5281/zenodo.4697778",
-              "type": "doi"
+              "@id": "_:b22",
+              "identifier": "urn:git.qyanu.net:qyanu/2021-gdp-vs-ucdp:/ucdp",
+              "type": "other"
             },
             "distribution": {
-              "@id": "_:b45",
+              "@id": "_:b23",
+              "description": "Verbatim preservation of the originally downloaded files.",
               "format": "text/csv",
-              "title": "Statistical descriptors of GDP per capita combined with yearly averages of hours of sunshine per country",
-              "access_url": "https://zenodo.org/record/4697778",
-              "download_url": "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1",
-              "data_access": "open",
+              "title": "`ucdp` data set within the non-public project git repository",
+              "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/ucdp-data",
+              "byte_size": 4295476,
+              "data_access": "closed",
               "host": {
-                "@id": "_:b46",
-                "description": "General-purpose data repository hosted by CERN.",
-                "title": "Zenodo",
-                "availability": "99.8",
-                "backup_frequency": "weekly",
-                "backup_type": "tapes",
-                "geo_location": "CH",
-                "pid_system": [
-                  "doi",
-                  "url"
-                ],
-                "storage_type": "Decentralized disk cluster",
+                "@id": "_:b24",
+                "title": "Pogner Family IT System",
+                "availability": "sufficient",
+                "backup_frequency": "within 24h",
+                "backup_type": "rotating magnetic disks, on-site and off-site",
+                "geo_location": "AT",
+                "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
                 "support_versioning": "yes",
-                "url": "https://zenodo.org"
-              },
-              "license": {
-                "@id": "_:b47",
-                "start": "2021-04-16",
-                "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
+                "url": "https://pogner.at"
               }
             },
-            "metadata": {
-              "@id": "_:b48",
-              "description": "JSON metadata according to the W3C's CSV on Web Recommendation, using the Dublin Core vocabulary.",
-              "metadata_standard_id": {
-                "@id": "_:b49",
-                "identifier": "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1",
-                "type": "url"
-              },
-              "language": "eng"
-            },
-            "type": "dataset",
+            "type": "Dataset",
             "language": "eng",
             "personal_data": "no",
-            "sensitive_data": "unknown"
+            "sensitive_data": "no"
           },
           {
-            "@id": "_:b50",
-            "description": "Two vectorized world maps color-coded according to average sunshine hours and mean GDP per capita.",
-            "issued": "2021-04-16",
-            "title": "Influence of sunshine on GDP per capita - World heatmap",
-            "keyword": [
-              "GDP per capita",
-              "Sunshine"
+            "@id": "_:b25",
+            "description": "Based on the UCDP/PRIO 20.1 dataset, the per-year cummulative world conflict level is calculated as the sum of all `intensity_level` values of all conflicts active in a particular year.",
+            "issued": "2020-05-25",
+            "title": "Aggregated Extraction from the UCDP/PRIO dataset",
+            "data_quality_assurance": [
+              "file naming convention: single file with data is named like data set",
+              "data quality checklist provided",
+              "layman-knowledge visual inspection of result rendered in pdf form"
             ],
             "dataset_id": {
-              "@id": "_:b51",
-              "identifier": "10.5281/zenodo.4697855",
-              "type": "doi"
+              "@id": "_:b26",
+              "identifier": "urn:git.qyanu.net:qyanu/2021-gdp-vs-ucdp:/ucdp-extracted",
+              "type": "other"
             },
             "distribution": {
-              "@id": "_:b52",
-              "format": "application/pdf",
-              "title": "Influence of sunshine on GDP per capita - World heatmap",
-              "access_url": "https://zenodo.org/record/4697855",
-              "download_url": "https://zenodo.org/record/4697855/files/sunshine_gdp_world.pdf?download=1",
-              "data_access": "open",
+              "@id": "_:b27",
+              "description": "Preservation of the intermediate data set, created during data processing within the 2021-gdp-vs-ucdp project.",
+              "format": "text/csv",
+              "title": "`ucdp-extracted` data set within the non-public project git repository",
+              "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/ucdp-data-extracted",
+              "byte_size": 14472,
+              "data_access": "closed",
               "host": {
-                "@id": "_:b53",
-                "description": "General-purpose data repository hosted by CERN.",
-                "title": "Zenodo",
-                "availability": "99.8",
-                "backup_frequency": "weekly",
-                "backup_type": "tapes",
-                "geo_location": "CH",
-                "pid_system": [
-                  "doi",
-                  "url"
-                ],
-                "storage_type": "Decentralized disk cluster",
+                "@id": "_:b28",
+                "title": "Pogner Family IT System",
+                "availability": "sufficient",
+                "backup_frequency": "within 24h",
+                "backup_type": "rotating magnetic disks, on-site and off-site",
+                "geo_location": "AT",
+                "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
                 "support_versioning": "yes",
-                "url": "https://zenodo.org"
-              },
-              "license": {
-                "@id": "_:b54",
-                "start": "2021-04-16",
-                "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
+                "url": "https://pogner.at"
               }
             },
-            "metadata": {
-              "@id": "_:b55",
-              "description": "Dublin Core metadata in XML format.",
-              "metadata_standard_id": {
-                "@id": "_:b56",
-                "identifier": "https://zenodo.org/record/4697855/files/sunshine_gdp_world-metadata.xml?download=1",
-                "type": "url"
-              },
-              "language": "eng"
-            },
-            "type": "image",
-            "language": "eng",
-            "personal_data": "no",
-            "sensitive_data": "unknown"
-          },
-          {
-            "@id": "_:b57",
-            "description": "A vectorized visualization of Pearson correlation coefficients accompanying the tabular data artifact of the experiment in the title.",
-            "issued": "2021-04-16",
-            "title": "Influence of sunshine on GDP per capita - Column correlation plot",
-            "keyword": [
-              "GDP per capita",
-              "Sunshine",
-              "Correlation"
-            ],
-            "dataset_id": {
-              "@id": "_:b58",
-              "identifier": "10.5281/zenodo.4697850",
-              "type": "doi"
-            },
-            "distribution": {
-              "@id": "_:b59",
-              "format": "application/pdf",
-              "title": "Influence of sunshine on GDP per capita - Column correlation plot",
-              "access_url": "https://zenodo.org/record/4697850",
-              "download_url": "https://zenodo.org/record/4697850/files/sunshine_gdp_corr.pdf?download=1",
-              "data_access": "open",
-              "host": {
-                "@id": "_:b60",
-                "description": "General-purpose data repository hosted by CERN.",
-                "title": "Zenodo",
-                "availability": "99.8",
-                "backup_frequency": "weekly",
-                "backup_type": "tapes",
-                "geo_location": "CH",
-                "pid_system": [
-                  "doi",
-                  "url"
-                ],
-                "storage_type": "Decentralized disk cluster",
-                "support_versioning": "yes",
-                "url": "https://zenodo.org"
-              },
-              "license": {
-                "@id": "_:b61",
-                "start": "2021-04-16",
-                "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-              }
-            },
-            "metadata": {
-              "@id": "_:b62",
-              "description": "Dublin Core metadata in XML format.",
-              "metadata_standard_id": {
-                "@id": "_:b63",
-                "identifier": "https://zenodo.org/record/4697850/files/sunshine_gdp_corr-metadata.xml?download=1",
-                "type": "url"
-              },
-              "language": "eng"
-            },
-            "type": "image",
+            "type": "Dataset",
             "language": "eng",
             "personal_data": "no",
             "sensitive_data": "no"
           }
         ],
         "project": {
-          "@id": "_:b64",
-          "description": "This project, which revolves around a central jupyter notebook explores the hypothesis that dreary weather discourages people from going outside and in turn makes them more productive. Likewise, that beautiful weather distracts people from their work, which should reflect in a country's GDP per capita.",
-          "title": "Influence of sunshine on GDP per capita",
+          "@id": "_:b29",
+          "description": "For the average student, the `Uppsala Conflict Data Program <https://ucdp.uu.se/> <https://ucdp.uu.se/>`_ offers a fascinating periscope onto the conflicts of the world. Together with economic figures as collected by `Statistik Austria <https://www.statistik.at> <https://www.statistik.at>`_, the local economic impact of world-wide conflict is calculated.\nWARNING: While this student is fairly confident regarding the numerical quality of the calculations, any conclusions have to be regarded as having worse-than-questionable statistical validity.",
+          "title": "Correlating World Conflict with Local Economy Growth",
           "end": "2021-04-19",
-          "start": "2021-04-08"
+          "start": "2021-04-01"
         },
         "language": "eng"
       }
     },
     {
       "@id": "_:b1",
-      "created": "2021-04-17T22:30:49.604Z",
-      "description": "This is the machine-actionable version of the primary DMP (10.5281/zenodo.4698514), which describes the project 'Influence of sunshine on GDP per capita'",
-      "modified": "2021-04-17T22:30:49.604Z",
-      "title": "maDMP: Influence of sunshine on GDP per capita",
+      "created": "2021-04-19T04:51:48+02:00",
+      "modified": "2021-04-19T04:51:48+02:00",
+      "title": "Data Management Plan -- Correlating World Conflict with Local Economy Growth",
       "ethical_issues_exist": "no",
       "contact": {
         "@id": "_:b2",
-        "mbox": "e1527089@student.tuwien.ac.at",
-        "name": "Filip Darmanovic",
+        "mbox": "max-julian@pogner.at",
+        "name": "Max-Julian Pogner",
         "contact_id": {
           "@id": "_:b3",
-          "identifier": "https://orcid.org/0000-0002-2239-1634",
+          "identifier": "https://orcid.org/0000-0001-6244-0173",
           "type": "orcid"
         }
       },
-      "contributor": {
-        "@id": "_:b4",
-        "mbox": "e1527089@student.tuwien.ac.at",
-        "name": "Filip Darmanovic",
-        "contributor_id": {
-          "@id": "_:b5",
-          "identifier": "https://orcid.org/0000-0002-2239-1634",
-          "type": "orcid"
-        },
-        "role": [
-          "Lead Researcher",
-          "Data Steward",
-          "Project Lead"
-        ]
-      },
-      "cost": {
-        "@id": "_:b6",
-        "description": "esse Excepteur eiusmod cillum",
-        "title": "Duis laborum",
-        "currency_code": "HNL",
-        "value": -23242891.467893064
-      },
       "dmp_id": {
-        "@id": "_:b7",
-        "identifier": "10.5281/zenodo.4698936",
+        "@id": "_:b4",
+        "identifier": "https://doi.org/10.5281/zenodo.4699885",
         "type": "doi"
       },
       "dataset": [
         {
-          "@id": "_:b8",
-          "description": "The following is a list of cities by sunshine duration. Sunshine duration is a climatological indicator, measuring duration of sunshine in given period (usually, a day or a year) for a given location on Earth, typically expressed as an averaged value over several years. It is a general indicator of cloudiness of a location, and thus differs from insolation, which measures the total energy delivered by sunlight over a given period.",
-          "title": "List of cities by sunshine duration",
+          "@id": "_:b5",
+          "description": "Economical data on the country 'AUSTRIA' as calculated by the state-owned and state-sponsored entity 'STATISTIK AUSTRIA'.\nData comprises such values as the gross domestic product, and related figures.\nData contains one value of each parameter per year, in the extent from 1976 to 2020.\nData constitutes three files, as downloaded by the publisher from the creator's homepage.\nvolkswirtschaftliche_gesamtrechnung_hauptgroessen.xlsx\n    the most recent data, up to 2020. the data 2016 to 2020 is\n    only preliminary.\n\nvolkswirtschaftliche_gesamtrechnungen_1976-2007.pdf\n    austria economic figures from 1976 to 2007 (final numbers).\n\nvolkswirtschaftliche_gesamtrechnungen_1995_-_2018.pdf\n    austria economic figures from 1995 to 2018, final numbers,\n    except 2016 to 2018 which are preliminiary numbers.",
+          "issued": "2021-05-03",
+          "title": "Economic figures of Austria, 1976 to 2020",
+          "data_quality_assurance": [
+            "file naming convention: store files exactly as named by the data source",
+            "data quality checklist items included in step-by-step download guide",
+            "layman-knowledge visual inspection of files"
+          ],
           "dataset_id": {
-            "@id": "_:b9",
-            "identifier": "https://data.world/makeovermonday/2019w44",
-            "type": "url"
+            "@id": "_:b6",
+            "identifier": "https://doi.org/10.5281/zenodo.4699804",
+            "type": "doi"
           },
           "distribution": [
             {
-              "@id": "_:b10",
-              "description": "World Cities Ranked by Annual Average Sunshine Hours, exported from wikipedia.",
-              "format": "application/vnd.ms-excel",
-              "title": "2019/W44: World Cities Ranked by Annual Sunshine Hours",
-              "access_url": "https://data.world/makeovermonday/2019w44",
-              "byte_size": 44304,
-              "download_url": "https://query.data.world/s/luog37hqnqmtktu5s7ntjvowwbp34r",
+              "@id": "_:b7",
+              "description": "Re-publishing of the original dataset in unaltered form via public github git repository.\nThe distribution consists of multiple files, exactly in the form the data was acquired from the source.",
+              "format": [
+                "text/csv",
+                "application/vnd.ms-excel"
+              ],
+              "title": "`sna-at` data set within the public project github repository",
+              "access_url": "https://github.com/qyanu/2021-gdp-vs-ucdp/tree/master/sna-at-data",
+              "byte_size": 5867691,
               "data_access": "open",
               "host": {
-                "@id": "_:b11",
-                "description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
-                "title": "data.world",
-                "backup_type": "AWS",
-                "geo_location": "US",
+                "@id": "_:b8",
+                "title": "Github Inc.",
                 "support_versioning": "yes",
-                "url": "http://data.world"
+                "url": "https://github.com"
+              },
+              "license": {
+                "@id": "_:b9",
+                "start": "2021-04-15",
+                "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
+              }
+            },
+            {
+              "@id": "_:b10",
+              "description": "Publishing of the original dataset in unaltered form via public github git repository.\nThe distribution consists of multiple files, exactly in the form the data was acquired from the source.",
+              "format": [
+                "text/csv",
+                "application/vnd.ms-excel"
+              ],
+              "title": "`sna-at` data set within the public project github repository",
+              "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/sna-at-data",
+              "byte_size": 5867691,
+              "data_access": "closed",
+              "host": {
+                "@id": "_:b11",
+                "title": "Pogner Family IT System",
+                "availability": "sufficient",
+                "backup_frequency": "within 24h",
+                "backup_type": "rotating magnetic disks, on-site and off-site",
+                "geo_location": "AT",
+                "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+                "support_versioning": "yes",
+                "url": "https://pogner.at"
               },
               "license": {
                 "@id": "_:b12",
-                "start": "2019-10-27",
-                "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-              }
-            },
-            {
-              "@id": "_:b13",
-              "description": "List of cities by sunshine duration, compiled from weather reports all accross the world",
-              "format": "text/html",
-              "title": "List of cities by sunshine duration",
-              "access_url": "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration",
-              "byte_size": 482085,
-              "download_url": "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration",
-              "data_access": "open",
-              "host": {
-                "@id": "_:b14",
-                "description": "Community and commercial dataset and metadata repository with many features. Hosted on AWS",
-                "title": "Wikipedia",
-                "geo_location": "US",
-                "storage_type": "Object storage (Swift)",
-                "support_versioning": "yes",
-                "url": "https://wikipedia.org"
-              },
-              "license": {
-                "@id": "_:b15",
-                "start": "2019-10-27",
-                "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
+                "start": "2021-04-15",
+                "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
               }
             }
           ],
-          "type": "dataset",
-          "language": "eng",
+          "type": "Dataset",
+          "language": "deu",
           "personal_data": "no",
           "sensitive_data": "no"
         },
         {
-          "@id": "_:b16",
-          "description": "World Bank national accounts data, and OECD National Accounts data files regarding GDP per capita.",
-          "issued": "2020-01-01",
-          "title": "GDP per capita (current US$)",
-          "keyword": [
-            "GDP",
-            "capita"
+          "@id": "_:b13",
+          "description": "Economical data on the nominal gross domestic product of the country 'AUSTRIA' as calculated by the state-owned and state-sponsored entity 'STATISTIK AUSTRIA'.\nThe data points for various years have been collected from various places on https://statistik.at and merged into a single table by the contributor.",
+          "issued": "2021-05-03",
+          "title": "Gross Domestic Product of Austria, 1976 to 2019",
+          "data_quality_assurance": [
+            "file naming convention: single file with data is named like data set",
+            "data quality checklist items included in step-by-step extract & combine guide",
+            "layman-knowledge visual inspection of result rendered in pdf form"
           ],
           "dataset_id": {
-            "@id": "_:b17",
-            "identifier": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
-            "type": "url"
+            "@id": "_:b14",
+            "identifier": "https://doi.org/10.5281/zenodo.4699806",
+            "type": "doi"
           },
-          "distribution": {
-            "@id": "_:b18",
-            "format": [
-              "text/csv",
-              "text/xml",
-              "application/vnd.ms-excel"
-            ],
-            "title": "GDP per capita (current US$)",
-            "access_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
-            "download_url": "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv",
-            "data_access": "open",
-            "host": {
-              "@id": "_:b19",
-              "description": "Global organization with more than 170 member countries dealing with development.",
-              "title": "World Bank Data",
-              "support_versioning": "unknown",
-              "url": "https://data.worldbank.org"
+          "distribution": [
+            {
+              "@id": "_:b15",
+              "description": "Publishing of intermediate processing steps of the 2021-gdp-vs-ucdp project.\nThe distribution consists of a single `csv` file, which is also rendered into `pdf` form.",
+              "format": "text/csv",
+              "title": "`sna-at-extracted` data set within the public project github repository",
+              "access_url": "https://github.com/qyanu/2021-gdp-vs-ucdp/tree/master/sna-at-data-extracted",
+              "byte_size": 18443,
+              "data_access": "open",
+              "host": {
+                "@id": "_:b16",
+                "title": "Github Inc.",
+                "support_versioning": "yes",
+                "url": "https://github.com"
+              },
+              "license": {
+                "@id": "_:b17",
+                "start": "2021-04-15",
+                "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
+              }
             },
-            "license": {
-              "@id": "_:b20",
-              "start": "2021-04-18",
-              "license_ref": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+            {
+              "@id": "_:b18",
+              "description": "Sharing of intermediate processing steps of the 2021-gdp-vs-ucdp project.\nThe distribution consists of a single `csv` file, which is also rendered into `pdf` form.",
+              "format": "text/csv",
+              "title": "`sna-at-extracted` data set within the public project github repository",
+              "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/sna-at-data",
+              "byte_size": 18443,
+              "data_access": "closed",
+              "host": {
+                "@id": "_:b19",
+                "title": "Pogner Family IT System",
+                "availability": "sufficient",
+                "backup_frequency": "within 24h",
+                "backup_type": "rotating magnetic disks, on-site and off-site",
+                "geo_location": "AT",
+                "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+                "support_versioning": "yes",
+                "url": "https://pogner.at"
+              },
+              "license": {
+                "@id": "_:b20",
+                "start": "2021-04-15",
+                "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
+              }
             }
-          },
-          "metadata": {
-            "@id": "_:b21",
-            "description": "Provides metadata on the included countires and general data collection methods.",
-            "metadata_standard_id": {
-              "@id": "_:b22",
-              "identifier": "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.PCAP.CD",
-              "type": "url"
-            },
-            "language": "eng"
-          },
-          "type": "dataset",
-          "language": "eng",
+          ],
+          "type": "Dataset",
+          "language": "deu",
           "personal_data": "no",
           "sensitive_data": "no"
         },
         {
-          "@id": "_:b23",
-          "description": "Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data",
-          "issued": "2018-05-23",
-          "title": "Admin 0 \u00e2\u20ac\u201c Countries",
-          "keyword": [
-            "GIS",
-            "Map",
-            "Vector",
-            "World",
-            "Countries"
+          "@id": "_:b21",
+          "description": "A conflict-year dataset with information on armed conflict where at least one party is the government of a state in the time period 1946-2019.",
+          "issued": "2020-05-25",
+          "title": "UCDP/PRIO Armed Conflict Dataset version 20.1",
+          "data_quality_assurance": [
+            "file naming convention: store files exactly as named by the data source",
+            "data quality checklist provided",
+            "downloaded file content compared with expected sha256 checksum"
           ],
           "dataset_id": {
-            "@id": "_:b24",
-            "identifier": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
-            "type": "url"
-          },
-          "distribution": [
-            {
-              "@id": "_:b25",
-              "format": "appliaction/zip",
-              "title": "Admin 0 - Countries",
-              "access_url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
-              "download_url": "https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip",
-              "data_access": "open",
-              "host": {
-                "@id": "_:b26",
-                "description": "Landing page for the Natural Earth dataset.",
-                "title": "Natural Earth",
-                "pid_system": "url",
-                "support_versioning": "unknown",
-                "url": "https://www.naturalearthdata.com/"
-              },
-              "license": {
-                "@id": "_:b27",
-                "start": "2015-06-07",
-                "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
-              }
-            },
-            {
-              "@id": "_:b28",
-              "format": "appliaction/zip",
-              "title": "natural-earth-vector",
-              "access_url": "https://github.com/nvkelso/natural-earth-vector",
-              "download_url": "https://github.com/nvkelso/natural-earth-vector/archive/refs/tags/v4.1.0.zip",
-              "data_access": "open",
-              "host": {
-                "@id": "_:b29",
-                "description": "World's largest code repository.",
-                "title": "GitHub",
-                "backup_type": "tape in an ice vault",
-                "pid_system": "url",
-                "support_versioning": "yes",
-                "url": "https://github.com"
-              },
-              "license": {
-                "@id": "_:b30",
-                "start": "2015-06-07",
-                "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
-              }
-            }
-          ],
-          "language": "eng",
-          "personal_data": "no",
-          "sensitive_data": "unknown"
-        },
-        {
-          "@id": "_:b31",
-          "description": "The actual source code of the project, with or without the entire project directory including the input and output data, depending on the distribution.",
-          "issued": "2021-04-17",
-          "title": "Influence of sunshine on GDP per capita",
-          "keyword": [
-            "GDP per capita",
-            "Sunshine",
-            "Correlation",
-            "Jupyter"
-          ],
-          "dataset_id": {
-            "@id": "_:b32",
-            "identifier": "10.5281/zenodo.4698564",
-            "type": "doi"
-          },
-          "distribution": [
-            {
-              "@id": "_:b33",
-              "description": "The 'source-of-truth' repository from which releases are created.",
-              "format": [
-                "application/zip",
-                "application/x-ipynb+json"
-              ],
-              "title": "Influence-of-sunshine-on-GDP-per-capita",
-              "access_url": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/tree/v1.0",
-              "download_url": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/archive/refs/tags/v1.0.zip",
-              "data_access": "open",
-              "host": {
-                "@id": "_:b34",
-                "description": "World's largest code repository.",
-                "title": "GitHub",
-                "backup_type": "tape in an ice vault",
-                "pid_system": "url",
-                "support_versioning": "yes",
-                "url": "https://github.com"
-              },
-              "license": {
-                "@id": "_:b35",
-                "start": "2021-04-17",
-                "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
-              }
-            },
-            {
-              "@id": "_:b36",
-              "format": [
-                "application/zip",
-                "application/x-ipynb+json"
-              ],
-              "title": "Influence of sunshine on GDP per capita",
-              "access_url": "https://zenodo.org/record/4698564",
-              "download_url": "https://zenodo.org/record/4698564/files/Dzeri96/Influence-of-sunshine-on-GDP-per-capita-v1.0.zip?download=1",
-              "data_access": "open",
-              "host": {
-                "@id": "_:b37",
-                "description": "General-purpose data repository hosted by CERN.",
-                "title": "Zenodo",
-                "availability": "99.8",
-                "backup_frequency": "weekly",
-                "backup_type": "tapes",
-                "geo_location": "CH",
-                "pid_system": [
-                  "doi",
-                  "url"
-                ],
-                "storage_type": "Decentralized disk cluster",
-                "support_versioning": "yes",
-                "url": "https://zenodo.org"
-              },
-              "license": {
-                "@id": "_:b38",
-                "start": "2021-04-17",
-                "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
-              }
-            }
-          ],
-          "metadata": {
-            "@id": "_:b39",
-            "description": "Dublin Core metadata in XML format.",
-            "metadata_standard_id": {
-              "@id": "_:b40",
-              "identifier": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/v1.0/documentation/metadata.xml",
-              "type": "url"
-            },
-            "language": "eng"
-          },
-          "technical_resource": [
-            {
-              "@id": "_:b41",
-              "name": "python3"
-            },
-            {
-              "@id": "_:b42",
-              "description": "Python package manager.",
-              "name": "pip"
-            }
-          ],
-          "type": "software",
-          "language": "eng",
-          "personal_data": "no",
-          "sensitive_data": "unknown"
-        },
-        {
-          "@id": "_:b43",
-          "description": "Tabular dataset containing descriptors like min, max, median of GDP per capita for many countries from the 1960s up to 2019, combined with average yearly sunshine hours extrapolated from readings in some cities of those countries.",
-          "issued": "2021-04-16",
-          "title": "Statistical descriptors of GDP per capita combined with yearly averages of hours of sunshine per country",
-          "keyword": [
-            "GDP per capita",
-            "Sunshine",
-            "Tabular"
-          ],
-          "dataset_id": {
-            "@id": "_:b44",
-            "identifier": "10.5281/zenodo.4697778",
-            "type": "doi"
+            "@id": "_:b22",
+            "identifier": "urn:git.qyanu.net:qyanu/2021-gdp-vs-ucdp:/ucdp",
+            "type": "other"
           },
           "distribution": {
-            "@id": "_:b45",
+            "@id": "_:b23",
+            "description": "Verbatim preservation of the originally downloaded files.",
             "format": "text/csv",
-            "title": "Statistical descriptors of GDP per capita combined with yearly averages of hours of sunshine per country",
-            "access_url": "https://zenodo.org/record/4697778",
-            "download_url": "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1",
-            "data_access": "open",
+            "title": "`ucdp` data set within the non-public project git repository",
+            "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/ucdp-data",
+            "byte_size": 4295476,
+            "data_access": "closed",
             "host": {
-              "@id": "_:b46",
-              "description": "General-purpose data repository hosted by CERN.",
-              "title": "Zenodo",
-              "availability": "99.8",
-              "backup_frequency": "weekly",
-              "backup_type": "tapes",
-              "geo_location": "CH",
-              "pid_system": [
-                "doi",
-                "url"
-              ],
-              "storage_type": "Decentralized disk cluster",
+              "@id": "_:b24",
+              "title": "Pogner Family IT System",
+              "availability": "sufficient",
+              "backup_frequency": "within 24h",
+              "backup_type": "rotating magnetic disks, on-site and off-site",
+              "geo_location": "AT",
+              "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
               "support_versioning": "yes",
-              "url": "https://zenodo.org"
-            },
-            "license": {
-              "@id": "_:b47",
-              "start": "2021-04-16",
-              "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
+              "url": "https://pogner.at"
             }
           },
-          "metadata": {
-            "@id": "_:b48",
-            "description": "JSON metadata according to the W3C's CSV on Web Recommendation, using the Dublin Core vocabulary.",
-            "metadata_standard_id": {
-              "@id": "_:b49",
-              "identifier": "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1",
-              "type": "url"
-            },
-            "language": "eng"
-          },
-          "type": "dataset",
+          "type": "Dataset",
           "language": "eng",
           "personal_data": "no",
-          "sensitive_data": "unknown"
+          "sensitive_data": "no"
         },
         {
-          "@id": "_:b50",
-          "description": "Two vectorized world maps color-coded according to average sunshine hours and mean GDP per capita.",
-          "issued": "2021-04-16",
-          "title": "Influence of sunshine on GDP per capita - World heatmap",
-          "keyword": [
-            "GDP per capita",
-            "Sunshine"
+          "@id": "_:b25",
+          "description": "Based on the UCDP/PRIO 20.1 dataset, the per-year cummulative world conflict level is calculated as the sum of all `intensity_level` values of all conflicts active in a particular year.",
+          "issued": "2020-05-25",
+          "title": "Aggregated Extraction from the UCDP/PRIO dataset",
+          "data_quality_assurance": [
+            "file naming convention: single file with data is named like data set",
+            "data quality checklist provided",
+            "layman-knowledge visual inspection of result rendered in pdf form"
           ],
           "dataset_id": {
-            "@id": "_:b51",
-            "identifier": "10.5281/zenodo.4697855",
-            "type": "doi"
+            "@id": "_:b26",
+            "identifier": "urn:git.qyanu.net:qyanu/2021-gdp-vs-ucdp:/ucdp-extracted",
+            "type": "other"
           },
           "distribution": {
-            "@id": "_:b52",
-            "format": "application/pdf",
-            "title": "Influence of sunshine on GDP per capita - World heatmap",
-            "access_url": "https://zenodo.org/record/4697855",
-            "download_url": "https://zenodo.org/record/4697855/files/sunshine_gdp_world.pdf?download=1",
-            "data_access": "open",
+            "@id": "_:b27",
+            "description": "Preservation of the intermediate data set, created during data processing within the 2021-gdp-vs-ucdp project.",
+            "format": "text/csv",
+            "title": "`ucdp-extracted` data set within the non-public project git repository",
+            "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/ucdp-data-extracted",
+            "byte_size": 14472,
+            "data_access": "closed",
             "host": {
-              "@id": "_:b53",
-              "description": "General-purpose data repository hosted by CERN.",
-              "title": "Zenodo",
-              "availability": "99.8",
-              "backup_frequency": "weekly",
-              "backup_type": "tapes",
-              "geo_location": "CH",
-              "pid_system": [
-                "doi",
-                "url"
-              ],
-              "storage_type": "Decentralized disk cluster",
+              "@id": "_:b28",
+              "title": "Pogner Family IT System",
+              "availability": "sufficient",
+              "backup_frequency": "within 24h",
+              "backup_type": "rotating magnetic disks, on-site and off-site",
+              "geo_location": "AT",
+              "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
               "support_versioning": "yes",
-              "url": "https://zenodo.org"
-            },
-            "license": {
-              "@id": "_:b54",
-              "start": "2021-04-16",
-              "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
+              "url": "https://pogner.at"
             }
           },
-          "metadata": {
-            "@id": "_:b55",
-            "description": "Dublin Core metadata in XML format.",
-            "metadata_standard_id": {
-              "@id": "_:b56",
-              "identifier": "https://zenodo.org/record/4697855/files/sunshine_gdp_world-metadata.xml?download=1",
-              "type": "url"
-            },
-            "language": "eng"
-          },
-          "type": "image",
-          "language": "eng",
-          "personal_data": "no",
-          "sensitive_data": "unknown"
-        },
-        {
-          "@id": "_:b57",
-          "description": "A vectorized visualization of Pearson correlation coefficients accompanying the tabular data artifact of the experiment in the title.",
-          "issued": "2021-04-16",
-          "title": "Influence of sunshine on GDP per capita - Column correlation plot",
-          "keyword": [
-            "GDP per capita",
-            "Sunshine",
-            "Correlation"
-          ],
-          "dataset_id": {
-            "@id": "_:b58",
-            "identifier": "10.5281/zenodo.4697850",
-            "type": "doi"
-          },
-          "distribution": {
-            "@id": "_:b59",
-            "format": "application/pdf",
-            "title": "Influence of sunshine on GDP per capita - Column correlation plot",
-            "access_url": "https://zenodo.org/record/4697850",
-            "download_url": "https://zenodo.org/record/4697850/files/sunshine_gdp_corr.pdf?download=1",
-            "data_access": "open",
-            "host": {
-              "@id": "_:b60",
-              "description": "General-purpose data repository hosted by CERN.",
-              "title": "Zenodo",
-              "availability": "99.8",
-              "backup_frequency": "weekly",
-              "backup_type": "tapes",
-              "geo_location": "CH",
-              "pid_system": [
-                "doi",
-                "url"
-              ],
-              "storage_type": "Decentralized disk cluster",
-              "support_versioning": "yes",
-              "url": "https://zenodo.org"
-            },
-            "license": {
-              "@id": "_:b61",
-              "start": "2021-04-16",
-              "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-            }
-          },
-          "metadata": {
-            "@id": "_:b62",
-            "description": "Dublin Core metadata in XML format.",
-            "metadata_standard_id": {
-              "@id": "_:b63",
-              "identifier": "https://zenodo.org/record/4697850/files/sunshine_gdp_corr-metadata.xml?download=1",
-              "type": "url"
-            },
-            "language": "eng"
-          },
-          "type": "image",
+          "type": "Dataset",
           "language": "eng",
           "personal_data": "no",
           "sensitive_data": "no"
         }
       ],
       "project": {
-        "@id": "_:b64",
-        "description": "This project, which revolves around a central jupyter notebook explores the hypothesis that dreary weather discourages people from going outside and in turn makes them more productive. Likewise, that beautiful weather distracts people from their work, which should reflect in a country's GDP per capita.",
-        "title": "Influence of sunshine on GDP per capita",
+        "@id": "_:b29",
+        "description": "For the average student, the `Uppsala Conflict Data Program <https://ucdp.uu.se/> <https://ucdp.uu.se/>`_ offers a fascinating periscope onto the conflicts of the world. Together with economic figures as collected by `Statistik Austria <https://www.statistik.at> <https://www.statistik.at>`_, the local economic impact of world-wide conflict is calculated.\nWARNING: While this student is fairly confident regarding the numerical quality of the calculations, any conclusions have to be regarded as having worse-than-questionable statistical validity.",
+        "title": "Correlating World Conflict with Local Economy Growth",
         "end": "2021-04-19",
-        "start": "2021-04-08"
+        "start": "2021-04-01"
       },
       "language": "eng"
     },
     {
       "@id": "_:b10",
-      "description": "World Cities Ranked by Annual Average Sunshine Hours, exported from wikipedia.",
-      "format": "application/vnd.ms-excel",
-      "title": "2019/W44: World Cities Ranked by Annual Sunshine Hours",
-      "access_url": "https://data.world/makeovermonday/2019w44",
-      "byte_size": 44304,
-      "download_url": "https://query.data.world/s/luog37hqnqmtktu5s7ntjvowwbp34r",
-      "data_access": "open",
+      "description": "Publishing of the original dataset in unaltered form via public github git repository.\nThe distribution consists of multiple files, exactly in the form the data was acquired from the source.",
+      "format": [
+        "text/csv",
+        "application/vnd.ms-excel"
+      ],
+      "title": "`sna-at` data set within the public project github repository",
+      "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/sna-at-data",
+      "byte_size": 5867691,
+      "data_access": "closed",
       "host": {
         "@id": "_:b11",
-        "description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
-        "title": "data.world",
-        "backup_type": "AWS",
-        "geo_location": "US",
+        "title": "Pogner Family IT System",
+        "availability": "sufficient",
+        "backup_frequency": "within 24h",
+        "backup_type": "rotating magnetic disks, on-site and off-site",
+        "geo_location": "AT",
+        "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
         "support_versioning": "yes",
-        "url": "http://data.world"
+        "url": "https://pogner.at"
       },
       "license": {
         "@id": "_:b12",
-        "start": "2019-10-27",
-        "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
+        "start": "2021-04-15",
+        "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
       }
     },
     {
       "@id": "_:b11",
-      "description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
-      "title": "data.world",
-      "backup_type": "AWS",
-      "geo_location": "US",
+      "title": "Pogner Family IT System",
+      "availability": "sufficient",
+      "backup_frequency": "within 24h",
+      "backup_type": "rotating magnetic disks, on-site and off-site",
+      "geo_location": "AT",
+      "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
       "support_versioning": "yes",
-      "url": "http://data.world"
+      "url": "https://pogner.at"
     },
     {
       "@id": "_:b12",
-      "start": "2019-10-27",
-      "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "start": "2021-04-15",
+      "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
     },
     {
       "@id": "_:b13",
-      "description": "List of cities by sunshine duration, compiled from weather reports all accross the world",
-      "format": "text/html",
-      "title": "List of cities by sunshine duration",
-      "access_url": "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration",
-      "byte_size": 482085,
-      "download_url": "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration",
-      "data_access": "open",
-      "host": {
-        "@id": "_:b14",
-        "description": "Community and commercial dataset and metadata repository with many features. Hosted on AWS",
-        "title": "Wikipedia",
-        "geo_location": "US",
-        "storage_type": "Object storage (Swift)",
-        "support_versioning": "yes",
-        "url": "https://wikipedia.org"
-      },
-      "license": {
-        "@id": "_:b15",
-        "start": "2019-10-27",
-        "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-      }
-    },
-    {
-      "@id": "_:b14",
-      "description": "Community and commercial dataset and metadata repository with many features. Hosted on AWS",
-      "title": "Wikipedia",
-      "geo_location": "US",
-      "storage_type": "Object storage (Swift)",
-      "support_versioning": "yes",
-      "url": "https://wikipedia.org"
-    },
-    {
-      "@id": "_:b15",
-      "start": "2019-10-27",
-      "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
-      "@id": "_:b16",
-      "description": "World Bank national accounts data, and OECD National Accounts data files regarding GDP per capita.",
-      "issued": "2020-01-01",
-      "title": "GDP per capita (current US$)",
-      "keyword": [
-        "GDP",
-        "capita"
+      "description": "Economical data on the nominal gross domestic product of the country 'AUSTRIA' as calculated by the state-owned and state-sponsored entity 'STATISTIK AUSTRIA'.\nThe data points for various years have been collected from various places on https://statistik.at and merged into a single table by the contributor.",
+      "issued": "2021-05-03",
+      "title": "Gross Domestic Product of Austria, 1976 to 2019",
+      "data_quality_assurance": [
+        "file naming convention: single file with data is named like data set",
+        "data quality checklist items included in step-by-step extract & combine guide",
+        "layman-knowledge visual inspection of result rendered in pdf form"
       ],
       "dataset_id": {
-        "@id": "_:b17",
-        "identifier": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
-        "type": "url"
+        "@id": "_:b14",
+        "identifier": "https://doi.org/10.5281/zenodo.4699806",
+        "type": "doi"
       },
-      "distribution": {
-        "@id": "_:b18",
-        "format": [
-          "text/csv",
-          "text/xml",
-          "application/vnd.ms-excel"
-        ],
-        "title": "GDP per capita (current US$)",
-        "access_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
-        "download_url": "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv",
-        "data_access": "open",
-        "host": {
-          "@id": "_:b19",
-          "description": "Global organization with more than 170 member countries dealing with development.",
-          "title": "World Bank Data",
-          "support_versioning": "unknown",
-          "url": "https://data.worldbank.org"
+      "distribution": [
+        {
+          "@id": "_:b15",
+          "description": "Publishing of intermediate processing steps of the 2021-gdp-vs-ucdp project.\nThe distribution consists of a single `csv` file, which is also rendered into `pdf` form.",
+          "format": "text/csv",
+          "title": "`sna-at-extracted` data set within the public project github repository",
+          "access_url": "https://github.com/qyanu/2021-gdp-vs-ucdp/tree/master/sna-at-data-extracted",
+          "byte_size": 18443,
+          "data_access": "open",
+          "host": {
+            "@id": "_:b16",
+            "title": "Github Inc.",
+            "support_versioning": "yes",
+            "url": "https://github.com"
+          },
+          "license": {
+            "@id": "_:b17",
+            "start": "2021-04-15",
+            "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
+          }
         },
-        "license": {
-          "@id": "_:b20",
-          "start": "2021-04-18",
-          "license_ref": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        {
+          "@id": "_:b18",
+          "description": "Sharing of intermediate processing steps of the 2021-gdp-vs-ucdp project.\nThe distribution consists of a single `csv` file, which is also rendered into `pdf` form.",
+          "format": "text/csv",
+          "title": "`sna-at-extracted` data set within the public project github repository",
+          "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/sna-at-data",
+          "byte_size": 18443,
+          "data_access": "closed",
+          "host": {
+            "@id": "_:b19",
+            "title": "Pogner Family IT System",
+            "availability": "sufficient",
+            "backup_frequency": "within 24h",
+            "backup_type": "rotating magnetic disks, on-site and off-site",
+            "geo_location": "AT",
+            "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+            "support_versioning": "yes",
+            "url": "https://pogner.at"
+          },
+          "license": {
+            "@id": "_:b20",
+            "start": "2021-04-15",
+            "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
+          }
         }
-      },
-      "metadata": {
-        "@id": "_:b21",
-        "description": "Provides metadata on the included countires and general data collection methods.",
-        "metadata_standard_id": {
-          "@id": "_:b22",
-          "identifier": "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.PCAP.CD",
-          "type": "url"
-        },
-        "language": "eng"
-      },
-      "type": "dataset",
-      "language": "eng",
+      ],
+      "type": "Dataset",
+      "language": "deu",
       "personal_data": "no",
       "sensitive_data": "no"
     },
     {
+      "@id": "_:b14",
+      "identifier": "https://doi.org/10.5281/zenodo.4699806",
+      "type": "doi"
+    },
+    {
+      "@id": "_:b15",
+      "description": "Publishing of intermediate processing steps of the 2021-gdp-vs-ucdp project.\nThe distribution consists of a single `csv` file, which is also rendered into `pdf` form.",
+      "format": "text/csv",
+      "title": "`sna-at-extracted` data set within the public project github repository",
+      "access_url": "https://github.com/qyanu/2021-gdp-vs-ucdp/tree/master/sna-at-data-extracted",
+      "byte_size": 18443,
+      "data_access": "open",
+      "host": {
+        "@id": "_:b16",
+        "title": "Github Inc.",
+        "support_versioning": "yes",
+        "url": "https://github.com"
+      },
+      "license": {
+        "@id": "_:b17",
+        "start": "2021-04-15",
+        "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
+      }
+    },
+    {
+      "@id": "_:b16",
+      "title": "Github Inc.",
+      "support_versioning": "yes",
+      "url": "https://github.com"
+    },
+    {
       "@id": "_:b17",
-      "identifier": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
-      "type": "url"
+      "start": "2021-04-15",
+      "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
     },
     {
       "@id": "_:b18",
-      "format": [
-        "text/csv",
-        "text/xml",
-        "application/vnd.ms-excel"
-      ],
-      "title": "GDP per capita (current US$)",
-      "access_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
-      "download_url": "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv",
-      "data_access": "open",
+      "description": "Sharing of intermediate processing steps of the 2021-gdp-vs-ucdp project.\nThe distribution consists of a single `csv` file, which is also rendered into `pdf` form.",
+      "format": "text/csv",
+      "title": "`sna-at-extracted` data set within the public project github repository",
+      "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/sna-at-data",
+      "byte_size": 18443,
+      "data_access": "closed",
       "host": {
         "@id": "_:b19",
-        "description": "Global organization with more than 170 member countries dealing with development.",
-        "title": "World Bank Data",
-        "support_versioning": "unknown",
-        "url": "https://data.worldbank.org"
+        "title": "Pogner Family IT System",
+        "availability": "sufficient",
+        "backup_frequency": "within 24h",
+        "backup_type": "rotating magnetic disks, on-site and off-site",
+        "geo_location": "AT",
+        "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+        "support_versioning": "yes",
+        "url": "https://pogner.at"
       },
       "license": {
         "@id": "_:b20",
-        "start": "2021-04-18",
-        "license_ref": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        "start": "2021-04-15",
+        "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
       }
     },
     {
       "@id": "_:b19",
-      "description": "Global organization with more than 170 member countries dealing with development.",
-      "title": "World Bank Data",
-      "support_versioning": "unknown",
-      "url": "https://data.worldbank.org"
+      "title": "Pogner Family IT System",
+      "availability": "sufficient",
+      "backup_frequency": "within 24h",
+      "backup_type": "rotating magnetic disks, on-site and off-site",
+      "geo_location": "AT",
+      "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+      "support_versioning": "yes",
+      "url": "https://pogner.at"
     },
     {
       "@id": "_:b2",
-      "mbox": "e1527089@student.tuwien.ac.at",
-      "name": "Filip Darmanovic",
+      "mbox": "max-julian@pogner.at",
+      "name": "Max-Julian Pogner",
       "contact_id": {
         "@id": "_:b3",
-        "identifier": "https://orcid.org/0000-0002-2239-1634",
+        "identifier": "https://orcid.org/0000-0001-6244-0173",
         "type": "orcid"
       }
     },
     {
       "@id": "_:b20",
-      "start": "2021-04-18",
-      "license_ref": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+      "start": "2021-04-15",
+      "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
     },
     {
       "@id": "_:b21",
-      "description": "Provides metadata on the included countires and general data collection methods.",
-      "metadata_standard_id": {
+      "description": "A conflict-year dataset with information on armed conflict where at least one party is the government of a state in the time period 1946-2019.",
+      "issued": "2020-05-25",
+      "title": "UCDP/PRIO Armed Conflict Dataset version 20.1",
+      "data_quality_assurance": [
+        "file naming convention: store files exactly as named by the data source",
+        "data quality checklist provided",
+        "downloaded file content compared with expected sha256 checksum"
+      ],
+      "dataset_id": {
         "@id": "_:b22",
-        "identifier": "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.PCAP.CD",
-        "type": "url"
+        "identifier": "urn:git.qyanu.net:qyanu/2021-gdp-vs-ucdp:/ucdp",
+        "type": "other"
       },
-      "language": "eng"
+      "distribution": {
+        "@id": "_:b23",
+        "description": "Verbatim preservation of the originally downloaded files.",
+        "format": "text/csv",
+        "title": "`ucdp` data set within the non-public project git repository",
+        "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/ucdp-data",
+        "byte_size": 4295476,
+        "data_access": "closed",
+        "host": {
+          "@id": "_:b24",
+          "title": "Pogner Family IT System",
+          "availability": "sufficient",
+          "backup_frequency": "within 24h",
+          "backup_type": "rotating magnetic disks, on-site and off-site",
+          "geo_location": "AT",
+          "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+          "support_versioning": "yes",
+          "url": "https://pogner.at"
+        }
+      },
+      "type": "Dataset",
+      "language": "eng",
+      "personal_data": "no",
+      "sensitive_data": "no"
     },
     {
       "@id": "_:b22",
-      "identifier": "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.PCAP.CD",
-      "type": "url"
+      "identifier": "urn:git.qyanu.net:qyanu/2021-gdp-vs-ucdp:/ucdp",
+      "type": "other"
     },
     {
       "@id": "_:b23",
-      "description": "Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data",
-      "issued": "2018-05-23",
-      "title": "Admin 0 \u00e2\u20ac\u201c Countries",
-      "keyword": [
-        "GIS",
-        "Map",
-        "Vector",
-        "World",
-        "Countries"
-      ],
-      "dataset_id": {
+      "description": "Verbatim preservation of the originally downloaded files.",
+      "format": "text/csv",
+      "title": "`ucdp` data set within the non-public project git repository",
+      "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/ucdp-data",
+      "byte_size": 4295476,
+      "data_access": "closed",
+      "host": {
         "@id": "_:b24",
-        "identifier": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
-        "type": "url"
-      },
-      "distribution": [
-        {
-          "@id": "_:b25",
-          "format": "appliaction/zip",
-          "title": "Admin 0 - Countries",
-          "access_url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
-          "download_url": "https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip",
-          "data_access": "open",
-          "host": {
-            "@id": "_:b26",
-            "description": "Landing page for the Natural Earth dataset.",
-            "title": "Natural Earth",
-            "pid_system": "url",
-            "support_versioning": "unknown",
-            "url": "https://www.naturalearthdata.com/"
-          },
-          "license": {
-            "@id": "_:b27",
-            "start": "2015-06-07",
-            "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
-          }
-        },
-        {
-          "@id": "_:b28",
-          "format": "appliaction/zip",
-          "title": "natural-earth-vector",
-          "access_url": "https://github.com/nvkelso/natural-earth-vector",
-          "download_url": "https://github.com/nvkelso/natural-earth-vector/archive/refs/tags/v4.1.0.zip",
-          "data_access": "open",
-          "host": {
-            "@id": "_:b29",
-            "description": "World's largest code repository.",
-            "title": "GitHub",
-            "backup_type": "tape in an ice vault",
-            "pid_system": "url",
-            "support_versioning": "yes",
-            "url": "https://github.com"
-          },
-          "license": {
-            "@id": "_:b30",
-            "start": "2015-06-07",
-            "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
-          }
-        }
-      ],
-      "language": "eng",
-      "personal_data": "no",
-      "sensitive_data": "unknown"
+        "title": "Pogner Family IT System",
+        "availability": "sufficient",
+        "backup_frequency": "within 24h",
+        "backup_type": "rotating magnetic disks, on-site and off-site",
+        "geo_location": "AT",
+        "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+        "support_versioning": "yes",
+        "url": "https://pogner.at"
+      }
     },
     {
       "@id": "_:b24",
-      "identifier": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
-      "type": "url"
+      "title": "Pogner Family IT System",
+      "availability": "sufficient",
+      "backup_frequency": "within 24h",
+      "backup_type": "rotating magnetic disks, on-site and off-site",
+      "geo_location": "AT",
+      "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+      "support_versioning": "yes",
+      "url": "https://pogner.at"
     },
     {
       "@id": "_:b25",
-      "format": "appliaction/zip",
-      "title": "Admin 0 - Countries",
-      "access_url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
-      "download_url": "https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip",
-      "data_access": "open",
-      "host": {
+      "description": "Based on the UCDP/PRIO 20.1 dataset, the per-year cummulative world conflict level is calculated as the sum of all `intensity_level` values of all conflicts active in a particular year.",
+      "issued": "2020-05-25",
+      "title": "Aggregated Extraction from the UCDP/PRIO dataset",
+      "data_quality_assurance": [
+        "file naming convention: single file with data is named like data set",
+        "data quality checklist provided",
+        "layman-knowledge visual inspection of result rendered in pdf form"
+      ],
+      "dataset_id": {
         "@id": "_:b26",
-        "description": "Landing page for the Natural Earth dataset.",
-        "title": "Natural Earth",
-        "pid_system": "url",
-        "support_versioning": "unknown",
-        "url": "https://www.naturalearthdata.com/"
+        "identifier": "urn:git.qyanu.net:qyanu/2021-gdp-vs-ucdp:/ucdp-extracted",
+        "type": "other"
       },
-      "license": {
+      "distribution": {
         "@id": "_:b27",
-        "start": "2015-06-07",
-        "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
-      }
+        "description": "Preservation of the intermediate data set, created during data processing within the 2021-gdp-vs-ucdp project.",
+        "format": "text/csv",
+        "title": "`ucdp-extracted` data set within the non-public project git repository",
+        "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/ucdp-data-extracted",
+        "byte_size": 14472,
+        "data_access": "closed",
+        "host": {
+          "@id": "_:b28",
+          "title": "Pogner Family IT System",
+          "availability": "sufficient",
+          "backup_frequency": "within 24h",
+          "backup_type": "rotating magnetic disks, on-site and off-site",
+          "geo_location": "AT",
+          "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
+          "support_versioning": "yes",
+          "url": "https://pogner.at"
+        }
+      },
+      "type": "Dataset",
+      "language": "eng",
+      "personal_data": "no",
+      "sensitive_data": "no"
     },
     {
       "@id": "_:b26",
-      "description": "Landing page for the Natural Earth dataset.",
-      "title": "Natural Earth",
-      "pid_system": "url",
-      "support_versioning": "unknown",
-      "url": "https://www.naturalearthdata.com/"
+      "identifier": "urn:git.qyanu.net:qyanu/2021-gdp-vs-ucdp:/ucdp-extracted",
+      "type": "other"
     },
     {
       "@id": "_:b27",
-      "start": "2015-06-07",
-      "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
-    },
-    {
-      "@id": "_:b28",
-      "format": "appliaction/zip",
-      "title": "natural-earth-vector",
-      "access_url": "https://github.com/nvkelso/natural-earth-vector",
-      "download_url": "https://github.com/nvkelso/natural-earth-vector/archive/refs/tags/v4.1.0.zip",
-      "data_access": "open",
+      "description": "Preservation of the intermediate data set, created during data processing within the 2021-gdp-vs-ucdp project.",
+      "format": "text/csv",
+      "title": "`ucdp-extracted` data set within the non-public project git repository",
+      "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/ucdp-data-extracted",
+      "byte_size": 14472,
+      "data_access": "closed",
       "host": {
-        "@id": "_:b29",
-        "description": "World's largest code repository.",
-        "title": "GitHub",
-        "backup_type": "tape in an ice vault",
-        "pid_system": "url",
+        "@id": "_:b28",
+        "title": "Pogner Family IT System",
+        "availability": "sufficient",
+        "backup_frequency": "within 24h",
+        "backup_type": "rotating magnetic disks, on-site and off-site",
+        "geo_location": "AT",
+        "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
         "support_versioning": "yes",
-        "url": "https://github.com"
-      },
-      "license": {
-        "@id": "_:b30",
-        "start": "2015-06-07",
-        "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
+        "url": "https://pogner.at"
       }
     },
     {
-      "@id": "_:b29",
-      "description": "World's largest code repository.",
-      "title": "GitHub",
-      "backup_type": "tape in an ice vault",
-      "pid_system": "url",
+      "@id": "_:b28",
+      "title": "Pogner Family IT System",
+      "availability": "sufficient",
+      "backup_frequency": "within 24h",
+      "backup_type": "rotating magnetic disks, on-site and off-site",
+      "geo_location": "AT",
+      "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
       "support_versioning": "yes",
-      "url": "https://github.com"
+      "url": "https://pogner.at"
+    },
+    {
+      "@id": "_:b29",
+      "description": "For the average student, the `Uppsala Conflict Data Program <https://ucdp.uu.se/> <https://ucdp.uu.se/>`_ offers a fascinating periscope onto the conflicts of the world. Together with economic figures as collected by `Statistik Austria <https://www.statistik.at> <https://www.statistik.at>`_, the local economic impact of world-wide conflict is calculated.\nWARNING: While this student is fairly confident regarding the numerical quality of the calculations, any conclusions have to be regarded as having worse-than-questionable statistical validity.",
+      "title": "Correlating World Conflict with Local Economy Growth",
+      "end": "2021-04-19",
+      "start": "2021-04-01"
     },
     {
       "@id": "_:b3",
-      "identifier": "https://orcid.org/0000-0002-2239-1634",
+      "identifier": "https://orcid.org/0000-0001-6244-0173",
       "type": "orcid"
     },
     {
-      "@id": "_:b30",
-      "start": "2015-06-07",
-      "license_ref": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md"
+      "@id": "_:b4",
+      "identifier": "https://doi.org/10.5281/zenodo.4699885",
+      "type": "doi"
     },
     {
-      "@id": "_:b31",
-      "description": "The actual source code of the project, with or without the entire project directory including the input and output data, depending on the distribution.",
-      "issued": "2021-04-17",
-      "title": "Influence of sunshine on GDP per capita",
-      "keyword": [
-        "GDP per capita",
-        "Sunshine",
-        "Correlation",
-        "Jupyter"
+      "@id": "_:b5",
+      "description": "Economical data on the country 'AUSTRIA' as calculated by the state-owned and state-sponsored entity 'STATISTIK AUSTRIA'.\nData comprises such values as the gross domestic product, and related figures.\nData contains one value of each parameter per year, in the extent from 1976 to 2020.\nData constitutes three files, as downloaded by the publisher from the creator's homepage.\nvolkswirtschaftliche_gesamtrechnung_hauptgroessen.xlsx\n    the most recent data, up to 2020. the data 2016 to 2020 is\n    only preliminary.\n\nvolkswirtschaftliche_gesamtrechnungen_1976-2007.pdf\n    austria economic figures from 1976 to 2007 (final numbers).\n\nvolkswirtschaftliche_gesamtrechnungen_1995_-_2018.pdf\n    austria economic figures from 1995 to 2018, final numbers,\n    except 2016 to 2018 which are preliminiary numbers.",
+      "issued": "2021-05-03",
+      "title": "Economic figures of Austria, 1976 to 2020",
+      "data_quality_assurance": [
+        "file naming convention: store files exactly as named by the data source",
+        "data quality checklist items included in step-by-step download guide",
+        "layman-knowledge visual inspection of files"
       ],
       "dataset_id": {
-        "@id": "_:b32",
-        "identifier": "10.5281/zenodo.4698564",
+        "@id": "_:b6",
+        "identifier": "https://doi.org/10.5281/zenodo.4699804",
         "type": "doi"
       },
       "distribution": [
         {
-          "@id": "_:b33",
-          "description": "The 'source-of-truth' repository from which releases are created.",
+          "@id": "_:b7",
+          "description": "Re-publishing of the original dataset in unaltered form via public github git repository.\nThe distribution consists of multiple files, exactly in the form the data was acquired from the source.",
           "format": [
-            "application/zip",
-            "application/x-ipynb+json"
+            "text/csv",
+            "application/vnd.ms-excel"
           ],
-          "title": "Influence-of-sunshine-on-GDP-per-capita",
-          "access_url": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/tree/v1.0",
-          "download_url": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/archive/refs/tags/v1.0.zip",
+          "title": "`sna-at` data set within the public project github repository",
+          "access_url": "https://github.com/qyanu/2021-gdp-vs-ucdp/tree/master/sna-at-data",
+          "byte_size": 5867691,
           "data_access": "open",
           "host": {
-            "@id": "_:b34",
-            "description": "World's largest code repository.",
-            "title": "GitHub",
-            "backup_type": "tape in an ice vault",
-            "pid_system": "url",
+            "@id": "_:b8",
+            "title": "Github Inc.",
             "support_versioning": "yes",
             "url": "https://github.com"
           },
           "license": {
-            "@id": "_:b35",
-            "start": "2021-04-17",
-            "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
+            "@id": "_:b9",
+            "start": "2021-04-15",
+            "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
           }
         },
         {
-          "@id": "_:b36",
+          "@id": "_:b10",
+          "description": "Publishing of the original dataset in unaltered form via public github git repository.\nThe distribution consists of multiple files, exactly in the form the data was acquired from the source.",
           "format": [
-            "application/zip",
-            "application/x-ipynb+json"
+            "text/csv",
+            "application/vnd.ms-excel"
           ],
-          "title": "Influence of sunshine on GDP per capita",
-          "access_url": "https://zenodo.org/record/4698564",
-          "download_url": "https://zenodo.org/record/4698564/files/Dzeri96/Influence-of-sunshine-on-GDP-per-capita-v1.0.zip?download=1",
-          "data_access": "open",
+          "title": "`sna-at` data set within the public project github repository",
+          "access_url": "gitolite3@git.qyanu.net:studium/2021-UE-Data-Stewardship/Excercise-1.git:/refs/heads/master:/sna-at-data",
+          "byte_size": 5867691,
+          "data_access": "closed",
           "host": {
-            "@id": "_:b37",
-            "description": "General-purpose data repository hosted by CERN.",
-            "title": "Zenodo",
-            "availability": "99.8",
-            "backup_frequency": "weekly",
-            "backup_type": "tapes",
-            "geo_location": "CH",
-            "pid_system": [
-              "doi",
-              "url"
-            ],
-            "storage_type": "Decentralized disk cluster",
+            "@id": "_:b11",
+            "title": "Pogner Family IT System",
+            "availability": "sufficient",
+            "backup_frequency": "within 24h",
+            "backup_type": "rotating magnetic disks, on-site and off-site",
+            "geo_location": "AT",
+            "storage_type": "active checksum file system, on raid5, on rotating magnetic disks",
             "support_versioning": "yes",
-            "url": "https://zenodo.org"
+            "url": "https://pogner.at"
           },
           "license": {
-            "@id": "_:b38",
-            "start": "2021-04-17",
-            "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
+            "@id": "_:b12",
+            "start": "2021-04-15",
+            "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
           }
         }
       ],
-      "metadata": {
-        "@id": "_:b39",
-        "description": "Dublin Core metadata in XML format.",
-        "metadata_standard_id": {
-          "@id": "_:b40",
-          "identifier": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/v1.0/documentation/metadata.xml",
-          "type": "url"
-        },
-        "language": "eng"
-      },
-      "technical_resource": [
-        {
-          "@id": "_:b41",
-          "name": "python3"
-        },
-        {
-          "@id": "_:b42",
-          "description": "Python package manager.",
-          "name": "pip"
-        }
-      ],
-      "type": "software",
-      "language": "eng",
+      "type": "Dataset",
+      "language": "deu",
       "personal_data": "no",
-      "sensitive_data": "unknown"
+      "sensitive_data": "no"
     },
     {
-      "@id": "_:b32",
-      "identifier": "10.5281/zenodo.4698564",
+      "@id": "_:b6",
+      "identifier": "https://doi.org/10.5281/zenodo.4699804",
       "type": "doi"
     },
     {
-      "@id": "_:b33",
-      "description": "The 'source-of-truth' repository from which releases are created.",
+      "@id": "_:b7",
+      "description": "Re-publishing of the original dataset in unaltered form via public github git repository.\nThe distribution consists of multiple files, exactly in the form the data was acquired from the source.",
       "format": [
-        "application/zip",
-        "application/x-ipynb+json"
+        "text/csv",
+        "application/vnd.ms-excel"
       ],
-      "title": "Influence-of-sunshine-on-GDP-per-capita",
-      "access_url": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/tree/v1.0",
-      "download_url": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/archive/refs/tags/v1.0.zip",
+      "title": "`sna-at` data set within the public project github repository",
+      "access_url": "https://github.com/qyanu/2021-gdp-vs-ucdp/tree/master/sna-at-data",
+      "byte_size": 5867691,
       "data_access": "open",
       "host": {
-        "@id": "_:b34",
-        "description": "World's largest code repository.",
-        "title": "GitHub",
-        "backup_type": "tape in an ice vault",
-        "pid_system": "url",
+        "@id": "_:b8",
+        "title": "Github Inc.",
         "support_versioning": "yes",
         "url": "https://github.com"
       },
       "license": {
-        "@id": "_:b35",
-        "start": "2021-04-17",
-        "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
+        "@id": "_:b9",
+        "start": "2021-04-15",
+        "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
       }
     },
     {
-      "@id": "_:b34",
-      "description": "World's largest code repository.",
-      "title": "GitHub",
-      "backup_type": "tape in an ice vault",
-      "pid_system": "url",
+      "@id": "_:b8",
+      "title": "Github Inc.",
       "support_versioning": "yes",
       "url": "https://github.com"
     },
     {
-      "@id": "_:b35",
-      "start": "2021-04-17",
-      "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
-    },
-    {
-      "@id": "_:b36",
-      "format": [
-        "application/zip",
-        "application/x-ipynb+json"
-      ],
-      "title": "Influence of sunshine on GDP per capita",
-      "access_url": "https://zenodo.org/record/4698564",
-      "download_url": "https://zenodo.org/record/4698564/files/Dzeri96/Influence-of-sunshine-on-GDP-per-capita-v1.0.zip?download=1",
-      "data_access": "open",
-      "host": {
-        "@id": "_:b37",
-        "description": "General-purpose data repository hosted by CERN.",
-        "title": "Zenodo",
-        "availability": "99.8",
-        "backup_frequency": "weekly",
-        "backup_type": "tapes",
-        "geo_location": "CH",
-        "pid_system": [
-          "doi",
-          "url"
-        ],
-        "storage_type": "Decentralized disk cluster",
-        "support_versioning": "yes",
-        "url": "https://zenodo.org"
-      },
-      "license": {
-        "@id": "_:b38",
-        "start": "2021-04-17",
-        "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
-      }
-    },
-    {
-      "@id": "_:b37",
-      "description": "General-purpose data repository hosted by CERN.",
-      "title": "Zenodo",
-      "availability": "99.8",
-      "backup_frequency": "weekly",
-      "backup_type": "tapes",
-      "geo_location": "CH",
-      "pid_system": [
-        "doi",
-        "url"
-      ],
-      "storage_type": "Decentralized disk cluster",
-      "support_versioning": "yes",
-      "url": "https://zenodo.org"
-    },
-    {
-      "@id": "_:b38",
-      "start": "2021-04-17",
-      "license_ref": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE"
-    },
-    {
-      "@id": "_:b39",
-      "description": "Dublin Core metadata in XML format.",
-      "metadata_standard_id": {
-        "@id": "_:b40",
-        "identifier": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/v1.0/documentation/metadata.xml",
-        "type": "url"
-      },
-      "language": "eng"
-    },
-    {
-      "@id": "_:b4",
-      "mbox": "e1527089@student.tuwien.ac.at",
-      "name": "Filip Darmanovic",
-      "contributor_id": {
-        "@id": "_:b5",
-        "identifier": "https://orcid.org/0000-0002-2239-1634",
-        "type": "orcid"
-      },
-      "role": [
-        "Lead Researcher",
-        "Data Steward",
-        "Project Lead"
-      ]
-    },
-    {
-      "@id": "_:b40",
-      "identifier": "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/v1.0/documentation/metadata.xml",
-      "type": "url"
-    },
-    {
-      "@id": "_:b41",
-      "name": "python3"
-    },
-    {
-      "@id": "_:b42",
-      "description": "Python package manager.",
-      "name": "pip"
-    },
-    {
-      "@id": "_:b43",
-      "description": "Tabular dataset containing descriptors like min, max, median of GDP per capita for many countries from the 1960s up to 2019, combined with average yearly sunshine hours extrapolated from readings in some cities of those countries.",
-      "issued": "2021-04-16",
-      "title": "Statistical descriptors of GDP per capita combined with yearly averages of hours of sunshine per country",
-      "keyword": [
-        "GDP per capita",
-        "Sunshine",
-        "Tabular"
-      ],
-      "dataset_id": {
-        "@id": "_:b44",
-        "identifier": "10.5281/zenodo.4697778",
-        "type": "doi"
-      },
-      "distribution": {
-        "@id": "_:b45",
-        "format": "text/csv",
-        "title": "Statistical descriptors of GDP per capita combined with yearly averages of hours of sunshine per country",
-        "access_url": "https://zenodo.org/record/4697778",
-        "download_url": "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1",
-        "data_access": "open",
-        "host": {
-          "@id": "_:b46",
-          "description": "General-purpose data repository hosted by CERN.",
-          "title": "Zenodo",
-          "availability": "99.8",
-          "backup_frequency": "weekly",
-          "backup_type": "tapes",
-          "geo_location": "CH",
-          "pid_system": [
-            "doi",
-            "url"
-          ],
-          "storage_type": "Decentralized disk cluster",
-          "support_versioning": "yes",
-          "url": "https://zenodo.org"
-        },
-        "license": {
-          "@id": "_:b47",
-          "start": "2021-04-16",
-          "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-        }
-      },
-      "metadata": {
-        "@id": "_:b48",
-        "description": "JSON metadata according to the W3C's CSV on Web Recommendation, using the Dublin Core vocabulary.",
-        "metadata_standard_id": {
-          "@id": "_:b49",
-          "identifier": "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1",
-          "type": "url"
-        },
-        "language": "eng"
-      },
-      "type": "dataset",
-      "language": "eng",
-      "personal_data": "no",
-      "sensitive_data": "unknown"
-    },
-    {
-      "@id": "_:b44",
-      "identifier": "10.5281/zenodo.4697778",
-      "type": "doi"
-    },
-    {
-      "@id": "_:b45",
-      "format": "text/csv",
-      "title": "Statistical descriptors of GDP per capita combined with yearly averages of hours of sunshine per country",
-      "access_url": "https://zenodo.org/record/4697778",
-      "download_url": "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1",
-      "data_access": "open",
-      "host": {
-        "@id": "_:b46",
-        "description": "General-purpose data repository hosted by CERN.",
-        "title": "Zenodo",
-        "availability": "99.8",
-        "backup_frequency": "weekly",
-        "backup_type": "tapes",
-        "geo_location": "CH",
-        "pid_system": [
-          "doi",
-          "url"
-        ],
-        "storage_type": "Decentralized disk cluster",
-        "support_versioning": "yes",
-        "url": "https://zenodo.org"
-      },
-      "license": {
-        "@id": "_:b47",
-        "start": "2021-04-16",
-        "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-      }
-    },
-    {
-      "@id": "_:b46",
-      "description": "General-purpose data repository hosted by CERN.",
-      "title": "Zenodo",
-      "availability": "99.8",
-      "backup_frequency": "weekly",
-      "backup_type": "tapes",
-      "geo_location": "CH",
-      "pid_system": [
-        "doi",
-        "url"
-      ],
-      "storage_type": "Decentralized disk cluster",
-      "support_versioning": "yes",
-      "url": "https://zenodo.org"
-    },
-    {
-      "@id": "_:b47",
-      "start": "2021-04-16",
-      "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
-      "@id": "_:b48",
-      "description": "JSON metadata according to the W3C's CSV on Web Recommendation, using the Dublin Core vocabulary.",
-      "metadata_standard_id": {
-        "@id": "_:b49",
-        "identifier": "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1",
-        "type": "url"
-      },
-      "language": "eng"
-    },
-    {
-      "@id": "_:b49",
-      "identifier": "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1",
-      "type": "url"
-    },
-    {
-      "@id": "_:b5",
-      "identifier": "https://orcid.org/0000-0002-2239-1634",
-      "type": "orcid"
-    },
-    {
-      "@id": "_:b50",
-      "description": "Two vectorized world maps color-coded according to average sunshine hours and mean GDP per capita.",
-      "issued": "2021-04-16",
-      "title": "Influence of sunshine on GDP per capita - World heatmap",
-      "keyword": [
-        "GDP per capita",
-        "Sunshine"
-      ],
-      "dataset_id": {
-        "@id": "_:b51",
-        "identifier": "10.5281/zenodo.4697855",
-        "type": "doi"
-      },
-      "distribution": {
-        "@id": "_:b52",
-        "format": "application/pdf",
-        "title": "Influence of sunshine on GDP per capita - World heatmap",
-        "access_url": "https://zenodo.org/record/4697855",
-        "download_url": "https://zenodo.org/record/4697855/files/sunshine_gdp_world.pdf?download=1",
-        "data_access": "open",
-        "host": {
-          "@id": "_:b53",
-          "description": "General-purpose data repository hosted by CERN.",
-          "title": "Zenodo",
-          "availability": "99.8",
-          "backup_frequency": "weekly",
-          "backup_type": "tapes",
-          "geo_location": "CH",
-          "pid_system": [
-            "doi",
-            "url"
-          ],
-          "storage_type": "Decentralized disk cluster",
-          "support_versioning": "yes",
-          "url": "https://zenodo.org"
-        },
-        "license": {
-          "@id": "_:b54",
-          "start": "2021-04-16",
-          "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-        }
-      },
-      "metadata": {
-        "@id": "_:b55",
-        "description": "Dublin Core metadata in XML format.",
-        "metadata_standard_id": {
-          "@id": "_:b56",
-          "identifier": "https://zenodo.org/record/4697855/files/sunshine_gdp_world-metadata.xml?download=1",
-          "type": "url"
-        },
-        "language": "eng"
-      },
-      "type": "image",
-      "language": "eng",
-      "personal_data": "no",
-      "sensitive_data": "unknown"
-    },
-    {
-      "@id": "_:b51",
-      "identifier": "10.5281/zenodo.4697855",
-      "type": "doi"
-    },
-    {
-      "@id": "_:b52",
-      "format": "application/pdf",
-      "title": "Influence of sunshine on GDP per capita - World heatmap",
-      "access_url": "https://zenodo.org/record/4697855",
-      "download_url": "https://zenodo.org/record/4697855/files/sunshine_gdp_world.pdf?download=1",
-      "data_access": "open",
-      "host": {
-        "@id": "_:b53",
-        "description": "General-purpose data repository hosted by CERN.",
-        "title": "Zenodo",
-        "availability": "99.8",
-        "backup_frequency": "weekly",
-        "backup_type": "tapes",
-        "geo_location": "CH",
-        "pid_system": [
-          "doi",
-          "url"
-        ],
-        "storage_type": "Decentralized disk cluster",
-        "support_versioning": "yes",
-        "url": "https://zenodo.org"
-      },
-      "license": {
-        "@id": "_:b54",
-        "start": "2021-04-16",
-        "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-      }
-    },
-    {
-      "@id": "_:b53",
-      "description": "General-purpose data repository hosted by CERN.",
-      "title": "Zenodo",
-      "availability": "99.8",
-      "backup_frequency": "weekly",
-      "backup_type": "tapes",
-      "geo_location": "CH",
-      "pid_system": [
-        "doi",
-        "url"
-      ],
-      "storage_type": "Decentralized disk cluster",
-      "support_versioning": "yes",
-      "url": "https://zenodo.org"
-    },
-    {
-      "@id": "_:b54",
-      "start": "2021-04-16",
-      "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
-      "@id": "_:b55",
-      "description": "Dublin Core metadata in XML format.",
-      "metadata_standard_id": {
-        "@id": "_:b56",
-        "identifier": "https://zenodo.org/record/4697855/files/sunshine_gdp_world-metadata.xml?download=1",
-        "type": "url"
-      },
-      "language": "eng"
-    },
-    {
-      "@id": "_:b56",
-      "identifier": "https://zenodo.org/record/4697855/files/sunshine_gdp_world-metadata.xml?download=1",
-      "type": "url"
-    },
-    {
-      "@id": "_:b57",
-      "description": "A vectorized visualization of Pearson correlation coefficients accompanying the tabular data artifact of the experiment in the title.",
-      "issued": "2021-04-16",
-      "title": "Influence of sunshine on GDP per capita - Column correlation plot",
-      "keyword": [
-        "GDP per capita",
-        "Sunshine",
-        "Correlation"
-      ],
-      "dataset_id": {
-        "@id": "_:b58",
-        "identifier": "10.5281/zenodo.4697850",
-        "type": "doi"
-      },
-      "distribution": {
-        "@id": "_:b59",
-        "format": "application/pdf",
-        "title": "Influence of sunshine on GDP per capita - Column correlation plot",
-        "access_url": "https://zenodo.org/record/4697850",
-        "download_url": "https://zenodo.org/record/4697850/files/sunshine_gdp_corr.pdf?download=1",
-        "data_access": "open",
-        "host": {
-          "@id": "_:b60",
-          "description": "General-purpose data repository hosted by CERN.",
-          "title": "Zenodo",
-          "availability": "99.8",
-          "backup_frequency": "weekly",
-          "backup_type": "tapes",
-          "geo_location": "CH",
-          "pid_system": [
-            "doi",
-            "url"
-          ],
-          "storage_type": "Decentralized disk cluster",
-          "support_versioning": "yes",
-          "url": "https://zenodo.org"
-        },
-        "license": {
-          "@id": "_:b61",
-          "start": "2021-04-16",
-          "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-        }
-      },
-      "metadata": {
-        "@id": "_:b62",
-        "description": "Dublin Core metadata in XML format.",
-        "metadata_standard_id": {
-          "@id": "_:b63",
-          "identifier": "https://zenodo.org/record/4697850/files/sunshine_gdp_corr-metadata.xml?download=1",
-          "type": "url"
-        },
-        "language": "eng"
-      },
-      "type": "image",
-      "language": "eng",
-      "personal_data": "no",
-      "sensitive_data": "no"
-    },
-    {
-      "@id": "_:b58",
-      "identifier": "10.5281/zenodo.4697850",
-      "type": "doi"
-    },
-    {
-      "@id": "_:b59",
-      "format": "application/pdf",
-      "title": "Influence of sunshine on GDP per capita - Column correlation plot",
-      "access_url": "https://zenodo.org/record/4697850",
-      "download_url": "https://zenodo.org/record/4697850/files/sunshine_gdp_corr.pdf?download=1",
-      "data_access": "open",
-      "host": {
-        "@id": "_:b60",
-        "description": "General-purpose data repository hosted by CERN.",
-        "title": "Zenodo",
-        "availability": "99.8",
-        "backup_frequency": "weekly",
-        "backup_type": "tapes",
-        "geo_location": "CH",
-        "pid_system": [
-          "doi",
-          "url"
-        ],
-        "storage_type": "Decentralized disk cluster",
-        "support_versioning": "yes",
-        "url": "https://zenodo.org"
-      },
-      "license": {
-        "@id": "_:b61",
-        "start": "2021-04-16",
-        "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-      }
-    },
-    {
-      "@id": "_:b6",
-      "description": "esse Excepteur eiusmod cillum",
-      "title": "Duis laborum",
-      "currency_code": "HNL",
-      "value": -23242891.467893064
-    },
-    {
-      "@id": "_:b60",
-      "description": "General-purpose data repository hosted by CERN.",
-      "title": "Zenodo",
-      "availability": "99.8",
-      "backup_frequency": "weekly",
-      "backup_type": "tapes",
-      "geo_location": "CH",
-      "pid_system": [
-        "doi",
-        "url"
-      ],
-      "storage_type": "Decentralized disk cluster",
-      "support_versioning": "yes",
-      "url": "https://zenodo.org"
-    },
-    {
-      "@id": "_:b61",
-      "start": "2021-04-16",
-      "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
-      "@id": "_:b62",
-      "description": "Dublin Core metadata in XML format.",
-      "metadata_standard_id": {
-        "@id": "_:b63",
-        "identifier": "https://zenodo.org/record/4697850/files/sunshine_gdp_corr-metadata.xml?download=1",
-        "type": "url"
-      },
-      "language": "eng"
-    },
-    {
-      "@id": "_:b63",
-      "identifier": "https://zenodo.org/record/4697850/files/sunshine_gdp_corr-metadata.xml?download=1",
-      "type": "url"
-    },
-    {
-      "@id": "_:b64",
-      "description": "This project, which revolves around a central jupyter notebook explores the hypothesis that dreary weather discourages people from going outside and in turn makes them more productive. Likewise, that beautiful weather distracts people from their work, which should reflect in a country's GDP per capita.",
-      "title": "Influence of sunshine on GDP per capita",
-      "end": "2021-04-19",
-      "start": "2021-04-08"
-    },
-    {
-      "@id": "_:b7",
-      "identifier": "10.5281/zenodo.4698936",
-      "type": "doi"
-    },
-    {
-      "@id": "_:b8",
-      "description": "The following is a list of cities by sunshine duration. Sunshine duration is a climatological indicator, measuring duration of sunshine in given period (usually, a day or a year) for a given location on Earth, typically expressed as an averaged value over several years. It is a general indicator of cloudiness of a location, and thus differs from insolation, which measures the total energy delivered by sunlight over a given period.",
-      "title": "List of cities by sunshine duration",
-      "dataset_id": {
-        "@id": "_:b9",
-        "identifier": "https://data.world/makeovermonday/2019w44",
-        "type": "url"
-      },
-      "distribution": [
-        {
-          "@id": "_:b10",
-          "description": "World Cities Ranked by Annual Average Sunshine Hours, exported from wikipedia.",
-          "format": "application/vnd.ms-excel",
-          "title": "2019/W44: World Cities Ranked by Annual Sunshine Hours",
-          "access_url": "https://data.world/makeovermonday/2019w44",
-          "byte_size": 44304,
-          "download_url": "https://query.data.world/s/luog37hqnqmtktu5s7ntjvowwbp34r",
-          "data_access": "open",
-          "host": {
-            "@id": "_:b11",
-            "description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
-            "title": "data.world",
-            "backup_type": "AWS",
-            "geo_location": "US",
-            "support_versioning": "yes",
-            "url": "http://data.world"
-          },
-          "license": {
-            "@id": "_:b12",
-            "start": "2019-10-27",
-            "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-          }
-        },
-        {
-          "@id": "_:b13",
-          "description": "List of cities by sunshine duration, compiled from weather reports all accross the world",
-          "format": "text/html",
-          "title": "List of cities by sunshine duration",
-          "access_url": "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration",
-          "byte_size": 482085,
-          "download_url": "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration",
-          "data_access": "open",
-          "host": {
-            "@id": "_:b14",
-            "description": "Community and commercial dataset and metadata repository with many features. Hosted on AWS",
-            "title": "Wikipedia",
-            "geo_location": "US",
-            "storage_type": "Object storage (Swift)",
-            "support_versioning": "yes",
-            "url": "https://wikipedia.org"
-          },
-          "license": {
-            "@id": "_:b15",
-            "start": "2019-10-27",
-            "license_ref": "https://creativecommons.org/licenses/by-sa/3.0/"
-          }
-        }
-      ],
-      "type": "dataset",
-      "language": "eng",
-      "personal_data": "no",
-      "sensitive_data": "no"
-    },
-    {
       "@id": "_:b9",
-      "identifier": "https://data.world/makeovermonday/2019w44",
-      "type": "url"
+      "start": "2021-04-15",
+      "license_ref": "https://raw.githubusercontent.com/qyanu/2021-gdp-vs-ucdp/master/sna-at-data/LICENSE"
     }
   ]
 }
