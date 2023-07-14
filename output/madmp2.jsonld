@@ -27,7 +27,10 @@
     "identifier": "terms:identifier",
     "type": "dcso:identifierType",
     "dmp": "dcso:hasDMP",
+    "methodology": "dcso:hasMethodology",
+    "methodology_id": "dcso:hasMethodologyId",
     "dmp_id": "dcso:hasDMPId",
+    "is_reused": "dcso:isReused",
     "language": "dcso:language",
     "ethical_issues_exist": "dcso:ethicalIssuesExist",
     "ethical_issues_report": "dcso:ethicalIssuesReport",
@@ -52,6 +55,7 @@
     "dataset_id": "dcso:hasDatasetId",
     "data_quality_assurance": "dcso:dataQualityAssurance",
     "personal_data": "dcso:personalData",
+    "preservation_statement": "dcso:preservationStatement",
     "sensitive_data": "dcso:sensitiveData",
     "distribution": "dcso:hasDistribution",
     "available_until": "dcso:availableUntil",
@@ -141,6 +145,7 @@
               "type": "url"
             },
             "type": "dataset",
+            "is_reused": "reused",
             "personal_data": "no",
             "sensitive_data": "no"
           },
@@ -155,6 +160,7 @@
               "type": "url"
             },
             "type": "dataset",
+            "is_reused": "reused",
             "personal_data": "no",
             "sensitive_data": "no"
           },
@@ -169,6 +175,7 @@
               "type": "doi"
             },
             "type": "dataset",
+            "is_reused": "reused",
             "personal_data": "no",
             "sensitive_data": "no"
           },
@@ -205,22 +212,32 @@
                 "license_ref": "https://opensource.org/licenses/lgpl-3.0.html"
               }
             },
+            "methodology": {
+              "@id": "_:b20",
+              "description": "The source code for the project. It includes all needed code, and data as well as all results. The results and data sets can all be recreated by downloading the original data sets from the provided links and run the experiment again and start the plotting. ",
+              "methodology_id": {
+                "@id": "_:b21",
+                "identifier": "https://doi.org/10.5281/zenodo.4701071",
+                "type": "url"
+              }
+            },
             "type": "software",
+            "is_reused": "produced",
             "personal_data": "no",
             "sensitive_data": "no"
           },
           {
-            "@id": "_:b20",
+            "@id": "_:b22",
             "description": "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset.",
             "issued": "2021-04-18",
             "title": "Results for Performance Comparison of kNN and GD",
             "dataset_id": {
-              "@id": "_:b21",
+              "@id": "_:b23",
               "identifier": "https://doi.org/10.5281/zenodo.4699565",
               "type": "doi"
             },
             "distribution": {
-              "@id": "_:b22",
+              "@id": "_:b24",
               "description": "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
               "format": "text/csv",
               "title": "Planned Distribution",
@@ -228,7 +245,7 @@
               "available_until": "2022-04-19",
               "data_access": "open",
               "host": {
-                "@id": "_:b23",
+                "@id": "_:b25",
                 "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
                 "title": "Zenodo",
                 "pid_system": "doi",
@@ -236,18 +253,28 @@
                 "url": "https://www.re3data.org/repository/r3d100010468"
               },
               "license": {
-                "@id": "_:b24",
+                "@id": "_:b26",
                 "start": "2021-04-19",
                 "license_ref": "https://creativecommons.org/licenses/by/4.0/"
               }
             },
+            "methodology": {
+              "@id": "_:b27",
+              "description": "The data is produced by running the experiment for both datasets. Two files for each data set are yielded, one for each algorithm.",
+              "methodology_id": {
+                "@id": "_:b28",
+                "identifier": "https://doi.org/10.5281/zenodo.4699565",
+                "type": "url"
+              }
+            },
             "type": "dataset",
+            "is_reused": "produced",
             "personal_data": "no",
             "sensitive_data": "no"
           }
         ],
         "project": {
-          "@id": "_:b25",
+          "@id": "_:b29",
           "description": "This project aims to analyze the difference of two custom written regression algorithms against the state of the art implementation of sklearn. The two algorithms are k-nearest neighbors (KNN) and gradient descend (gd). Both are fully implemented in python. Key points to the comparison are accuracy and efficency of the two algorithms but we will furthermore comapre mse, mae, r2. ",
           "title": "Performance Comparison of kNN and GD",
           "end": "2020-12-10",
@@ -321,6 +348,7 @@
             "type": "url"
           },
           "type": "dataset",
+          "is_reused": "reused",
           "personal_data": "no",
           "sensitive_data": "no"
         },
@@ -335,6 +363,7 @@
             "type": "url"
           },
           "type": "dataset",
+          "is_reused": "reused",
           "personal_data": "no",
           "sensitive_data": "no"
         },
@@ -349,6 +378,7 @@
             "type": "doi"
           },
           "type": "dataset",
+          "is_reused": "reused",
           "personal_data": "no",
           "sensitive_data": "no"
         },
@@ -385,22 +415,32 @@
               "license_ref": "https://opensource.org/licenses/lgpl-3.0.html"
             }
           },
+          "methodology": {
+            "@id": "_:b20",
+            "description": "The source code for the project. It includes all needed code, and data as well as all results. The results and data sets can all be recreated by downloading the original data sets from the provided links and run the experiment again and start the plotting. ",
+            "methodology_id": {
+              "@id": "_:b21",
+              "identifier": "https://doi.org/10.5281/zenodo.4701071",
+              "type": "url"
+            }
+          },
           "type": "software",
+          "is_reused": "produced",
           "personal_data": "no",
           "sensitive_data": "no"
         },
         {
-          "@id": "_:b20",
+          "@id": "_:b22",
           "description": "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset.",
           "issued": "2021-04-18",
           "title": "Results for Performance Comparison of kNN and GD",
           "dataset_id": {
-            "@id": "_:b21",
+            "@id": "_:b23",
             "identifier": "https://doi.org/10.5281/zenodo.4699565",
             "type": "doi"
           },
           "distribution": {
-            "@id": "_:b22",
+            "@id": "_:b24",
             "description": "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
             "format": "text/csv",
             "title": "Planned Distribution",
@@ -408,7 +448,7 @@
             "available_until": "2022-04-19",
             "data_access": "open",
             "host": {
-              "@id": "_:b23",
+              "@id": "_:b25",
               "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
               "title": "Zenodo",
               "pid_system": "doi",
@@ -416,18 +456,28 @@
               "url": "https://www.re3data.org/repository/r3d100010468"
             },
             "license": {
-              "@id": "_:b24",
+              "@id": "_:b26",
               "start": "2021-04-19",
               "license_ref": "https://creativecommons.org/licenses/by/4.0/"
             }
           },
+          "methodology": {
+            "@id": "_:b27",
+            "description": "The data is produced by running the experiment for both datasets. Two files for each data set are yielded, one for each algorithm.",
+            "methodology_id": {
+              "@id": "_:b28",
+              "identifier": "https://doi.org/10.5281/zenodo.4699565",
+              "type": "url"
+            }
+          },
           "type": "dataset",
+          "is_reused": "produced",
           "personal_data": "no",
           "sensitive_data": "no"
         }
       ],
       "project": {
-        "@id": "_:b25",
+        "@id": "_:b29",
         "description": "This project aims to analyze the difference of two custom written regression algorithms against the state of the art implementation of sklearn. The two algorithms are k-nearest neighbors (KNN) and gradient descend (gd). Both are fully implemented in python. Key points to the comparison are accuracy and efficency of the two algorithms but we will furthermore comapre mse, mae, r2. ",
         "title": "Performance Comparison of kNN and GD",
         "end": "2020-12-10",
@@ -451,6 +501,7 @@
         "type": "url"
       },
       "type": "dataset",
+      "is_reused": "reused",
       "personal_data": "no",
       "sensitive_data": "no"
     },
@@ -470,6 +521,7 @@
         "type": "doi"
       },
       "type": "dataset",
+      "is_reused": "reused",
       "personal_data": "no",
       "sensitive_data": "no"
     },
@@ -511,7 +563,17 @@
           "license_ref": "https://opensource.org/licenses/lgpl-3.0.html"
         }
       },
+      "methodology": {
+        "@id": "_:b20",
+        "description": "The source code for the project. It includes all needed code, and data as well as all results. The results and data sets can all be recreated by downloading the original data sets from the provided links and run the experiment again and start the plotting. ",
+        "methodology_id": {
+          "@id": "_:b21",
+          "identifier": "https://doi.org/10.5281/zenodo.4701071",
+          "type": "url"
+        }
+      },
       "type": "software",
+      "is_reused": "produced",
       "personal_data": "no",
       "sensitive_data": "no"
     },
@@ -567,16 +629,30 @@
     },
     {
       "@id": "_:b20",
+      "description": "The source code for the project. It includes all needed code, and data as well as all results. The results and data sets can all be recreated by downloading the original data sets from the provided links and run the experiment again and start the plotting. ",
+      "methodology_id": {
+        "@id": "_:b21",
+        "identifier": "https://doi.org/10.5281/zenodo.4701071",
+        "type": "url"
+      }
+    },
+    {
+      "@id": "_:b21",
+      "identifier": "https://doi.org/10.5281/zenodo.4701071",
+      "type": "url"
+    },
+    {
+      "@id": "_:b22",
       "description": "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset.",
       "issued": "2021-04-18",
       "title": "Results for Performance Comparison of kNN and GD",
       "dataset_id": {
-        "@id": "_:b21",
+        "@id": "_:b23",
         "identifier": "https://doi.org/10.5281/zenodo.4699565",
         "type": "doi"
       },
       "distribution": {
-        "@id": "_:b22",
+        "@id": "_:b24",
         "description": "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
         "format": "text/csv",
         "title": "Planned Distribution",
@@ -584,7 +660,7 @@
         "available_until": "2022-04-19",
         "data_access": "open",
         "host": {
-          "@id": "_:b23",
+          "@id": "_:b25",
           "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
           "title": "Zenodo",
           "pid_system": "doi",
@@ -592,22 +668,32 @@
           "url": "https://www.re3data.org/repository/r3d100010468"
         },
         "license": {
-          "@id": "_:b24",
+          "@id": "_:b26",
           "start": "2021-04-19",
           "license_ref": "https://creativecommons.org/licenses/by/4.0/"
         }
       },
+      "methodology": {
+        "@id": "_:b27",
+        "description": "The data is produced by running the experiment for both datasets. Two files for each data set are yielded, one for each algorithm.",
+        "methodology_id": {
+          "@id": "_:b28",
+          "identifier": "https://doi.org/10.5281/zenodo.4699565",
+          "type": "url"
+        }
+      },
       "type": "dataset",
+      "is_reused": "produced",
       "personal_data": "no",
       "sensitive_data": "no"
     },
     {
-      "@id": "_:b21",
+      "@id": "_:b23",
       "identifier": "https://doi.org/10.5281/zenodo.4699565",
       "type": "doi"
     },
     {
-      "@id": "_:b22",
+      "@id": "_:b24",
       "description": "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
       "format": "text/csv",
       "title": "Planned Distribution",
@@ -615,7 +701,7 @@
       "available_until": "2022-04-19",
       "data_access": "open",
       "host": {
-        "@id": "_:b23",
+        "@id": "_:b25",
         "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
         "title": "Zenodo",
         "pid_system": "doi",
@@ -623,13 +709,13 @@
         "url": "https://www.re3data.org/repository/r3d100010468"
       },
       "license": {
-        "@id": "_:b24",
+        "@id": "_:b26",
         "start": "2021-04-19",
         "license_ref": "https://creativecommons.org/licenses/by/4.0/"
       }
     },
     {
-      "@id": "_:b23",
+      "@id": "_:b25",
       "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
       "title": "Zenodo",
       "pid_system": "doi",
@@ -637,12 +723,26 @@
       "url": "https://www.re3data.org/repository/r3d100010468"
     },
     {
-      "@id": "_:b24",
+      "@id": "_:b26",
       "start": "2021-04-19",
       "license_ref": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
-      "@id": "_:b25",
+      "@id": "_:b27",
+      "description": "The data is produced by running the experiment for both datasets. Two files for each data set are yielded, one for each algorithm.",
+      "methodology_id": {
+        "@id": "_:b28",
+        "identifier": "https://doi.org/10.5281/zenodo.4699565",
+        "type": "url"
+      }
+    },
+    {
+      "@id": "_:b28",
+      "identifier": "https://doi.org/10.5281/zenodo.4699565",
+      "type": "url"
+    },
+    {
+      "@id": "_:b29",
       "description": "This project aims to analyze the difference of two custom written regression algorithms against the state of the art implementation of sklearn. The two algorithms are k-nearest neighbors (KNN) and gradient descend (gd). Both are fully implemented in python. Key points to the comparison are accuracy and efficency of the two algorithms but we will furthermore comapre mse, mae, r2. ",
       "title": "Performance Comparison of kNN and GD",
       "end": "2020-12-10",
@@ -708,6 +808,7 @@
         "type": "url"
       },
       "type": "dataset",
+      "is_reused": "reused",
       "personal_data": "no",
       "sensitive_data": "no"
     }

@@ -27,7 +27,10 @@
     "identifier": "terms:identifier",
     "type": "dcso:identifierType",
     "dmp": "dcso:hasDMP",
+    "methodology": "dcso:hasMethodology",
+    "methodology_id": "dcso:hasMethodologyId",
     "dmp_id": "dcso:hasDMPId",
+    "is_reused": "dcso:isReused",
     "language": "dcso:language",
     "ethical_issues_exist": "dcso:ethicalIssuesExist",
     "ethical_issues_report": "dcso:ethicalIssuesReport",
@@ -52,6 +55,7 @@
     "dataset_id": "dcso:hasDatasetId",
     "data_quality_assurance": "dcso:dataQualityAssurance",
     "personal_data": "dcso:personalData",
+    "preservation_statement": "dcso:preservationStatement",
     "sensitive_data": "dcso:sensitiveData",
     "distribution": "dcso:hasDistribution",
     "available_until": "dcso:availableUntil",
@@ -198,25 +202,31 @@
             },
             "language": "eng"
           },
+          "methodology": {
+            "@id": "_:b17",
+            "description": "The creation of the output of the experiment is conducted as follows: First, the two input datasets are downloaded in the CSV format. The dataset concerning the GDP per capita is downloaded as a ZIP file containing the actual dataset as well as two CSV files containing metadata (their file names start with \"Metadata\") which can be ignored for this experiment as we are only interested in the concrete data. The ZIP file is extracted. The data about the average height can be downloaded directly in the CSV format. The two CSV files from the two different datasets are renamed to gdps.csv and heights.csv, respectively, in order to better indicate their scope and content. There is a data folder in the repository in order to separate the source code and output from the input data. The renamed CSV files are transferred to this data folder since the source code for the experiment excepts data provided in data/gdps.csv and data/heights.csv as input. The first four lines of the CSV file for the GDP per capita information are reserved for a header indicating the data source and the date of the last update. Those four lines are deleted before running the experiment since the library used for data processing (pandas) is not able to handle \"uneven\" CSV files well."
+          },
           "security_and_privacy": [
             {
-              "@id": "_:b17",
+              "@id": "_:b18",
               "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
               "title": "Read access to the data"
             },
             {
-              "@id": "_:b18",
+              "@id": "_:b19",
               "description": "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
               "title": "Write access to the data"
             }
           ],
           "type": "dataset",
+          "is_reused": "produced",
           "language": "eng",
           "personal_data": "no",
+          "preservation_statement": "The data are produced in the scope of a university course project; hence, the potential uses in research are limited. Nevertheless, as all used data are licensed under the CC-BY 4.0 license described above and no personal data is processed, there is no reason to destroy the produced data either. Therefore, all data as well as the source code for the experiment are preserved in order to enable long-term reusability.",
           "sensitive_data": "no"
         },
         "project": {
-          "@id": "_:b19",
+          "@id": "_:b20",
           "description": "The aim of this experiment is to find out whether there is a (strong) correlation between the gross domestic product (GDP) per capita of a country and the average height of its 19-year-old inhabitants. For this purpose, data from two publicly available datasets were used: One dataset concerns the GDP per capita and the other contains data about the mean height of girls and boys of different ages per country. Both datasets consist of data collected over the course of several years; the year of interest for this experiment is 2019. The data entries from the two datasets were matched by comparing the country name given in the respective entry. Only countries are taken into consideration for which both datasets yield complete information - in total, 164 countries were considered in the experiment.",
           "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
           "end": "2021-04-19",
@@ -347,25 +357,31 @@
           },
           "language": "eng"
         },
+        "methodology": {
+          "@id": "_:b17",
+          "description": "The creation of the output of the experiment is conducted as follows: First, the two input datasets are downloaded in the CSV format. The dataset concerning the GDP per capita is downloaded as a ZIP file containing the actual dataset as well as two CSV files containing metadata (their file names start with \"Metadata\") which can be ignored for this experiment as we are only interested in the concrete data. The ZIP file is extracted. The data about the average height can be downloaded directly in the CSV format. The two CSV files from the two different datasets are renamed to gdps.csv and heights.csv, respectively, in order to better indicate their scope and content. There is a data folder in the repository in order to separate the source code and output from the input data. The renamed CSV files are transferred to this data folder since the source code for the experiment excepts data provided in data/gdps.csv and data/heights.csv as input. The first four lines of the CSV file for the GDP per capita information are reserved for a header indicating the data source and the date of the last update. Those four lines are deleted before running the experiment since the library used for data processing (pandas) is not able to handle \"uneven\" CSV files well."
+        },
         "security_and_privacy": [
           {
-            "@id": "_:b17",
+            "@id": "_:b18",
             "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
             "title": "Read access to the data"
           },
           {
-            "@id": "_:b18",
+            "@id": "_:b19",
             "description": "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
             "title": "Write access to the data"
           }
         ],
         "type": "dataset",
+        "is_reused": "produced",
         "language": "eng",
         "personal_data": "no",
+        "preservation_statement": "The data are produced in the scope of a university course project; hence, the potential uses in research are limited. Nevertheless, as all used data are licensed under the CC-BY 4.0 license described above and no personal data is processed, there is no reason to destroy the produced data either. Therefore, all data as well as the source code for the experiment are preserved in order to enable long-term reusability.",
         "sensitive_data": "no"
       },
       "project": {
-        "@id": "_:b19",
+        "@id": "_:b20",
         "description": "The aim of this experiment is to find out whether there is a (strong) correlation between the gross domestic product (GDP) per capita of a country and the average height of its 19-year-old inhabitants. For this purpose, data from two publicly available datasets were used: One dataset concerns the GDP per capita and the other contains data about the mean height of girls and boys of different ages per country. Both datasets consist of data collected over the course of several years; the year of interest for this experiment is 2019. The data entries from the two datasets were matched by comparing the country name given in the respective entry. Only countries are taken into consideration for which both datasets yield complete information - in total, 164 countries were considered in the experiment.",
         "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
         "end": "2021-04-19",
@@ -441,20 +457,17 @@
     },
     {
       "@id": "_:b17",
+      "description": "The creation of the output of the experiment is conducted as follows: First, the two input datasets are downloaded in the CSV format. The dataset concerning the GDP per capita is downloaded as a ZIP file containing the actual dataset as well as two CSV files containing metadata (their file names start with \"Metadata\") which can be ignored for this experiment as we are only interested in the concrete data. The ZIP file is extracted. The data about the average height can be downloaded directly in the CSV format. The two CSV files from the two different datasets are renamed to gdps.csv and heights.csv, respectively, in order to better indicate their scope and content. There is a data folder in the repository in order to separate the source code and output from the input data. The renamed CSV files are transferred to this data folder since the source code for the experiment excepts data provided in data/gdps.csv and data/heights.csv as input. The first four lines of the CSV file for the GDP per capita information are reserved for a header indicating the data source and the date of the last update. Those four lines are deleted before running the experiment since the library used for data processing (pandas) is not able to handle \"uneven\" CSV files well."
+    },
+    {
+      "@id": "_:b18",
       "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
       "title": "Read access to the data"
     },
     {
-      "@id": "_:b18",
+      "@id": "_:b19",
       "description": "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
       "title": "Write access to the data"
-    },
-    {
-      "@id": "_:b19",
-      "description": "The aim of this experiment is to find out whether there is a (strong) correlation between the gross domestic product (GDP) per capita of a country and the average height of its 19-year-old inhabitants. For this purpose, data from two publicly available datasets were used: One dataset concerns the GDP per capita and the other contains data about the mean height of girls and boys of different ages per country. Both datasets consist of data collected over the course of several years; the year of interest for this experiment is 2019. The data entries from the two datasets were matched by comparing the country name given in the respective entry. Only countries are taken into consideration for which both datasets yield complete information - in total, 164 countries were considered in the experiment.",
-      "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
-      "end": "2021-04-19",
-      "start": "2021-04-11"
     },
     {
       "@id": "_:b2",
@@ -465,6 +478,13 @@
         "identifier": "https://orcid.org/0000-0001-8770-4112",
         "type": "orcid"
       }
+    },
+    {
+      "@id": "_:b20",
+      "description": "The aim of this experiment is to find out whether there is a (strong) correlation between the gross domestic product (GDP) per capita of a country and the average height of its 19-year-old inhabitants. For this purpose, data from two publicly available datasets were used: One dataset concerns the GDP per capita and the other contains data about the mean height of girls and boys of different ages per country. Both datasets consist of data collected over the course of several years; the year of interest for this experiment is 2019. The data entries from the two datasets were matched by comparing the country name given in the respective entry. Only countries are taken into consideration for which both datasets yield complete information - in total, 164 countries were considered in the experiment.",
+      "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+      "end": "2021-04-19",
+      "start": "2021-04-11"
     },
     {
       "@id": "_:b3",
@@ -580,21 +600,27 @@
         },
         "language": "eng"
       },
+      "methodology": {
+        "@id": "_:b17",
+        "description": "The creation of the output of the experiment is conducted as follows: First, the two input datasets are downloaded in the CSV format. The dataset concerning the GDP per capita is downloaded as a ZIP file containing the actual dataset as well as two CSV files containing metadata (their file names start with \"Metadata\") which can be ignored for this experiment as we are only interested in the concrete data. The ZIP file is extracted. The data about the average height can be downloaded directly in the CSV format. The two CSV files from the two different datasets are renamed to gdps.csv and heights.csv, respectively, in order to better indicate their scope and content. There is a data folder in the repository in order to separate the source code and output from the input data. The renamed CSV files are transferred to this data folder since the source code for the experiment excepts data provided in data/gdps.csv and data/heights.csv as input. The first four lines of the CSV file for the GDP per capita information are reserved for a header indicating the data source and the date of the last update. Those four lines are deleted before running the experiment since the library used for data processing (pandas) is not able to handle \"uneven\" CSV files well."
+      },
       "security_and_privacy": [
         {
-          "@id": "_:b17",
+          "@id": "_:b18",
           "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
           "title": "Read access to the data"
         },
         {
-          "@id": "_:b18",
+          "@id": "_:b19",
           "description": "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
           "title": "Write access to the data"
         }
       ],
       "type": "dataset",
+      "is_reused": "produced",
       "language": "eng",
       "personal_data": "no",
+      "preservation_statement": "The data are produced in the scope of a university course project; hence, the potential uses in research are limited. Nevertheless, as all used data are licensed under the CC-BY 4.0 license described above and no personal data is processed, there is no reason to destroy the produced data either. Therefore, all data as well as the source code for the experiment are preserved in order to enable long-term reusability.",
       "sensitive_data": "no"
     },
     {

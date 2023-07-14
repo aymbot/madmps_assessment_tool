@@ -27,7 +27,10 @@
     "identifier": "terms:identifier",
     "type": "dcso:identifierType",
     "dmp": "dcso:hasDMP",
+    "methodology": "dcso:hasMethodology",
+    "methodology_id": "dcso:hasMethodologyId",
     "dmp_id": "dcso:hasDMPId",
+    "is_reused": "dcso:isReused",
     "language": "dcso:language",
     "ethical_issues_exist": "dcso:ethicalIssuesExist",
     "ethical_issues_report": "dcso:ethicalIssuesReport",
@@ -52,6 +55,7 @@
     "dataset_id": "dcso:hasDatasetId",
     "data_quality_assurance": "dcso:dataQualityAssurance",
     "personal_data": "dcso:personalData",
+    "preservation_statement": "dcso:preservationStatement",
     "sensitive_data": "dcso:sensitiveData",
     "distribution": "dcso:hasDistribution",
     "available_until": "dcso:availableUntil",
@@ -142,7 +146,9 @@
               }
             ],
             "type": "source-code",
+            "is_reused": "produced",
             "personal_data": "no",
+            "preservation_statement": "Is preserved to allow reproducibility of the experiment, reference files to promote validation will also be kept",
             "sensitive_data": "no"
           },
           {
@@ -190,7 +196,9 @@
               }
             ],
             "type": "csv dataset, figures",
+            "is_reused": "produced",
             "personal_data": "no",
+            "preservation_statement": "Even though the data can be recreated by re-run of the experiment the output dataset is retained for future reference in case the experiment is no longer runnable due to deprecation of the technologies used.",
             "sensitive_data": "no"
           },
           {
@@ -217,6 +225,7 @@
               }
             },
             "type": "document",
+            "is_reused": "reused",
             "personal_data": "no",
             "sensitive_data": "unknown"
           },
@@ -244,6 +253,7 @@
               }
             },
             "type": "document",
+            "is_reused": "reused",
             "personal_data": "no",
             "sensitive_data": "unknown"
           }
@@ -317,7 +327,9 @@
             }
           ],
           "type": "source-code",
+          "is_reused": "produced",
           "personal_data": "no",
+          "preservation_statement": "Is preserved to allow reproducibility of the experiment, reference files to promote validation will also be kept",
           "sensitive_data": "no"
         },
         {
@@ -365,7 +377,9 @@
             }
           ],
           "type": "csv dataset, figures",
+          "is_reused": "produced",
           "personal_data": "no",
+          "preservation_statement": "Even though the data can be recreated by re-run of the experiment the output dataset is retained for future reference in case the experiment is no longer runnable due to deprecation of the technologies used.",
           "sensitive_data": "no"
         },
         {
@@ -392,6 +406,7 @@
             }
           },
           "type": "document",
+          "is_reused": "reused",
           "personal_data": "no",
           "sensitive_data": "unknown"
         },
@@ -419,6 +434,7 @@
             }
           },
           "type": "document",
+          "is_reused": "reused",
           "personal_data": "no",
           "sensitive_data": "unknown"
         }
@@ -475,7 +491,9 @@
         }
       ],
       "type": "csv dataset, figures",
+      "is_reused": "produced",
       "personal_data": "no",
+      "preservation_statement": "Even though the data can be recreated by re-run of the experiment the output dataset is retained for future reference in case the experiment is no longer runnable due to deprecation of the technologies used.",
       "sensitive_data": "no"
     },
     {
@@ -534,6 +552,7 @@
         }
       },
       "type": "document",
+      "is_reused": "reused",
       "personal_data": "no",
       "sensitive_data": "unknown"
     },
@@ -594,6 +613,7 @@
         }
       },
       "type": "document",
+      "is_reused": "reused",
       "personal_data": "no",
       "sensitive_data": "unknown"
     },
@@ -673,7 +693,9 @@
         }
       ],
       "type": "source-code",
+      "is_reused": "produced",
       "personal_data": "no",
+      "preservation_statement": "Is preserved to allow reproducibility of the experiment, reference files to promote validation will also be kept",
       "sensitive_data": "no"
     },
     {

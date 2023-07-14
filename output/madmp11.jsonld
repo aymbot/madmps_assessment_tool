@@ -27,7 +27,10 @@
     "identifier": "terms:identifier",
     "type": "dcso:identifierType",
     "dmp": "dcso:hasDMP",
+    "methodology": "dcso:haslogy",
+    "methodology_id": "dcso:hasMethodologyId",
     "dmp_id": "dcso:hasDMPId",
+    "is_reused": "dcso:isReused",
     "language": "dcso:language",
     "ethical_issues_exist": "dcso:ethicalIssuesExist",
     "ethical_issues_report": "dcso:ethicalIssuesReport",
@@ -52,6 +55,7 @@
     "dataset_id": "dcso:hasDatasetId",
     "data_quality_assurance": "dcso:dataQualityAssurance",
     "personal_data": "dcso:personalData",
+    "preservation_statement": "dcso:preservationStatement",
     "sensitive_data": "dcso:sensitiveData",
     "distribution": "dcso:hasDistribution",
     "available_until": "dcso:availableUntil",
@@ -181,8 +185,10 @@
               }
             ],
             "type": "dataset",
+            "is_reused": "reused",
             "language": "eng",
             "personal_data": "no",
+            "preservation_statement": "Preserved in the code repository due to small size",
             "sensitive_data": "no"
           },
           {
@@ -234,8 +240,10 @@
               "language": "eng"
             },
             "type": "dataset",
+            "is_reused": "reused",
             "language": "eng",
             "personal_data": "no",
+            "preservation_statement": "Preserved in the code repository due to small size",
             "sensitive_data": "no"
           },
           {
@@ -300,8 +308,10 @@
                 }
               }
             ],
+            "is_reused": "reused",
             "language": "eng",
             "personal_data": "no",
+            "preservation_statement": "Preserved in the code repository due to small size",
             "sensitive_data": "unknown"
           },
           {
@@ -404,6 +414,7 @@
             "type": "software",
             "language": "eng",
             "personal_data": "no",
+            "preservation_statement": "Preserved both in GitHub and Zenodo for up to 1000 years, and accessible for at least 20.",
             "sensitive_data": "unknown"
           },
           {
@@ -698,8 +709,10 @@
             }
           ],
           "type": "dataset",
+          "is_reused": "reused",
           "language": "eng",
           "personal_data": "no",
+          "preservation_statement": "Preserved in the code repository due to small size",
           "sensitive_data": "no"
         },
         {
@@ -751,8 +764,10 @@
             "language": "eng"
           },
           "type": "dataset",
+          "is_reused": "reused",
           "language": "eng",
           "personal_data": "no",
+          "preservation_statement": "Preserved in the code repository due to small size",
           "sensitive_data": "no"
         },
         {
@@ -817,8 +832,10 @@
               }
             }
           ],
+          "is_reused": "reused",
           "language": "eng",
           "personal_data": "no",
+          "preservation_statement": "Preserved in the code repository due to small size",
           "sensitive_data": "unknown"
         },
         {
@@ -921,6 +938,7 @@
           "type": "software",
           "language": "eng",
           "personal_data": "no",
+          "preservation_statement": "Preserved both in GitHub and Zenodo for up to 1000 years, and accessible for at least 20.",
           "sensitive_data": "unknown"
         },
         {
@@ -1234,8 +1252,10 @@
         "language": "eng"
       },
       "type": "dataset",
+      "is_reused": "reused",
       "language": "eng",
       "personal_data": "no",
+      "preservation_statement": "Preserved in the code repository due to small size",
       "sensitive_data": "no"
     },
     {
@@ -1366,8 +1386,10 @@
           }
         }
       ],
+      "is_reused": "reused",
       "language": "eng",
       "personal_data": "no",
+      "preservation_statement": "Preserved in the code repository due to small size",
       "sensitive_data": "unknown"
     },
     {
@@ -1550,6 +1572,7 @@
       "type": "software",
       "language": "eng",
       "personal_data": "no",
+      "preservation_statement": "Preserved both in GitHub and Zenodo for up to 1000 years, and accessible for at least 20.",
       "sensitive_data": "unknown"
     },
     {
@@ -2159,8 +2182,10 @@
         }
       ],
       "type": "dataset",
+      "is_reused": "reused",
       "language": "eng",
       "personal_data": "no",
+      "preservation_statement": "Preserved in the code repository due to small size",
       "sensitive_data": "no"
     },
     {

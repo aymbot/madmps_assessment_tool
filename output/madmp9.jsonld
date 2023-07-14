@@ -27,7 +27,10 @@
     "identifier": "terms:identifier",
     "type": "dcso:identifierType",
     "dmp": "dcso:hasDMP",
+    "methodology": "dcso:hasMethodology",
+    "methodology_id": "dcso:hasMethodologyId",
     "dmp_id": "dcso:hasDMPId",
+    "is_reused": "dcso:isReused",
     "language": "dcso:language",
     "ethical_issues_exist": "dcso:ethicalIssuesExist",
     "ethical_issues_report": "dcso:ethicalIssuesReport",
@@ -52,6 +55,7 @@
     "dataset_id": "dcso:hasDatasetId",
     "data_quality_assurance": "dcso:dataQualityAssurance",
     "personal_data": "dcso:personalData",
+    "preservation_statement": "dcso:preservationStatement",
     "sensitive_data": "dcso:sensitiveData",
     "distribution": "dcso:hasDistribution",
     "available_until": "dcso:availableUntil",
@@ -238,30 +242,35 @@
               "language": "eng"
             }
           ],
+          "methodology": {
+            "@id": "_:b22",
+            "description": "The data is a result of a Python script aggregating source data into a consolidated CSV format and producing a PNG chart from the raw result data."
+          },
           "security_and_privacy": [
             {
-              "@id": "_:b22",
+              "@id": "_:b23",
               "description": "Write-Access to data is only permitted using credentials that belong to the project creator",
               "title": "Access Control"
             },
             {
-              "@id": "_:b23",
+              "@id": "_:b24",
               "description": "Backups are performed at least twice a week. Data is stored redundantly at four locations.",
               "title": "Data Security"
             },
             {
-              "@id": "_:b24",
+              "@id": "_:b25",
               "description": "The project neither processes nor produces sensitive or personal data. Hence, no actions to protect any of the data need to be taken.",
               "title": "Privacy"
             }
           ],
           "type": "dataset",
+          "is_reused": "produced",
           "language": "eng",
           "personal_data": "no",
           "sensitive_data": "no"
         },
         "project": {
-          "@id": "_:b25",
+          "@id": "_:b26",
           "description": "Examines the progression of the gross revenue in the USA and the IMDB user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016.",
           "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
           "end": "2021-04-19",
@@ -432,30 +441,35 @@
             "language": "eng"
           }
         ],
+        "methodology": {
+          "@id": "_:b22",
+          "description": "The data is a result of a Python script aggregating source data into a consolidated CSV format and producing a PNG chart from the raw result data."
+        },
         "security_and_privacy": [
           {
-            "@id": "_:b22",
+            "@id": "_:b23",
             "description": "Write-Access to data is only permitted using credentials that belong to the project creator",
             "title": "Access Control"
           },
           {
-            "@id": "_:b23",
+            "@id": "_:b24",
             "description": "Backups are performed at least twice a week. Data is stored redundantly at four locations.",
             "title": "Data Security"
           },
           {
-            "@id": "_:b24",
+            "@id": "_:b25",
             "description": "The project neither processes nor produces sensitive or personal data. Hence, no actions to protect any of the data need to be taken.",
             "title": "Privacy"
           }
         ],
         "type": "dataset",
+        "is_reused": "produced",
         "language": "eng",
         "personal_data": "no",
         "sensitive_data": "no"
       },
       "project": {
-        "@id": "_:b25",
+        "@id": "_:b26",
         "description": "Examines the progression of the gross revenue in the USA and the IMDB user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016.",
         "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
         "end": "2021-04-19",
@@ -602,21 +616,25 @@
     },
     {
       "@id": "_:b22",
+      "description": "The data is a result of a Python script aggregating source data into a consolidated CSV format and producing a PNG chart from the raw result data."
+    },
+    {
+      "@id": "_:b23",
       "description": "Write-Access to data is only permitted using credentials that belong to the project creator",
       "title": "Access Control"
     },
     {
-      "@id": "_:b23",
+      "@id": "_:b24",
       "description": "Backups are performed at least twice a week. Data is stored redundantly at four locations.",
       "title": "Data Security"
     },
     {
-      "@id": "_:b24",
+      "@id": "_:b25",
       "description": "The project neither processes nor produces sensitive or personal data. Hence, no actions to protect any of the data need to be taken.",
       "title": "Privacy"
     },
     {
-      "@id": "_:b25",
+      "@id": "_:b26",
       "description": "Examines the progression of the gross revenue in the USA and the IMDB user score of movies which have won the Oscar in the category \"Best Picture\" and were released between 1986 and 2016.",
       "title": "Progression of Revenue and IMDb Score of Oscar \"Best Picture\" Winners From 1986 Until 2016",
       "end": "2021-04-19",
@@ -778,24 +796,29 @@
           "language": "eng"
         }
       ],
+      "methodology": {
+        "@id": "_:b22",
+        "description": "The data is a result of a Python script aggregating source data into a consolidated CSV format and producing a PNG chart from the raw result data."
+      },
       "security_and_privacy": [
         {
-          "@id": "_:b22",
+          "@id": "_:b23",
           "description": "Write-Access to data is only permitted using credentials that belong to the project creator",
           "title": "Access Control"
         },
         {
-          "@id": "_:b23",
+          "@id": "_:b24",
           "description": "Backups are performed at least twice a week. Data is stored redundantly at four locations.",
           "title": "Data Security"
         },
         {
-          "@id": "_:b24",
+          "@id": "_:b25",
           "description": "The project neither processes nor produces sensitive or personal data. Hence, no actions to protect any of the data need to be taken.",
           "title": "Privacy"
         }
       ],
       "type": "dataset",
+      "is_reused": "produced",
       "language": "eng",
       "personal_data": "no",
       "sensitive_data": "no"

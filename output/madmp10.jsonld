@@ -27,7 +27,10 @@
     "identifier": "terms:identifier",
     "type": "dcso:identifierType",
     "dmp": "dcso:hasDMP",
+    "methodology": "dcso:hasMethodology",
+    "methodology_id": "dcso:hasMethodologyId",
     "dmp_id": "dcso:hasDMPId",
+    "is_reused": "dcso:isReused",
     "language": "dcso:language",
     "ethical_issues_exist": "dcso:ethicalIssuesExist",
     "ethical_issues_report": "dcso:ethicalIssuesReport",
@@ -52,6 +55,7 @@
     "dataset_id": "dcso:hasDatasetId",
     "data_quality_assurance": "dcso:dataQualityAssurance",
     "personal_data": "dcso:personalData",
+    "preservation_statement": "dcso:preservationStatement",
     "sensitive_data": "dcso:sensitiveData",
     "distribution": "dcso:hasDistribution",
     "available_until": "dcso:availableUntil",
@@ -167,8 +171,10 @@
               }
             ],
             "type": "Dataset",
+            "is_reused": "reused",
             "language": "deu",
             "personal_data": "no",
+            "preservation_statement": "This data set is planned to be shared publicly alongside the public project github repository.\nThe data is shared from 2021-04-19 onward.\nSharing is performed via the github.com platform, until that hoster's strategic direction changes.\nUntil further notice, a web browser and internet connection to the western internet is required to access the public github repository. No authorization or registration is required for access.\nThe DOI of this data set was already acquired via the zenodo platform. However, due to technical limitations of the github/zenodo partnership, technical limitations of the `git` software, combined with the lock-in of the DOI system to institutionalized processes, the DOI for this data set actually points to a snapshot of the data which needs manual update each time the data set at the public project github repository is updated.",
             "sensitive_data": "no"
           },
           {
@@ -234,8 +240,10 @@
               }
             ],
             "type": "Dataset",
+            "is_reused": "produced",
             "language": "deu",
             "personal_data": "no",
+            "preservation_statement": "This data set is planned to be shared publicly alongside the public project github repository.\nThe data is shared from 2021-04-19 onward.\nSharing is performed via the github.com platform, until that hoster's strategic direction changes.\nUntil further notice, a web browser and internet connection to the western internet is required to access the public github repository. No authorization or registration is required for access.\nThe DOI of this data set was already acquired via the zenodo platform. However, due to technical limitations of the github/zenodo partnership, technical limitations of the `git` software, combined with the lock-in of the DOI system to institutionalized processes, the DOI for this data set actually points to a snapshot of the data which needs manual update each time the data set at the public project github repository is updated.",
             "sensitive_data": "no"
           },
           {
@@ -274,8 +282,10 @@
               }
             },
             "type": "Dataset",
+            "is_reused": "reused",
             "language": "eng",
             "personal_data": "no",
+            "preservation_statement": "This data set is planned to be barred from sharing, due to licensing concerns.\nA DOI of this data set cannot be obtained without further institutional support, due to it's non-public nature.\nLong-term availability of current, past and future versions of this data set is expected to be continuely provided by the UCDP itself.",
             "sensitive_data": "no"
           },
           {
@@ -314,8 +324,10 @@
               }
             },
             "type": "Dataset",
+            "is_reused": "produced",
             "language": "eng",
             "personal_data": "no",
+            "preservation_statement": "This data set is planned to be barred from sharing, due to licensing concerns.\nA DOI of this data set cannot be obtained without further institutional support, due to it's non-public nature.\nLong-term preservation of this data set is performed by the closed-access storage systems within the pogitsys.",
             "sensitive_data": "no"
           }
         ],
@@ -420,8 +432,10 @@
             }
           ],
           "type": "Dataset",
+          "is_reused": "reused",
           "language": "deu",
           "personal_data": "no",
+          "preservation_statement": "This data set is planned to be shared publicly alongside the public project github repository.\nThe data is shared from 2021-04-19 onward.\nSharing is performed via the github.com platform, until that hoster's strategic direction changes.\nUntil further notice, a web browser and internet connection to the western internet is required to access the public github repository. No authorization or registration is required for access.\nThe DOI of this data set was already acquired via the zenodo platform. However, due to technical limitations of the github/zenodo partnership, technical limitations of the `git` software, combined with the lock-in of the DOI system to institutionalized processes, the DOI for this data set actually points to a snapshot of the data which needs manual update each time the data set at the public project github repository is updated.",
           "sensitive_data": "no"
         },
         {
@@ -487,8 +501,10 @@
             }
           ],
           "type": "Dataset",
+          "is_reused": "produced",
           "language": "deu",
           "personal_data": "no",
+          "preservation_statement": "This data set is planned to be shared publicly alongside the public project github repository.\nThe data is shared from 2021-04-19 onward.\nSharing is performed via the github.com platform, until that hoster's strategic direction changes.\nUntil further notice, a web browser and internet connection to the western internet is required to access the public github repository. No authorization or registration is required for access.\nThe DOI of this data set was already acquired via the zenodo platform. However, due to technical limitations of the github/zenodo partnership, technical limitations of the `git` software, combined with the lock-in of the DOI system to institutionalized processes, the DOI for this data set actually points to a snapshot of the data which needs manual update each time the data set at the public project github repository is updated.",
           "sensitive_data": "no"
         },
         {
@@ -527,8 +543,10 @@
             }
           },
           "type": "Dataset",
+          "is_reused": "reused",
           "language": "eng",
           "personal_data": "no",
+          "preservation_statement": "This data set is planned to be barred from sharing, due to licensing concerns.\nA DOI of this data set cannot be obtained without further institutional support, due to it's non-public nature.\nLong-term availability of current, past and future versions of this data set is expected to be continuely provided by the UCDP itself.",
           "sensitive_data": "no"
         },
         {
@@ -567,8 +585,10 @@
             }
           },
           "type": "Dataset",
+          "is_reused": "produced",
           "language": "eng",
           "personal_data": "no",
+          "preservation_statement": "This data set is planned to be barred from sharing, due to licensing concerns.\nA DOI of this data set cannot be obtained without further institutional support, due to it's non-public nature.\nLong-term preservation of this data set is performed by the closed-access storage systems within the pogitsys.",
           "sensitive_data": "no"
         }
       ],
@@ -688,8 +708,10 @@
         }
       ],
       "type": "Dataset",
+      "is_reused": "produced",
       "language": "deu",
       "personal_data": "no",
+      "preservation_statement": "This data set is planned to be shared publicly alongside the public project github repository.\nThe data is shared from 2021-04-19 onward.\nSharing is performed via the github.com platform, until that hoster's strategic direction changes.\nUntil further notice, a web browser and internet connection to the western internet is required to access the public github repository. No authorization or registration is required for access.\nThe DOI of this data set was already acquired via the zenodo platform. However, due to technical limitations of the github/zenodo partnership, technical limitations of the `git` software, combined with the lock-in of the DOI system to institutionalized processes, the DOI for this data set actually points to a snapshot of the data which needs manual update each time the data set at the public project github repository is updated.",
       "sensitive_data": "no"
     },
     {
@@ -815,8 +837,10 @@
         }
       },
       "type": "Dataset",
+      "is_reused": "reused",
       "language": "eng",
       "personal_data": "no",
+      "preservation_statement": "This data set is planned to be barred from sharing, due to licensing concerns.\nA DOI of this data set cannot be obtained without further institutional support, due to it's non-public nature.\nLong-term availability of current, past and future versions of this data set is expected to be continuely provided by the UCDP itself.",
       "sensitive_data": "no"
     },
     {
@@ -891,8 +915,10 @@
         }
       },
       "type": "Dataset",
+      "is_reused": "produced",
       "language": "eng",
       "personal_data": "no",
+      "preservation_statement": "This data set is planned to be barred from sharing, due to licensing concerns.\nA DOI of this data set cannot be obtained without further institutional support, due to it's non-public nature.\nLong-term preservation of this data set is performed by the closed-access storage systems within the pogitsys.",
       "sensitive_data": "no"
     },
     {
@@ -1017,8 +1043,10 @@
         }
       ],
       "type": "Dataset",
+      "is_reused": "reused",
       "language": "deu",
       "personal_data": "no",
+      "preservation_statement": "This data set is planned to be shared publicly alongside the public project github repository.\nThe data is shared from 2021-04-19 onward.\nSharing is performed via the github.com platform, until that hoster's strategic direction changes.\nUntil further notice, a web browser and internet connection to the western internet is required to access the public github repository. No authorization or registration is required for access.\nThe DOI of this data set was already acquired via the zenodo platform. However, due to technical limitations of the github/zenodo partnership, technical limitations of the `git` software, combined with the lock-in of the DOI system to institutionalized processes, the DOI for this data set actually points to a snapshot of the data which needs manual update each time the data set at the public project github repository is updated.",
       "sensitive_data": "no"
     },
     {
