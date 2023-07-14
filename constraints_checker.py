@@ -6,7 +6,7 @@ output_folder = 'output'
 
 # Load the SHACL shapes graph
 shapes_graph = rdflib.Graph()
-shapes_graph.parse('shapes.ttl', format='turtle')
+shapes_graph.parse('shacl_constraints\shapes_6b2.ttl', format='turtle')
 
 # Perform SHACL validation for each madmp file
 for i in range(1, 12):
