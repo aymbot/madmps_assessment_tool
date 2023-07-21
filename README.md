@@ -85,10 +85,11 @@ The assessment of maDMPs was conducted based on the evaluation rubric provided b
 | 2a)      | `shapes_2a2.ttl` | All *maDMPs*
 | 2a)      | `shapes_2a3.ttl` | `madmp2.jsonld`, `madmp3.jsonld`, `madmp5.jsonld`, `madmp6.jsonld`, `madmp7.jsonld`, `madmp8.jsonld`, `madmp10.jsonld`
 | 2a)      | `shapes_2a4.ttl` | All *maDMPs*
+| 2b)      | `shapes_2b.ttl` | All *maDMPs*
 | 3a)      | `shapes_3a.ttl` | All *maDMPs*
 | 3b)      | `shapes_3b1.ttl` | No *maDMPs*
 | 3b)      | `shapes_3b2.ttl` | All *maDMPs*
-| 4a)      | `shapes_3b2.ttl` | All *maDMPs*
+| 4a)      | `shapes_3b2.ttl` | All *maDMPs* (since no fitting context, this is the closest to its actual constraint, but it has nothing to do with actually enforcing the definition of how data is processed)
 | 4b)      | No fitting context, therefore no fitting constraints | None since not applied
 | 4c)      | `shapes_4c1.ttl`, `shapes_4c2.ttl` | All *maDMPs*
 | 5a)      | `shapes_5a1.ttl` | `madmp8.jsonld`, `madmp9.jsonld`, `madmp10.jsonld`, `madmp11.jsonld`
@@ -106,6 +107,40 @@ The assessment of maDMPs was conducted based on the evaluation rubric provided b
 
 The assessment of the *maDMPs* using *SHACL* constraints indicates varying degrees of compliance. While some requirements were well met, there are areas for improvement. The use of *SHACL* constraints facilitated an automated and standardized validation process, aiding reviewers in their assessment. Applying *SHACL* constraints instead of *SPARQL* queries allows to automatically enforce *maDMPs* to adhere instead of simply querying them about if they conform or not.
 
+### Differences between Constraint and Queries
+
+Here, the differences between the constraints and queries are briefly mentioned. Even when it is describes as *"Kept true to the SPARQL query"*, one should be aware that of course there are still different and have different effects since one queries whereas the other applies a constraint or requires something from the *maDMP*.
+
+| Relevant SHACL Constraints | Relevant SPARL Query | Considerations/Alterations in SHACL vs. SPARQL|
+|--------------------|---------------------------|------------------|
+|`shapes_01.ttl`| `0-1.sparql`| Only hasContact is mandatory, the exact constellation of it is open |
+|`shapes_02.ttl`| `0-2.sparql`| Only applied the constraint didn't apply default values since we want this constraint to fail if fields do not exist |
+|`shapes_03.ttl`| `0-3.sparql`| Funding is explicitly optional due to self-funded projects, but requires ID if existing|
+|`shapes_1a.ttl`| *None* | Not covered by SPARQL and introduced as SHACL |
+|`shapes_1b1.ttl`| `1-b-1.sparql`| Kept true to the SPARL query besides enforcing literal datatype|
+|`shapes_1b2.ttl`| `1-b-2.sparql`| Kept true to the SPARL query besides omitting default values|
+|`shapes_1b3.ttl`| `1-b-3.sparql`| Kept true to the SPARL query besides omitting default values |
+|`shapes_2a1.ttl`| `2-a-1.sparql`| Kept true to the SPARL query|
+|`shapes_2a2.ttl`| `2-a-2.sparql`| SHACL only ensures that the hasDataset property exists, along title and keyword|
+|`shapes_2a3.ttl`| `2-a-3.sparql`| Kept true to the SPARL query|
+|`shapes_2a4.ttl`| `2-a-4.sparql`| Kept true to the SPARL query|
+|`shapes_2b.ttl`| `2-b-1.sparql`| Kept true to the SPARL query besides enforcing literal datatype|
+|`shapes_3a.ttl`| `3-a-1.sparql`| Kept true to the SPARL query besides enforcing literal datatype (aside from IRI to avoid constraint failures due to format issues, but it should be enforced in reality)|
+|`shapes_3b1.ttl`| `3-b-1.sparql`| To fully match the rubric, description was made mandatory and title optional (since no explicit mention, but it should be mandatory too in reality)|
+|`shapes_3b2.ttl`| `3-b-2.sparql`| Defined expected strings, anything else besides that would result in it failing constraint and again enforced literal type|
+|`shapes_4c1.ttl`| `4-c-1.sparql`| Kept true to the SPARL query besides expanding with answer "no"|
+|`shapes_4c2.ttl`| `4-c-2.sparql`| Stricter and more encompassing than SPARQL query |
+|`shapes_5a1.ttl`| `5-a-1.sparql`| Removed format from being required as it was not explicitly mentioned in the rubric section|
+|`shapes_5a2.ttl`| `5-a-2.sparql`| Preservation statement has to exist at least once|
+|`shapes_5a3.ttl`| `5-a-3.sparql`| Stricter constraint besides ommitting sensitive data since it is not covered in this rubric section|
+|`shapes_5b.ttl`| `5-b-1.sparql`| Kept true to the SPARL query|
+|`shapes_5c.ttl`| `5-c-1.sparql`| Kept true to the SPARL query|
+|`shapes_5d1.ttl`| `5-d-1.sparql`| Kept true to the SPARL query|
+|`shapes_5d2.ttl`| `5-d-2.sparql`| Kept true to the SPARL query|
+|`shapes_6a1.ttl`| `6-a-1.sparql`| Made role already mandatory in this constraint|
+|`shapes_6a2.ttl`| `6-a-2.sparql`| Made this constraint a subset of `shapes_6a1.ttl`|
+|`shapes_6b1.ttl`| `6-b-1.sparql`| Stricter and more encompassing than SPARQL query|
+|`shapes_6b2.ttl`| `6-b-2.sparql`| Stricter and more encompassing than SPARQL query|
 ## Further Opportunities & Limitations
 
 Hopefully this has provided valuable insights into the validation and assessment of *maDMPs* using *SHACL* constraints. However, there are certain limitations and further opportunities to consider.
